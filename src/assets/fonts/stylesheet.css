@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Sua Test';
+    src: url('Sua-Thin.woff2') format('woff2'),
+        url('Sua-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sua Test';
+    src: url('Sua-Medium.woff2') format('woff2'),
+        url('Sua-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sua Test';
+    src: url('Sua-Regular.woff2') format('woff2'),
+        url('Sua-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sua Test XBold';
+    src: url('Sua-XBold.woff2') format('woff2'),
+        url('Sua-XBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sua Test';
+    src: url('Sua-Light.woff2') format('woff2'),
+        url('Sua-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sua Test';
+    src: url('Sua-Bold.woff2') format('woff2'),
+        url('Sua-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sua Test';
+    src: url('Sua-Black.woff2') format('woff2'),
+        url('Sua-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
