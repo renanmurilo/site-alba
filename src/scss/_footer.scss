@@ -1,0 +1,120 @@
+footer{
+    background-color: $verde-alba;
+    width: 100%;
+
+    .session-footer{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 3.3125rem;
+        margin-bottom: 2.5125rem;
+
+        .logo-footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6.6rem;
+        }
+
+        .site-map{
+            
+            h2{
+                font-size: 0.875rem;
+                color: $amarelo-alba;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+            }
+
+            ul{
+                display: contents;
+                line-height: 220%;
+
+                .linha{
+                    position: relative;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 94px;
+                        background-color: #ffffff;
+                        height: 1px;
+                        bottom: 0;
+                    }
+                }
+
+                li{
+                    list-style-type: none;
+                    a{
+                        font-size: 0.75rem;
+                        color: #ffffff;
+                        font-weight: 500;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .unidades{
+            line-height: 150%;
+
+            h2{
+                font-size: 0.875rem;
+                color: $amarelo-alba;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+            }
+
+            p{
+                font-size: 0.875rem;
+                color: #ffffff;
+                margin: 1rem 0;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .nossas-redes{
+            display: flex;
+
+            h2{
+                font-size: 0.875rem;
+                color: $amarelo-alba;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+            }
+        }
+
+        .contato, .orcamento, .faq{
+            
+            h2{
+                font-size: 0.875rem;
+                color: $amarelo-alba;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 0.75rem;
+                color: #ffffff;
+                line-height: 100%;
+                margin-bottom: 2rem;
+
+                a{
+                    text-decoration: underline;
+                    font-size: 0.75rem;
+                    color: #ffffff;
+                }
+            }
+        }
+        .logo-weg{
+            margin-top: 2.5rem;
+        }
+    }
+}

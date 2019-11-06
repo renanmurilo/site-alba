@@ -1,15 +1,172 @@
 #banner{
-    display: flex;
-    width: 100%;
+   width: 100%;
 
     .carrousel-banner{
         
-     
-        .image{
-            background-image: url('src/assets/images/header/banner.png');
-        width: 100%;
-        padding-bottom: 10rem!important;
-        height: 100%;
+        div{
+            position: relative;
+            background-image: url('../images/banner.png');
+            background-repeat: no-repeat center;
+            background-size: cover;
+            background-position: center ;
+            height: 531px;
+            margin-top: 1.3rem;
+            width: 100%;
+            clip-path: polygon(50% 0%, 100% 0, 100% 80%, 92% 100%, 0 100%, 0 0);
+
+            .text-banner{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                
+                h5{
+                    position: absolute;
+                    color: $amarelo-alba;
+                    left: 5.8rem;
+                    top: 6rem;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                h1{
+                    position: absolute;
+                    font-size: 70px;
+                    font-weight: lighter;
+                    left: 5.6rem;
+                    line-height: 90%;
+                    top: 5.775rem;
+                    max-width: 630px;
+                    color: #ffffff;
+
+                    span{
+                        font-weight: bold;
+                    }
+                }
+
+                .text-button{
+                    position: absolute;
+                    bottom: 4.5625rem;
+                    left: 5.8rem;
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        font-size: 1.5rem;
+                        color: #ffffff;
+                        font-weight: bold;
+                        max-width: 220px;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        margin-left: 4rem;
+
+                        .btn-banner{
+                            display: flex;
+                            align-items: center;
+                            background-color: $amarelo-alba;
+                            padding: 0 1.2rem;
+                            width: 100%;
+                            height: 47.16px;
+                            text-align: center;
+                            border-radius: 3px;
+                            border: none;
+                            font-size: 0.875rem;
+                            color: $verde-alba;
+                            letter-spacing: 3px;
+                            text-transform: uppercase;
+                            font-weight: 900;
+                            margin-bottom: .6rem;
+                        }
+
+                        span{
+                            img{
+                                margin-left: .5rem;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+#solucoes{
+
+    .session-solucoes{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin-top: 5.3125rem;
+        margin-bottom: 5.625rem;
+
+        h2{
+            font-size: 2.5rem;
+            color: $verde-alba;
+            max-width: 210px;
+            position: relative;
+            line-height: 100%;
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 6px;
+                background-color: $amarelo-alba;
+                bottom: -10px;
+                left: 3px;
+            }
+        }
+
+        .text-solucoes{
+            max-width: 595px;
+            font-size: 1.125rem;
+            color: $cinza-alba;
+           
+            p{
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    .session-card{
+        h2{
+            font-size: 1.375rem;
+            color: $verde-alba;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card{
+            width: 248.17px;
+            height: 278.21px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            box-shadow: 0px 4px 10px 6px rgba(0, 0, 10,0.1);
+
+            
+
+            .conteudo-card{
+
+                
+                p{
+                    font-size: 1.4375rem;
+                    color: $verde-alba;
+                    font-weight: 500;
+                    margin-top: 1rem;
+                }
+                
+            }
         }
     }
 }
