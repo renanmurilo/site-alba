@@ -1,6 +1,19 @@
 footer{
-    background-color: $verde-alba;
     width: 100%;
+
+    .mask-img {
+        display: block;
+        max-width: 100%;
+        height: 430px;
+    }
+      
+    .object-mask {
+        mask-image: url(../images/mask-footer.svg);
+        background-color: $verde-alba;
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+        mask-position: center;
+    }
 
     .session-footer{
         display: flex;
@@ -11,9 +24,9 @@ footer{
 
         .logo-footer{
             display: flex;
-            justify-content: center;
             align-items: center;
             margin-top: 6.6rem;
+            margin-left: .7rem;
         }
 
         .site-map{
@@ -78,7 +91,7 @@ footer{
         }
 
         .nossas-redes{
-            display: flex;
+            
 
             h2{
                 font-size: 0.875rem;
@@ -86,6 +99,23 @@ footer{
                 text-transform: uppercase;
                 letter-spacing: 3px;
                 font-weight: 900;
+            }
+
+            .icones{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+
+                    .fab{
+                        font-size: 19.58px;
+                        color: #ffffff;
+                        margin-right: 2.5rem;
+                        margin-top: .3rem;
+                    }
+                }
             }
         }
 
