@@ -267,6 +267,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        font-weight: 900;
                         
                         span{
                             margin-left: .5rem;
@@ -276,5 +277,259 @@
             }
         }
 
+    }
+}
+
+#experiencia{
+    background-image: url('../images/banner-experiencia.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 7rem!important;
+    margin-bottom: 16.1875rem;
+
+    h2{
+        color: #ffffff;
+        font-size: 4.375rem;
+        font-weight: 300;
+        margin-top: 9rem;
+        max-width: 1050px;
+        margin-left: .8rem;
+        line-height: 110%;
+    }
+
+    .session-experiencia{
+        display: flex;
+        margin-top: 8.75rem;
+
+        .projetos, .mes, .toneladas, .economia{
+            font-size: 5.625rem;
+            color: $amarelo-alba;
+            font-weight: 100;
+            line-height: 60%;
+            
+        }
+
+        .projetos-m, .mes-m, .economia-m{
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 300;
+            margin-bottom: 2.6825rem;
+        }
+
+        .toneladas-m{
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 300;
+            max-width: 170px;
+        }
+
+
+        .text-button{
+            
+            .text{
+                font-size: 1.25rem;
+                color: #ffffff;
+                max-width: 237px;
+                position: relative;
+                line-height: 140%;
+
+                &::before{
+                    content: '';
+                    background-color: $amarelo-alba;
+                    width: 63px;
+                    height: 4px;
+                    position: absolute;
+                    top: -17px;
+                }
+            }
+
+            a{
+                text-decoration: none;
+
+                .btn-experiencia{
+                    background-color: $amarelo-alba;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $verde-alba;
+                    border: none;
+                    border-radius: 3px;
+                    width: 174.5px;
+                    height: 39.16px;
+                    font-weight: 900;
+                    text-transform: uppercase; 
+                    letter-spacing: 3px;
+                    margin-top: 3rem;
+                }
+
+                .seta{
+                    margin-left: .7rem;
+                }
+            }
+            
+        }
+
+    }
+}
+
+#blog{
+    background-image: url('../images/bg-cinza.png');
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 5rem!important;
+
+    h2{
+        color: $verde-alba;
+        text-align: center;
+        font-size: 2.5rem;
+        position: relative;
+        margin-top: 6.2135rem;
+
+        &::before{
+            content: '';
+            width: 30%;
+            height: 5px;
+            background-color: $amarelo-alba;
+            bottom: -12px;
+            position: absolute;
+        }
+    }
+
+    .session-blog{
+
+        .carroussel-blog{
+            margin-top: 3.4375rem;
+            .slick-initialized, .slick-slide{
+                display: flex;
+                justify-content: center;
+            }
+
+            // .slick-list{
+            //     overflow: inherit;
+            // }
+
+            .card{
+                border-radius: 15px!important;
+                width: 19.2475rem;
+                position: relative;
+                border: none;
+                box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.5);
+
+                .text-card{
+                    position: absolute;
+                    font-size: 0.75rem;
+                    color: $verde-alba;
+                    top: 6px;
+                    left: 7px;
+                    max-width: 30px;
+                    text-align: center;
+                    line-height: 120%;
+                    text-transform: uppercase;
+
+                    span{
+                        font-weight: 900;
+                    }
+                }
+
+                &::before{
+                    content: '';
+                    width: 47px;
+                    height: 42px;
+                    background-color: #ffffff;
+                    position: absolute;
+                    border-top-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+
+                }
+
+                .card-body{
+                    text-align: center;
+
+                    .card-text{
+                        font-size: 1rem;
+                        color: $cinza-alba;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .button-blog{
+        display: flex;
+        justify-content: center;
+
+        a{
+            text-decoration: none;
+
+            .btn-blog{
+                background-color: $amarelo-alba;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $verde-alba;
+                border: none;
+                border-radius: 3px;
+                width: 240.97px;
+                height: 39.16px;
+                font-weight: 900;
+                text-transform: uppercase; 
+                letter-spacing: 3px;
+                margin-top: 3rem;
+            }
+
+            .seta{
+                margin-left: .7rem;
+            }
+        }
+    }
+}
+
+#simule{
+    width: 100%;
+    max-width: 100%;
+
+    h2{
+        color: $verde-alba;
+        text-align: center;
+        font-size: 2.5rem;
+        position: relative;
+        margin-top: 4.8125rem;
+
+        &::before{
+            content: '';
+            width: 34%;
+            height: 5px;
+            background-color: $amarelo-alba;
+            bottom: -12px;
+            position: absolute;
+        }
+    }
+
+    .session-simule{
+
+
+        .text-simule{
+            display: flex;
+            justify-content: center;
+            margin-top: 2.875rem;
+            margin-bottom: 4.6875rem;
+
+            .text{
+                font-size: 1.125rem;
+                font-weight: 300;
+                color: $cinza-alba;
+                max-width: 350px;
+                text-align: center;
+            }
+        }
+
+        .formulario{
+            display: flex;
+            justify-content: center;
+        }
     }
 }
