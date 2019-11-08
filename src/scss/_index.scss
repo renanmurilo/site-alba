@@ -93,6 +93,7 @@
                             text-transform: uppercase;
                             font-weight: 900;
                             margin-bottom: .6rem;
+                            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
                         }
 
                         span{
@@ -268,6 +269,7 @@
                         align-items: center;
                         justify-content: center;
                         font-weight: 900;
+                        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
                         
                         span{
                             margin-left: .5rem;
@@ -303,6 +305,7 @@
     .session-experiencia{
         display: flex;
         margin-top: 8.75rem;
+        flex-wrap: wrap;
 
         .projetos, .mes, .toneladas, .economia{
             font-size: 5.625rem;
@@ -363,6 +366,7 @@
                     text-transform: uppercase; 
                     letter-spacing: 3px;
                     margin-top: 3rem;
+                    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
                 }
 
                 .seta{
@@ -405,18 +409,15 @@
             .slick-initialized, .slick-slide{
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
             }
-
-            // .slick-list{
-            //     overflow: inherit;
-            // }
 
             .card{
                 border-radius: 15px!important;
                 width: 19.2475rem;
                 position: relative;
                 border: none;
-                box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.5);
+                box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
 
                 .text-card{
                     position: absolute;
@@ -447,6 +448,7 @@
 
                 .card-body{
                     text-align: center;
+                    min-height: 7.265rem;
 
                     .card-text{
                         font-size: 1rem;
@@ -479,6 +481,7 @@
                 text-transform: uppercase; 
                 letter-spacing: 3px;
                 margin-top: 3rem;
+                box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
             }
 
             .seta{
@@ -491,6 +494,7 @@
 #simule{
     width: 100%;
     max-width: 100%;
+    position: relative;
 
     h2{
         color: $verde-alba;
@@ -506,6 +510,32 @@
             background-color: $amarelo-alba;
             bottom: -12px;
             position: absolute;
+        }
+    }
+
+    .lista{
+        position: absolute;
+        top: 5.3125rem;
+        right: 8.25rem;
+
+        ul{
+            list-style-type: none;
+            display: flex;
+
+            li{
+                margin: 0 .5rem;
+                
+                .circulo{
+                    border-radius: 100%;
+                    border: 1px solid $verde-alba;
+                    width: 33px;
+                    height: 33px;
+                    text-align: center;
+                    font-size: 1.375rem;
+                    color: $verde-alba;
+                    font-weight: 700;
+                }
+            }
         }
     }
 
@@ -530,6 +560,51 @@
         .formulario{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+
+            .form-simule-left{
+                margin-left: 3rem;
+            }
+
+            .form-simule,
+            .form-simule-left{
+                width: 406.69px;
+                margin-bottom: 2.3125rem;
+                background-color: #00808F;
+                border-radius: 3px;
+                border: none;
+
+                .form-control{
+                    opacity: .9;
+                    
+                }
+            }
+
+            .button-form{
+                display: flex;
+                justify-content: center;
+                margin-top: .5rem;
+                margin-bottom: 5.9375rem;
+
+                a{
+                    text-decoration: none;
+
+                    .btn-proximo{
+                        background-color: $amarelo-alba;
+                        color: $verde-alba;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: uppercase;
+                        border: none;
+                        border-radius: 3px;
+                        font-weight: 900;
+                        width: 145.17px;
+                        height: 39.16px;
+                        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+                    }
+                }
+            }
         }
     }
 }
