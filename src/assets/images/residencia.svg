@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64.708" height="56.569" viewBox="0 0 64.708 56.569"><g transform="translate(0.993 2.125)" opacity="0.4"><path d="M34.714,56.282V73.694H18.92V36.4" transform="translate(-10.77 -21)" fill="none" stroke="#7a8b99" stroke-miterlimit="10" stroke-width="3.5"/><path d="M96.234,36.4V73.694H80.44V56.282" transform="translate(-41.656 -21)" fill="none" stroke="#7a8b99" stroke-miterlimit="10" stroke-width="3.5"/><line x1="22.804" transform="translate(19.96 35.282)" fill="none" stroke="#7a8b99" stroke-miterlimit="10" stroke-width="3.5"/><path d="M65.272,27.089,33.913,5.47,2.55,27.089" transform="translate(-2.55 -5.47)" fill="none" stroke="#7a8b99" stroke-miterlimit="10" stroke-width="3.5"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64.709" height="56.57" viewBox="0 0 64.709 56.57">
+  <g id="Grupo_160" data-name="Grupo 160" transform="translate(0.993 2.126)">
+    <path id="Caminho_73" data-name="Caminho 73" d="M34.714,56.282V73.694H18.92V36.4" transform="translate(-10.77 -21)" fill="none" stroke="#00808f" stroke-miterlimit="10" stroke-width="3.5"/>
+    <path id="Caminho_75" data-name="Caminho 75" d="M96.234,36.4V73.694H80.44V56.282" transform="translate(-41.656 -21)" fill="none" stroke="#00808f" stroke-miterlimit="10" stroke-width="3.5"/>
+    <line id="Linha_87" data-name="Linha 87" x1="22.804" transform="translate(19.96 35.282)" fill="none" stroke="#00808f" stroke-miterlimit="10" stroke-width="3.5"/>
+    <path id="Caminho_74" data-name="Caminho 74" d="M65.272,27.089,33.913,5.47,2.55,27.089" transform="translate(-2.55 -5.47)" fill="none" stroke="#ffd45e" stroke-miterlimit="10" stroke-width="3.5"/>
+  </g>
+</svg>

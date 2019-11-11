@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="819.022" height="357.321" viewBox="0 0 819.022 357.321">
+  <defs>
+    <filter id="alternative-alternative-energy-blue-411592" x="0" y="0" width="819.022" height="357.321" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.243"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#alternative-alternative-energy-blue-411592)">
+    <path id="alternative-alternative-energy-blue-411592-2" data-name="alternative-alternative-energy-blue-411592" d="M789.022,121.925V-130H0V197.321H706.193a17.878,17.878,0,0,0,12.64-5.234Z" transform="translate(15 142)"/>
+  </g>
+</svg>

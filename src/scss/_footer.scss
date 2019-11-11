@@ -90,6 +90,10 @@ footer{
             }
         }
 
+        .unidades-mobile{
+            display: none;
+        }
+
         .nossas-redes{
             
 
@@ -147,4 +151,83 @@ footer{
             margin-top: 2.5rem;
         }
     }
+}
+
+
+@media screen and (max-width:768px) {
+
+    footer{
+        width: 100%;
+        height: 100%;
+    
+        .mask-img {
+            height: 951px;
+        }
+          
+        .object-mask {
+            mask-image: url(../images/home/mask-footer-mobile.svg)!important;
+        }
+    
+        .session-footer{
+            margin-top: 3.3125rem;
+            margin-bottom: 2.5125rem;
+            margin-left: 2.375rem;
+    
+            .logo-footer{
+                margin-top: 4.375rem;
+                margin-left: .7rem;
+                margin-bottom: 4rem;
+            }
+    
+            .site-map{
+               display: none;
+            }
+
+            .unidades{
+                display: none;
+            }
+    
+            .unidades-mobile{
+                display: block;
+                line-height: 150%;
+
+                h2{
+                    font-size: 0.875rem;
+                    color: $amarelo-alba;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-weight: 900;
+                }
+
+                p{
+                    font-size: 1rem;
+                    color: #ffffff;
+                    margin: 1rem 0;                    
+                }
+               
+            }
+    
+            .nossas-redes{
+                position: absolute;
+                top: 32rem;
+            }
+
+            .contato{
+                margin-top: 2rem;
+            }
+
+            .faq{
+                margin-top: 2.5rem;
+            }
+
+            .orcamento{
+                display: none;
+            }
+
+            .logo-weg{
+                display: none;
+            }
+        }
+    }    
+    
 }
