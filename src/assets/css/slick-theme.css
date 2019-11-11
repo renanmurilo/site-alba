@@ -25,7 +25,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: url('../images/seta-left.png') no-repeat;
+    background: url('../images/home/seta-left.png') no-repeat;
 }
 .slick-next {
     font-size: 0;
@@ -42,7 +42,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: url('../images/seta-right.png') no-repeat;
+    background: url('../images/home/seta-right.png') no-repeat;
 }
 
 /* .slick-prev:hover,

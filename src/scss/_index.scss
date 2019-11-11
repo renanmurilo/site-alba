@@ -9,7 +9,7 @@
     }
 
     .object-mask {
-      mask-image: url(../images/mask.svg);
+      mask-image: url(../images/home/mask.svg);
       mask-repeat: no-repeat;
       mask-size: 100%;
       mask-position: center;
@@ -17,7 +17,7 @@
 
     .image {
       position: relative;
-      background-image: url("../images/banner.png");
+      background-image: url("../images/home/banner.png");
       background-repeat: no-repeat center;
       background-size: cover;
       background-position: center;
@@ -89,7 +89,7 @@
               color: $verde-alba;
               letter-spacing: 3px;
               text-transform: uppercase;
-              font-weight: 900;
+              font-weight: 700;
               margin-bottom: 0.6rem;
               box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
             }
@@ -200,6 +200,10 @@
                     position: absolute;
                     top: 0;
                     left: -2px;
+
+                    .mobile{
+                      display: none;
+                    }
                 }
     
                     
@@ -240,7 +244,7 @@
                     color: $verde-alba;
                     letter-spacing: 3px;
                     text-transform: uppercase;
-                    font-weight: 900;
+                    font-weight: 700;
                     margin-bottom: 0.6rem;
                     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
                 }
@@ -254,7 +258,7 @@
 }
 
 #conheca {
-  background-image: url("../images/banner-conheca.png");
+  background-image: url("../images/home/banner-conheca.png");
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -265,7 +269,7 @@
   margin-bottom: 35rem;
 
   .bg-banner {
-    background-image: url("../images/bg-conheca.png");
+    background-image: url("../images/home/bg-conheca.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -334,7 +338,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 900;
+            font-weight: 700;
             box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
 
             span {
@@ -394,7 +398,7 @@
 }
 
 #experiencia {
-  background-image: url("../images/banner-experiencia.png");
+  background-image: url("../images/home/banner-experiencia.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -492,7 +496,7 @@
           border-radius: 3px;
           width: 174.5px;
           height: 39.16px;
-          font-weight: 900;
+          font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 3px;
           margin-top: 3rem;
@@ -508,7 +512,7 @@
 }
 
 #blog {
-  background-image: url("../images/bg-cinza.png");
+  background-image: url("../images/home/bg-cinza.png");
   width: 100%;
   max-width: 100%;
   padding-bottom: 5rem !important;
@@ -604,7 +608,7 @@
         border-radius: 3px;
         width: 240.97px;
         height: 39.16px;
-        font-weight: 900;
+        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 3px;
         margin-top: 3rem;
@@ -709,7 +713,7 @@
             -webkit-appearance: none; /* Remove estilo padrão do Chrome */
             -moz-appearance: none; /* Remove estilo padrão do FireFox */
             appearance: none; /* Remove estilo padrão do FireFox*/
-            background: url(../images/seta-select.png)no-repeat #ffffff; /* Imagem de fundo (Seta) */
+            background: url(../images/home/seta-select.png)no-repeat #ffffff; /* Imagem de fundo (Seta) */
             background-position: 95% center; /*Posição da imagem do background*/
             width: 100%; /* Tamanho do select, maior que o tamanho da div "div-select" */
             height: 100%; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
@@ -750,13 +754,38 @@
             text-transform: uppercase;
             border: none;
             border-radius: 3px;
-            font-weight: 900;
+            font-weight: 700;
             width: 145.17px;
             height: 39.16px;
             box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
           }
         }
       }
+    }
+  }
+}
+
+@media screen and(max-width: 1920px){
+
+  #banner{
+    .carrousel-banner{
+      .image{
+        .text-banner{
+          h5,
+          h1, 
+          .text-button{
+            left: 26rem;
+          }
+        }
+      }
+    }
+  }
+  #conheca{
+    min-height: 700px;
+    margin-bottom: 30.4rem;
+
+    .bg-banner{
+      margin-top: 32rem;
     }
   }
 }
@@ -824,7 +853,7 @@
               color: $verde-alba;
               letter-spacing: 3px;
               text-transform: uppercase;
-              font-weight: 900;
+              font-weight: 700;
               margin-bottom: 0.6rem;
               box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
             }
@@ -892,7 +921,7 @@
                 text-align: center;
                 filter: grayscale(100%);
                 opacity: 0.5;
-                margin: 0 auto 3.375rem auto;
+                margin: 0 auto;
                 
                     
                 &:hover{
@@ -912,8 +941,18 @@
     
                 .imagem{
                     position: absolute;
-                    top: -109px;
-                    left: -84px;
+                    top: -6px;
+                    left: -7px;
+
+                    .desk{
+                      display: none!important;
+                    }
+
+                    .mobile{
+                      display: block!important;
+                      width: 100%;
+                      margin-left: 1rem;
+                    }
                 }
     
                     
@@ -954,7 +993,7 @@
                     color: $verde-alba;
                     letter-spacing: 3px;
                     text-transform: uppercase;
-                    font-weight: 900;
+                    font-weight: 700;
                     margin-bottom: 0.6rem;
                     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
                 }
@@ -971,6 +1010,7 @@
     background-image: url("../images/home/banner-conheca-mobile.png");
     padding-bottom: 8rem !important;
     margin-bottom: 23.7rem;
+    min-height: 0;
   
     .bg-banner {
       background-image: url("../images/home/bg-conheca-mobile.png");
