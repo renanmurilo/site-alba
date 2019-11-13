@@ -6,7 +6,8 @@ $(function(){
             {
               breakpoint: 1024,
               settings: {
-                arrows : false
+                arrows : false,
+                slidesToShow: 1
               }
             }
         ]

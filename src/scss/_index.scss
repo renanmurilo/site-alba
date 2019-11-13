@@ -18,7 +18,7 @@
     .image {
       position: relative;
       background-image: url("../images/home/banner.png");
-      background-repeat: no-repeat center;
+      background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       height: 531px;
@@ -33,23 +33,22 @@
         flex-wrap: wrap;
 
         h5 {
-          position: absolute;
           color: $amarelo-alba;
-          left: 5.8rem;
-          top: 6rem;
+          margin-left: 5.8rem;
+          margin-top: 6.0625rem;
           font-size: 1rem;
           font-weight: bold;
           text-transform: uppercase;
         }
 
         h1 {
-          position: absolute;
           font-size: 70px;
           font-weight: lighter;
-          left: 5.6rem;
+          margin-left: 5.6rem;
           line-height: 90%;
-          top: 5.775rem;
-          max-width: 630px;
+          margin-top: 2.125rem;
+          padding-right: 23rem;
+          max-width: 990px;
           color: #ffffff;
 
           span {
@@ -58,9 +57,8 @@
         }
 
         .text-button {
-          position: absolute;
-          bottom: 4.5625rem;
-          left: 5.8rem;
+          margin-bottom: 4.375rem;
+          margin-left: 5.8rem;
           display: flex;
           align-items: center;
 
@@ -89,7 +87,7 @@
               color: $verde-alba;
               letter-spacing: 3px;
               text-transform: uppercase;
-              font-weight: 700;
+              font-weight: bolder;
               margin-bottom: 0.6rem;
               box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
             }
@@ -114,8 +112,8 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
-        margin-top: 5.3125rem;
-        margin-bottom: 5.625rem;
+        margin-top: 5.375rem;
+        margin-bottom: 5.4375rem;
 
         h2 {
         font-size: 2.5rem;
@@ -141,16 +139,18 @@
             color: $cinza-alba;
 
             p {
-                margin-bottom: 1rem;
+                margin-bottom: 0;
             }
         }
     }
 
-    h2 {
-        font-size: 1.375rem;
+    .text-h2 {
+        h2{
+          font-size: 1.375rem;
         color: $verde-alba;
         margin-left: 2rem;
         margin-bottom: 1.5rem;
+        }
     }
 
     .session-card {
@@ -178,7 +178,7 @@
                 text-align: center;
                 filter: grayscale(100%);
                 opacity: 0.5;
-                margin: 0 auto 3.375rem auto;
+                margin: 0 auto 3.3125rem auto;
                 
                     
                 &:hover{
@@ -225,7 +225,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 5.3125rem;
+            margin-bottom: 5.5rem;
 
             a{
                 text-decoration: none;
@@ -233,6 +233,7 @@
                 .btn-card{
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     background-color: $amarelo-alba;
                     padding: 0 1.2rem;
                     width: 100%;
@@ -266,7 +267,8 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  margin-bottom: 35rem;
+  margin-bottom: 34.4rem;
+  min-height: 459px;
 
   .bg-banner {
     background-image: url("../images/home/bg-conheca.png");
@@ -285,10 +287,10 @@
 
       h3 {
         font-size: 1rem;
-        font-weight: 700;
+        font-weight: bolder;
         color: $amarelo-alba;
         text-transform: uppercase;
-        margin-top: 4.375rem;
+        margin-top: 4.5625rem;
         letter-spacing: 3.5px;
       }
 
@@ -297,7 +299,7 @@
         color: #ffffff;
         max-width: 600px;
         line-height: 100%;
-        margin-top: 1.7rem;
+        margin-top: 2.625rem;
         font-weight: bold;
         margin-bottom: 3.125rem;
       }
@@ -306,6 +308,7 @@
         color: #ffffff;
         font-size: 1.375rem;
         max-width: 530px;
+        font-weight: 300;
       }
 
       .text-button {
@@ -338,11 +341,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
+            font-weight: bolder;
             box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
 
             span {
               margin-left: 0.5rem;
+              margin-bottom: .2rem;
             }
           }
         }
@@ -406,14 +410,15 @@
   max-width: 100%;
   padding-bottom: 7rem !important;
   margin-bottom: 16.1875rem;
+  position: relative;
 
   h2 {
     color: #ffffff;
     font-size: 4.375rem;
-    font-weight: 300;
-    margin-top: 9rem;
+    font-weight: lighter;
+    margin-top: 9.5rem;
     max-width: 1050px;
-    margin-left: 0.8rem;
+    margin-left: .5rem;
     line-height: 110%;
   }
 
@@ -765,7 +770,7 @@
   }
 }
 
-@media screen and(max-width: 1920px){
+@media screen and(min-width: 1281px){
 
   #banner{
     .carrousel-banner{
@@ -774,7 +779,7 @@
           h5,
           h1, 
           .text-button{
-            left: 26rem;
+            margin-left: 26rem;
           }
         }
       }
@@ -790,10 +795,10 @@
   }
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width:769px) {
   #banner{
     .mask-img {
+    
       height: 327px!important;
     }
 
@@ -802,28 +807,30 @@
     }
 
     .image {
-      background-image: url("../images/home/banner-mobile.png")!important;
+      background-image: url("../images/home/banner-mob.png")!important;
       height: 327px!important;
       margin: 0 auto!important;
+      width: 729px!important;
 
       .text-banner {
         h5 {
-          left: 1.25rem!important;
-          top: 2rem!important;
+          margin-left: 1.25rem!important;
+          margin-top: 2rem!important;
         }
 
         h1 {
           font-size: 30px!important;
-          left: 1.25rem!important;
+          margin-left: 1.25rem!important;
           line-height: 90%;
-          top: 2rem;
+          margin-top: 2rem;
           max-width: 270px!important;
+          padding-right: 0!important;
         }
 
         .text-button {
           position: absolute;
-          bottom: 4.5625rem;
-          left: 1.25rem!important;
+          margin-bottom: 4.5625rem;
+          margin-left: 1.25rem!important;
           display: flex;
           align-items: center;
           flex-wrap: wrap;
@@ -903,7 +910,7 @@
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
 
         .col-md-6{
             padding-right: 0!important;
@@ -914,53 +921,46 @@
             display: flex;
 
             .card {
-                width: 50%!important;
-                min-height: 169.46px;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
+                width: 50%;
+                min-height: 175.46px;
                 filter: grayscale(100%);
                 opacity: 0.5;
-                margin: 0 auto;
+                margin: 1rem 0 0 .5rem;
+                border-radius: 12px;
                 
-                    
-                &:hover{
-                    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
-                    background-image: linear-gradient(135deg, #ffffff 81.5%, $verde-alba 20%);
-                    transition: all .3s ease-in-out;
-                    top: -2px;
-                    filter: grayscale(0%);
-                    opacity: 1;
-                }
     
                 .seta{
                     position: absolute;
-                    bottom: 14px;
-                    right: 14px;
+                    bottom: 5px;
+                    right: 6px;
+
+                    img{
+                      width: 65%;
+                    }
                 }
     
                 .imagem{
                     position: absolute;
-                    top: -6px;
-                    left: -7px;
+                    top: 0px;
+                    left: 0px;
 
                     .desk{
-                      display: none!important;
+                      width: 166px;
+                      margin-right: .5rem;
                     }
 
-                    .mobile{
-                      display: block!important;
-                      width: 100%;
-                      margin-left: 1rem;
-                    }
                 }
     
                     
                 .conteudo-card{
                     position: absolute;
+
+                    img{
+                      width: 50%;
+                    }
                     
                     p {
-                        font-size: 1.4375rem;
+                        font-size: 1rem;
                         color: $verde-alba;
                         font-weight: 400;
                         margin-top: 1rem;
