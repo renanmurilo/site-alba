@@ -1,37 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => { 
-    // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
-    const player = new Plyr('#player');
-    
-    // Expose
-    window.player = player;
-  
-    // Bind event listener
-    function on(selector, type, callback) {
-      document.querySelector(selector).addEventListener(type, callback, false);
-    }
-  
-    // Play
-    on('.js-play', 'click', () => { 
-      player.play();
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+
+  if(vid.paused){
+    vid.play();
+    $( ".btn-play" ).on( "click", function() {
+      $( this ).css("opacity", "0");
     });
-  
-    // Pause
-    on('.js-pause', 'click', () => { 
-      player.pause();
+  }else {
+    vid.pause();
+    $( ".btn-play").on( "click", function() {
+      $( this ).css("opacity", "1")
     });
-  
-    // Stop
-    on('.js-stop', 'click', () => { 
-      player.stop();
-    });
-  
-    // Rewind
-    on('.js-rewind', 'click', () => { 
-      player.rewind();
-    });
-  
-    // Forward
-    on('.js-forward', 'click', () => { 
-      player.forward();
-    });
-  });
+  }
+} 
+
