@@ -72,3 +72,28 @@ header {
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  .menu {
+    display: block !important;
+  }
+
+  .cx-itens {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    text-align: center;
+    right: -100%;
+    transition: all .5s;
+  }
+  
+  .cx-itens.show {
+    position: relative;
+    background-color: #fff;
+    z-index: -1;
+    text-align: center;
+    right: 0;
+  }
+}
