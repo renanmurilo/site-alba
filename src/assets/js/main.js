@@ -36,3 +36,19 @@ $(function () {
     $('.cx-itens').toggleClass('show');
   });
 });
+
+$(function () {
+  $('.btn-cont-lendo').click(function () {
+    $(this).hide();
+    $('#banner-miolo').addClass('show');
+    $('#maneira-geral').addClass('show');
+  });
+});
+
+$(function () {
+  $('.carrossel-banner-blog').slick({
+    autoplay: true,
+    dots: true,
+    arrows: false,
+  })
+});
