@@ -1,0 +1,219 @@
+#banner-home-blog{
+    
+    .slick-dotted.slick-slider {
+        margin: 0 !important;
+    }
+    .carrossel-banner-blog {
+        max-width: 100%;
+
+        .slick-list {
+            padding: 0 !important;
+        }
+        
+        .caixa-banners {
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .btn-leia-agora {
+                position: absolute;
+                bottom: 85px;
+                left: 90px;
+                width: 182px;
+                height: 47px;
+                border: 0;
+                border-radius: 5px;
+                color: $verde-alba;
+                background-color: $amarelo-alba;
+            }
+        }
+    }
+    .tip-bar {
+        background-color: $verde-alba;
+
+        .area-texto {
+            display: flex;
+            justify-content: space-around;
+            height: 70px;
+            align-items: center;
+
+            p {
+                margin-top: 5px;
+                position: relative;
+            }
+
+            p.active:before {
+                content: '';
+                position: absolute;
+                width: 35px;
+                height: 30px;
+                left: -25px;
+                background-color: $verde-alba;
+            }
+
+            p.active:after {
+                content: '';
+                position: absolute;
+                width: 35px;
+                height: 30px;
+                right: -25px;
+                background-color: $verde-alba;
+            }
+
+            p>a {
+                text-decoration: none;
+                font-size: 14px;
+                margin: 0 10px;
+                color: $amarelo-alba;
+                font-weight: bold;
+            }
+
+            p.active {
+                border-bottom: 2px solid $amarelo-alba;
+            }
+        }
+    }
+}
+
+#conteudo-blog {
+    .container {
+        max-width: 95%;
+
+    .row.artigos-blog {
+        display: flex;
+        justify-content: space-between;
+
+    .tag-destaque {
+        padding: 20px;
+        height: 422px;
+        max-width: 305px;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px $cinza-alba;
+
+        #busca-tag {
+            #barra-busca {
+                float: left;
+                display: block;
+                border: 2px solid $amarelo-alba;
+                border-radius: 5px;
+                height: 30px;
+                width: 100%;
+                text-indent: 10px;
+            }
+
+            .btn-busca {
+                float: left;
+                background: transparent;
+                border: 0;
+                position: absolute;
+                right: 45px;
+                top: 27px;
+                color: $amarelo-alba;
+                }
+            }
+
+            .caixa-links {
+                margin-top: 50px;
+                line-height: 35px;
+
+                .destaque-blog {
+                    color: $verde-alba;
+                    font-size: 22px;
+                    font-weight: 300;
+                    margin: 0;
+                }
+
+                .s-tags>a {
+                    text-decoration: underline;
+                    color: $cinza-alba;
+                    margin: 5px 0px;
+                }
+            }
+
+            .veja-tbm {
+                margin-top: 40px;
+
+                .titulo-veja {
+                    color: $verde-alba;
+                    font-weight: bold;
+                    margin: 0;
+                }
+
+                .link-veja>a {
+                    font-size: 12px;
+                    color: $cinza-alba;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .col-md-3.segura-item {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+
+            .card {
+                border-radius: 15px !important;
+                width: 19.2475rem;
+                height: 345px;
+                position: relative;
+                border: none;
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+        
+                .text-card {
+                  position: absolute;
+                  font-size: 0.75rem;
+                  color: $verde-alba;
+                  top: 6px;
+                  left: 7px;
+                  max-width: 30px;
+                  text-align: center;
+                  line-height: 120%;
+                  text-transform: uppercase;
+        
+                  span {
+                    font-weight: 900;
+                  }
+                }
+        
+                &::before {
+                  content: "";
+                  width: 47px;
+                  height: 42px;
+                  background-color: #ffffff;
+                  position: absolute;
+                  border-top-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                }
+        
+                .card-body {
+                  text-align: center;
+                  min-height: 7.265rem;
+        
+                    .card-text {
+                        font-size: 1rem;
+                        color: $cinza-alba;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .caixa-botao {
+        margin: 50px 0;
+    }
+    
+    .btn-vermais {
+        width: 164px;
+        height: 40px;
+        border: 0;
+        border-radius: 5px;
+        background-color: $amarelo-alba;
+        color: $verde-alba;
+        font-size: 14px;
+    }
+  }
+}

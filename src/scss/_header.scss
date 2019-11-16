@@ -16,10 +16,13 @@ header {
     background: #ffffff;
     padding: 0.5rem 0;
 
+<<<<<<< HEAD
     .menu {
       display: none;
     }
 
+=======
+>>>>>>> c102e09a3e1070c0e99e7fa092bca79d08756404
     .navbar-brand{
       margin-left: 1.7rem;
     }
@@ -76,6 +79,17 @@ header {
   }
 }
 
+<<<<<<< HEAD
+=======
+*,
+    *:before,
+    *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+>>>>>>> c102e09a3e1070c0e99e7fa092bca79d08756404
     #menu-principal {
         position: relative;
     }

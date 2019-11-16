@@ -37,6 +37,7 @@ $(function () {
   });
 });
 
+<<<<<<< HEAD
 $(function(){
   $('.btn-proximo').click(function(e){
       e.preventDefault();
@@ -52,3 +53,20 @@ $(function(){
     $('.etapa.active').removeClass('active').next('div').addClass('active');
 });
 })
+=======
+$(function () {
+  $('.btn-cont-lendo').click(function () {
+    $(this).hide();
+    $('#banner-miolo').addClass('show');
+    $('#maneira-geral').addClass('show');
+  });
+});
+
+$(function () {
+  $('.carrossel-banner-blog').slick({
+    autoplay: true,
+    dots: true,
+    arrows: false,
+  })
+});
+>>>>>>> c102e09a3e1070c0e99e7fa092bca79d08756404
