@@ -36,3 +36,19 @@ $(function () {
     $('.cx-itens').toggleClass('show');
   });
 });
+
+$(function(){
+  $('.btn-proximo').click(function(e){
+      e.preventDefault();
+      $('.circulo.active').removeClass('active').next( 'li' ).addClass('active');
+      $('.etapa.active').removeClass('active').next('div').addClass('active');
+  });
+});
+
+$(function(){
+  $('.btn-simule').click(function(e){
+    e.preventDefault();
+    $('.circulo.active').removeClass('active').next( 'li' ).addClass('active');
+    $('.etapa.active').removeClass('active').next('div').addClass('active');
+});
+})

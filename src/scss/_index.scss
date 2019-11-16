@@ -2,18 +2,6 @@
   width: 100%;
 
   .carrousel-banner {
-    .mask-img {
-      display: block;
-      max-width: 100%;
-      height: 531px;
-    }
-
-    .object-mask {
-      mask-image: url(../images/home/mask.svg);
-      mask-repeat: no-repeat;
-      mask-size: 100%;
-      mask-position: center;
-    }
 
     .image {
       position: relative;
@@ -24,9 +12,20 @@
       height: 531px;
       margin-top: 1.3rem;
       width: 100%;
-      // clip-path: polygon(50% 0%, 100% 0, 100% 80%, 92% 100%, 0 100%, 0 0);
+
+      .mascara{
+        background-image: url('../images/home/mascara-banner.png');
+        position: absolute;
+        background-position: 100% center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 531px;
+        background-repeat: no-repeat;
+      }
 
       .text-banner {
+        position: absolute;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -87,7 +86,7 @@
               color: $verde-alba;
               letter-spacing: 3px;
               text-transform: uppercase;
-              font-weight: bolder;
+              font-weight: 900;
               margin-bottom: 0.6rem;
               box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
             }
@@ -245,7 +244,7 @@
                     color: $verde-alba;
                     letter-spacing: 3px;
                     text-transform: uppercase;
-                    font-weight: 700;
+                    font-weight: 900;
                     margin-bottom: 0.6rem;
                     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
                 }
@@ -661,17 +660,22 @@
 
       li {
         margin: 0 0.5rem;
+      }
 
-        .circulo {
-          border-radius: 100%;
-          border: 1px solid $verde-alba;
-          width: 33px;
-          height: 33px;
-          text-align: center;
-          font-size: 1.375rem;
-          color: $verde-alba;
-          font-weight: 700;
-        }
+      .circulo {
+        border-radius: 100%;
+        border: 1px solid $verde-alba;
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        font-size: 1.375rem;
+        color: $verde-alba;
+        font-weight: 700;
+      }
+
+      .active{
+        background-color: $verde-alba;
+        color: #ffffff;
       }
     }
   }
@@ -696,6 +700,16 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+
+      .etapa{
+        display: none;
+        
+      }
+
+      .etapa.active{
+        display: block;
+      }
+
       .form-simule-left {
         margin-left: 3rem;
       }
@@ -713,6 +727,11 @@
 
         .form-control {
           opacity: 0.9;
+        }
+
+        .form-control-file{
+          display: flex;
+          background: url('../images/home/clip.png')no-repeat #ffffff;
         }
 
         #custom-select {
@@ -742,6 +761,11 @@
         height: 100%;
       }
 
+      input[type="file"]{
+        opacity: 0!important;
+      }
+
+
       .button-form {
         display: flex;
         justify-content: center;
@@ -759,11 +783,32 @@
             align-items: center;
             text-transform: uppercase;
             border: none;
+            letter-spacing: 3px;
             border-radius: 3px;
             font-weight: 700;
             width: 145.17px;
             height: 39.16px;
             box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+          }
+          
+          .btn-simule {
+            background-color: $amarelo-alba;
+            color: $verde-alba;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            border: none;
+            letter-spacing: 3px;
+            border-radius: 3px;
+            font-weight: 700;
+            width: 145.17px;
+            height: 39.16px;
+            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+          }
+
+          .seta{
+            margin-left: .7rem;
           }
         }
       }
@@ -796,41 +841,43 @@
   }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:768px) {
   #banner{
-    .mask-img {
-    
-      height: 327px!important;
-    }
 
-    .object-mask {
-      mask-image: url(../images/home/mask-mobile.svg)!important;
+    .slick-list{
+      padding: 0 0!important;
     }
 
     .image {
       background-image: url("../images/home/banner-mob.png")!important;
-      height: 327px!important;
-      margin: 0 auto!important;
-      width: 729px!important;
+      background-repeat: no-repeat;
+      height: 430px!important;
+      width: 100%;
+      margin-top: 0!important;
+
+      .mascara{
+        background-image: url('../images/home/mascara-mobile.png')!important;
+        min-height: 328px;
+        width: 100%!important;
+      }
 
       .text-banner {
         h5 {
           margin-left: 1.25rem!important;
-          margin-top: 2rem!important;
+          margin-top: 7.1875rem!important;
         }
 
         h1 {
           font-size: 30px!important;
           margin-left: 1.25rem!important;
-          line-height: 90%;
-          margin-top: 2rem;
+          line-height: 120%!important;
           max-width: 270px!important;
           padding-right: 0!important;
+          margin-top: 1.125rem!important;
         }
 
         .text-button {
-          position: absolute;
-          margin-bottom: 4.5625rem;
+          margin-bottom: 2rem!important;
           margin-left: 1.25rem!important;
           display: flex;
           align-items: center;
@@ -838,38 +885,18 @@
 
           p {
             font-size: 1rem!important;
-            color: #ffffff;
-            font-weight: bold;
-            max-width: 220px;
+            max-width: 280px!important;
+            margin-bottom: 1.5625rem;
           }
 
           a {
-            text-decoration: none;
-            margin-left: 4rem;
+
+            margin-left: 0!important;
 
             .btn-banner {
-              display: flex;
-              align-items: center;
-              background-color: $amarelo-alba;
-              padding: 0 1.2rem;
-              width: 100%;
-              height: 47.16px;
-              text-align: center;
-              border-radius: 3px;
-              border: none;
-              font-size: 0.875rem;
-              color: $verde-alba;
-              letter-spacing: 3px;
-              text-transform: uppercase;
-              font-weight: 700;
-              margin-bottom: 0.6rem;
-              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
-            }
-
-            span {
-              img {
-                margin-left: 0.5rem;
-              }
+              width: 277.78px!important;
+              height: 44px!important;
+              justify-content: center!important;
             }
           }
         }
@@ -885,15 +912,22 @@
         align-items: center!important;
         margin-top: 3.375rem;
         margin-bottom: 5.625rem;
+        margin: 2.5rem auto 0 auto;
 
         h2 {
         font-size: 1.875rem;
-        text-align: center;
+        text-align: center!important;
         margin: 0 auto;
+
+        &::before {
+          text-align: center!important;
+          width: 271px;
+          left: -30px;
+      }
         }
 
         .text-solucoes {
-          
+            max-width: 278px;
             text-align: center;
             margin: 2rem auto;
 
@@ -903,15 +937,17 @@
         }
     }
 
-    h2 {
-        text-align: center;
+    .text-h2{ 
+        h2 {
+          text-align: center;
+          margin: 0 auto;
+          max-width: 250px;
+      }
     }
 
     .session-card {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+      
+        margin: 0 auto!important;
 
         .col-md-6{
             padding-right: 0!important;
@@ -975,7 +1011,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 5.3125rem;
+            margin-bottom: 3rem;
+            margin-top: 2rem;
 
             a{
                 text-decoration: none;
@@ -985,8 +1022,8 @@
                     align-items: center;
                     background-color: $amarelo-alba;
                     padding: 0 1.2rem;
-                    width: 100%;
-                    height: 39.16px;
+                    width: 180px;
+                    height: 44px;
                     text-align: center;
                     border-radius: 3px;
                     border: none;
@@ -1011,12 +1048,12 @@
     background-image: url("../images/home/banner-conheca-mobile.png");
     padding-bottom: 8rem !important;
     margin-bottom: 23.7rem;
-    min-height: 0;
+    min-height: 149px;
   
     .bg-banner {
       background-image: url("../images/home/bg-conheca-mobile.png");
-      height: 413px;
-      margin-top: 5.9rem;
+      height: 427px;
+      margin-top: 6.3rem;
   
       .session-conheca {
         display: flex;
@@ -1033,6 +1070,8 @@
           font-size: 1.875rem;
           text-align: center;
           margin-bottom: 1.5625rem;
+          max-width: 300px;
+          margin: 2rem auto;
         }
   
         p {

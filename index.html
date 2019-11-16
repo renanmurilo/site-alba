@@ -58,7 +58,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="carrousel-banner">
-                    <div class="image mask-img object-mask">
+                    <div class="image">
+                        <div class="mascara"></div>
                         <div class="text-banner">
                             <h5>Energia Solar:</h5>
                             <h1>Consciência limpa e 95% de economia <span> na conta de luz.</span></h1>
@@ -72,7 +73,8 @@
                         </div>
                     </div>
 
-                    <!-- <div class="image mask-img object-mask">
+                    <!-- <div class="image">
+                        <div class="mascara"></div>
                         <div class="text-banner">
                             <h5>Energia Solar:</h5>
                             <h1>Consciência limpa e 95% de economia <span> na conta de luz.</span></h1>
@@ -86,7 +88,8 @@
                         </div>
                     </div>
 
-                    <div class="image mask-img object-mask">
+                    <div class="image">
+                        <div class="mascara"></div>
                         <div class="text-banner">
                             <h5>Energia Solar:</h5>
                             <h1>Consciência limpa e 95% de economia <span> na conta de luz.</span></h1>
@@ -386,14 +389,14 @@
 
                     <div class="lista">
                         <ul>
-                            <li>
-                                <div class="circulo">1</div>
+                            <li class="circulo active">
+                                1
                             </li>
-                            <li>
-                                <div class="circulo">2</div>
+                            <li class="circulo">
+                                2
                             </li>
-                            <li>
-                                <div class="circulo">3</div>
+                            <li class="circulo">
+                                3
                             </li>
                         </ul>
                     </div>
@@ -406,34 +409,61 @@
 
                         <div class="formulario">
                             <form>
-                                <div class="row">
-                                    <div class="form-simule">
-                                        <input type="text" class="form-control" placeholder="Cidade" required>
+                                <div class="etapa active">
+                                    <div class="row">
+                                        <div class="form-simule">
+                                            <input type="text" class="form-control" placeholder="Cidade" required>
+                                        </div>
+                                        <div class="form-simule-left">
+                                            <input type="text" class="form-control" placeholder="Estado" required>
+                                        </div>
                                     </div>
-                                    <div class="form-simule-left">
-                                        <input type="text" class="form-control" placeholder="Estado" required>
+                                    <div class="row">
+                                        <div class="form-simule">
+                                            <select class="form-control" id="custom-select" required>
+                                                <option disabled>QUAL SEGMENTO?</option>
+                                                <option>QUAL SEGMENTO?</option>
+                                                <option>QUAL SEGMENTO?</option>
+                                                <option>QUAL SEGMENTO?</option>
+                                                <option>QUAL SEGMENTO?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-simule-left">
+                                            <input type="text" class="form-control" placeholder="Valor da conta ($)"
+                                                required>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-simule">
-                                        <select class="form-control" id="custom-select" required>
-                                            <option disabled>QUAL SEGMENTO?</option>
-                                            <option>QUAL SEGMENTO?</option>
-                                            <option>QUAL SEGMENTO?</option>
-                                            <option>QUAL SEGMENTO?</option>
-                                            <option>QUAL SEGMENTO?</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-simule-left">
-                                        <input type="text" class="form-control" placeholder="Valor da conta ($)"
-                                            required>
+    
+                                    <div class="button-form">
+                                        <a href="">
+                                            <button type="button" class="btn-proximo">Próximo</button>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div class="button-form">
-                                    <a href="">
-                                        <button type="button" class="btn-proximo">Próximo</button>
-                                    </a>
+                                <div class="etapa ">
+                                    <div class="row">
+                                        <div class="form-simule">
+                                            <input type="text" class="form-control" placeholder="Nome" required>
+                                        </div>
+                                        <div class="form-simule-left">
+                                            <input type="text" class="form-control" placeholder="Telefone" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-simule">
+                                            <input type="email" class="form-control" placeholder="Email" required>
+                                        </div>
+                                        <div class="form-simule-left" id="upload">
+                                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        </div>
+                                    </div>
+    
+                                    <div class="button-form">
+                                        <a href="">
+                                            <button type="button" class="btn-simule">Simular <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span></button>
+                                        </a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
