@@ -54,11 +54,19 @@ $(function () {
   });
 });
 
+<<<<<<< HEAD
 $(function () {
   $('.btn-proximo').click(function (e) {
     e.preventDefault();
     $('.circulo.active').removeClass('active').next('li').addClass('active');
     $('.etapa.active').removeClass('active').next('div').addClass('active');
+=======
+$(function(){
+  $('.btn-proximo').click(function(e){
+      e.preventDefault();
+      $('.circulo.active').removeClass('active').next( 'li' ).addClass('active');
+      $('.etapa.active').removeClass('active').next('div').addClass('active');
+>>>>>>> df75e4c233ee03f6bdc30f3f1eba869dc0008c71
   });
 });
 
@@ -69,6 +77,10 @@ $(function () {
     $('.etapa.active').removeClass('active').next('div').addClass('active');
   });
 })
+<<<<<<< HEAD
+=======
+
+>>>>>>> df75e4c233ee03f6bdc30f3f1eba869dc0008c71
 $(function () {
   $('.btn-cont-lendo').click(function () {
     $(this).hide();
@@ -84,6 +96,7 @@ $(function () {
     arrows: false,
   })
 });
+<<<<<<< HEAD
 
 $(document).ready(function () {
   
@@ -112,3 +125,5 @@ $(document).ready(function () {
     }
   });
 });
+=======
+>>>>>>> df75e4c233ee03f6bdc30f3f1eba869dc0008c71

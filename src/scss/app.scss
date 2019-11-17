@@ -5,6 +5,7 @@ $cinza-alba: #7A8B99;
 body{
     font-family: 'Sua Test';
     overflow-x: hidden;
+    max-width: 100%;
 }
   
 
@@ -17,4 +18,5 @@ body{
 @import 'blog';
 @import 'blog-sustentabilidade';
 @import 'segmentos';
+@import 'alba';
 
