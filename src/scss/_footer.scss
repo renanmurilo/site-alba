@@ -4,7 +4,7 @@ footer{
     .mask-img {
         display: block;
         max-width: 100%;
-        height: 430px;
+        min-height: 430px;
     }
       
     .object-mask {
@@ -161,7 +161,7 @@ footer{
         height: 100%;
     
         .mask-img {
-            height: 951px;
+            height: 811px;
         }
           
         .object-mask {
@@ -174,7 +174,7 @@ footer{
             margin-left: 2.375rem;
     
             .logo-footer{
-                margin-top: 4.375rem;
+                margin-top: 1.375rem;
                 margin-left: .7rem;
                 margin-bottom: 4rem;
             }
