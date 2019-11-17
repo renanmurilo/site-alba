@@ -32,28 +32,43 @@ $(function () {
 })
 
 $(function () {
+  $('.carroussel-sobre').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
+})
+
+$(function () {
   $('.menu').click(function () {
     $('.cx-itens').toggleClass('show');
   });
 });
 
-<<<<<<< HEAD
-$(function(){
-  $('.btn-proximo').click(function(e){
-      e.preventDefault();
-      $('.circulo.active').removeClass('active').next( 'li' ).addClass('active');
-      $('.etapa.active').removeClass('active').next('div').addClass('active');
+$(function () {
+  $('.btn-proximo').click(function (e) {
+    e.preventDefault();
+    $('.circulo.active').removeClass('active').next('li').addClass('active');
+    $('.etapa.active').removeClass('active').next('div').addClass('active');
   });
 });
 
-$(function(){
-  $('.btn-simule').click(function(e){
+$(function () {
+  $('.btn-simule').click(function (e) {
     e.preventDefault();
-    $('.circulo.active').removeClass('active').next( 'li' ).addClass('active');
+    $('.circulo.active').removeClass('active').next('li').addClass('active');
     $('.etapa.active').removeClass('active').next('div').addClass('active');
-});
+  });
 })
-=======
 $(function () {
   $('.btn-cont-lendo').click(function () {
     $(this).hide();
@@ -69,4 +84,31 @@ $(function () {
     arrows: false,
   })
 });
->>>>>>> c102e09a3e1070c0e99e7fa092bca79d08756404
+
+$(document).ready(function () {
+  
+  $("#setor").change(function () {
+    // exibindo uma janela com o valor selecionado
+    if ($('#setor option:selected').val() == 1) {
+      $('.row.setor.comercio').addClass('active');
+      $('.row.setor.agro').removeClass('active');
+      $('.row.setor.industria').removeClass('active');
+      $('.row.setor.residencia').removeClass('active');
+    } else if ($('#setor option:selected').val() == 2) {
+      $('.row.setor.agro').addClass('active');
+      $('.row.setor.comercio').removeClass('active');
+      $('.row.setor.industria').removeClass('active');
+      $('.row.setor.residencia').removeClass('active');
+    } else if ($('#setor option:selected').val() == 3) {
+      $('.row.setor.industria').addClass('active');
+      $('.row.setor.comercio').removeClass('active');
+      $('.row.setor.agro').removeClass('active');
+      $('.row.setor.residencia').removeClass('active');
+    } else if ($('#setor option:selected').val() == 4) {
+      $('.row.setor.residencia').addClass('active');
+      $('.row.setor.comercio').removeClass('active');
+      $('.row.setor.agro').removeClass('active');
+      $('.row.setor.industria').removeClass('active');
+    }
+  });
+});
