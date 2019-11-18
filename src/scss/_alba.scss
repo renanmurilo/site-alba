@@ -1,0 +1,762 @@
+#banner-alba{
+    width: 100%;
+    margin-top: 4.3rem;
+    margin-bottom: 12rem;
+
+    .session-banner{
+        display: flex;
+        flex-wrap: wrap;
+
+        .text-banner{
+            margin-left: 4.5rem;
+
+            h2{
+                font-size: 3rem;
+                color: $verde-alba;
+                font-weight: bold;
+                max-width: 415px;
+                line-height: 100%;
+                margin-top: 6.1875rem;
+
+                .amarelo{
+                    color: $amarelo-alba;
+                }
+            }
+
+            .text{
+                font-size: 1rem;
+                color: $cinza-alba;
+                line-height: 150%;
+                max-width: 482px;
+                margin-top: 3.125rem;
+            }
+
+            .button-banner{
+                margin-top: 4.875rem;
+
+                a{
+                    text-decoration: none;
+
+                    .btn-banner{
+                        color: $verde-alba;
+                        background-color: $amarelo-alba;
+                        font-size: 0.875rem;
+                        width: 286.5px;
+                        height: 47.16px;
+                        letter-spacing: 3px;
+                        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                        border: none;
+                        border-radius: 3px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                    }
+                }
+
+                .seta{
+                    margin-left: .7rem;
+                }
+            }
+        }
+
+        .banner-alba{
+            display: flex;
+            justify-content: flex-end;
+            align-content: flex-start;
+            position: relative;
+            // background-image: url('../images/alba/banner.png');
+            .image{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                max-width: 100%;
+                width: 512px;
+                top: -144px;
+                
+            }
+            .bg-banner{
+                background-color: $verde-alba;
+                width: 276px;
+                height: 119px;
+                border-radius: 8px;
+                position: absolute;
+                top: 21rem;
+                left: 0;
+                z-index: 0;
+
+                .text{
+                    font-size: 1.5rem;
+                    color: #ffffff;
+                    line-height: 120%;
+                    padding: 1rem;
+                    max-width: 204px;
+                }
+
+            }
+
+        }
+        
+    }
+}
+
+#especialista{
+    background-image: url('../images/alba/bg-cinza.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background-size: cover;
+
+    h3{
+        font-size: 1rem;
+        color: $amarelo-alba;
+        text-transform: uppercase;
+        margin-left: 5.9375rem;
+        margin-top: 3.5rem;
+        font-weight: 900;
+        letter-spacing: 3px;
+    }
+
+    h2{
+        color: $verde-alba;
+        margin-left: 5.9375rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        position: relative;
+
+        &::before{
+            content: '';
+            width: 481px;
+            height: 6px;
+            background-color: $amarelo-alba;
+            bottom: -10px;
+            position: absolute;
+        }
+    }
+
+    .lista-buttons{
+        margin-top: 3rem;
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+
+            .btn-list{
+                font-size: 0.875rem;
+                font-weight: 500;
+                margin: 0 3.3rem;
+                color: $cinza-alba;
+                filter: grayscale(100%);
+                display: flex;
+                align-items: flex-end;
+
+                span{
+                    vertical-align: bottom;
+                    margin-left: .3rem;
+                }
+            }
+
+            .btn-list.active{
+                border: 1px solid $verde-alba;
+                padding: .5rem;
+                border-radius: 7px;
+                color: $verde-alba;
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+    .session-especialista{
+        display: flex;
+        margin: 3.25rem 0 2rem 0;
+        flex-wrap: wrap;
+
+        .card-left{
+            display: flex;
+            justify-content: center;
+            margin-left: 4rem;
+        }
+
+        .card-right{
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 2rem;
+        }
+
+        .card{
+            width: 26.515625rem;
+            border-radius: 20px;
+            border: none;
+            height: 100%;
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+
+            .text-card{
+                font-size: 1.8125rem;
+                color: $verde-alba;
+                margin-left: 2.125rem;
+                margin-top: 1.375rem;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+
+            .card-body{
+                display: inline-block;
+                padding: 0;
+                min-height: 5.25rem;
+
+                .card-text{
+                    font-size: 0.9375rem;
+                    color: $cinza-alba;
+                    margin-left: 2.125rem;
+                    font-weight: 500;
+                }
+
+                .card-bottom{
+                    display: flex;
+                    margin-left: 2.125rem;
+                    font-size: 0.9375rem;
+                    color: $cinza-alba;
+                    align-items: center;
+                    font-weight: 300;
+
+                    .raio{
+                        margin-right: 3rem;
+                        
+                        img{
+                            margin-right: .6rem;
+                        }
+                    }
+
+                    .paines{
+                        img{
+                            margin-right: .6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+
+            .btn-especialista{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $verde-alba;
+                background-color: $amarelo-alba;
+                font-size: 0.875rem;
+                width: 181.5px;
+                height: 39.16px;
+                letter-spacing: 3px;
+                box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                border: none;
+                border-radius: 3px;
+                text-transform: uppercase;
+                font-weight: 900;
+                margin-bottom: 3rem;
+            }
+
+            .seta{
+                margin-left: .6rem;
+            }
+        }
+    }
+}
+
+#mapa{
+    width: 100%;
+
+
+    .session-mapa{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5.6875rem;
+        margin-bottom: 8rem;
+        position: relative;
+
+        .image-mapa{
+            background-image: url('../images/alba/mapa.png');
+            background-repeat: no-repeat;
+            width: 585px;
+            height: 588px;
+            max-width: 100%;
+            background-size: cover;
+            background-position: top center;
+        }
+
+        .bg-amarelo{
+            background-image: url('../images/alba/bg-amarelo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 489px;
+            height: 500px;
+            position: relative;
+            background-position: top center;
+            margin-top: 4.625rem;
+
+            .bg-branco{
+                background-color: #ffffff;
+                width: 590px;
+                max-height: 540px;
+                border-radius: 15px;
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+                margin-left: 2.5625rem;
+                position: absolute;
+                top: -4.625rem;
+
+                .text-bg{
+                    padding: 1.5625rem;
+
+                    h4{
+                        font-size: 1.75rem;
+                        color: $verde-alba;
+                        line-height: 120%;
+                        max-width: 446px;
+                        font-weight: bold;
+                        margin-bottom: 2.375rem;
+                        margin-top: 2.5rem;
+                    }
+
+                    .text{
+                        font-size: 1rem;
+                        color: $cinza-alba;
+                        line-height: 150%;
+                        max-width: 471px;
+                        margin-bottom: 1.5rem;
+
+                        a{
+                            text-decoration: underline;
+                            color: $verde-alba;
+                            font-size: 0.75rem;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .image-bg{
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .abgd{
+                            background-image: url('../images/alba/icon-abgd.png');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            max-width: 100%;
+                            width: 212px;
+                            height: 106px;
+                        }
+
+                        .solar{
+                            background-image: url('../images/alba/icon-solar.png');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            max-width: 100%;
+                            width: 210px;
+                            height: 106px;
+                            margin-left: 3.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#time{
+    background-image: url('../images/alba/banner-tecnica.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    max-width: 100%;
+    max-height: 462px;
+    position: relative;
+    margin-bottom: 3rem;
+
+    .session-time{
+        display: flex;
+        justify-content: flex-end;
+
+        .bg-verde{
+            background-image: url('../images/alba/bg-verde.png');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 494px;
+            height: 501px;
+            max-width: 100%;
+            padding: 3.5rem;
+
+            h3{
+                color: #ffffff;
+                font-weight: 300;
+                max-width: 224px;
+                font-size: 2.5rem;
+                line-height: 100%;
+            }
+
+            h2{
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: $amarelo-alba;
+                line-height: 100%;
+            }
+
+            .text{
+                font-size: 1.125rem;
+                color: #ffffff;
+                line-height: 150%;
+                margin-top: 2.1875rem;
+                max-width: 396px;
+            }
+        }
+    }
+}
+
+#comentarios{
+    width: 100%;
+    
+
+    h4{
+        text-align: center;
+        margin-top: 5.6875rem;
+        font-size: 1rem;
+        color: $amarelo-alba;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .text-h2{
+        display: flex;
+        justify-content: center;
+
+        h2{
+            font-size: 2.5rem;
+            color: $verde-alba;
+            font-weight: bold;
+            max-width: 581px;
+            text-align: center;
+            line-height: 100%;
+            margin-top: 1rem;
+            position: relative;
+
+            &::before{
+                content: '';
+                background-color: $amarelo-alba;
+                width: 429px;
+                height: 4px;
+                position: absolute;
+                bottom: -10px;
+            }
+        }
+    }
+
+    .session-comentarios{
+       margin-top: 3.8125rem;
+       margin-bottom: 1rem;
+
+        .carrousel-comentarios{
+
+            .slick-initialized,
+            .slick-slide {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+            }
+
+            .card{
+                border-radius: 15px;
+                height: 347px;
+                width: 17.2475rem;
+                border: none;
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+
+                .card-text{
+                    max-width: 220px;
+                    color: $cinza-alba;
+                    font-size: 1rem;
+                    line-height: 180%;
+                }
+
+                .rodape{
+                    position: absolute;
+                    bottom: .5rem;
+                    right: 1rem;
+
+                    .nome{
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        color: $verde-alba;
+                        font-size: 0.8125rem;
+                        font-weight: bold;
+
+                        span{
+                            margin-left: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+
+        a{
+            text-decoration: none;
+
+            .btn-comentarios{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $verde-alba;
+                background-color: $amarelo-alba;
+                font-size: 0.875rem;
+                width: 179.5px;
+                height: 39.16px;
+                letter-spacing: 3px;
+                box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                border: none;
+                border-radius: 3px;
+                text-transform: uppercase;
+                font-weight: 900;
+                margin-bottom: 3rem;
+            }
+            
+            .seta{
+                margin-left: .6rem;
+            }
+        }
+    }
+}
+
+#simule-verde {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-color: $verde-alba;
+  
+    h2 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 2.5rem;
+      position: relative;
+      margin-top: 4.8125rem;
+  
+      &::before {
+        content: "";
+        width: 35.5%;
+        height: 5px;
+        background-color: $amarelo-alba;
+        bottom: -12px;
+        position: absolute;
+      }
+    }
+  
+    .lista {
+      position: absolute;
+      top: 5.3125rem;
+      right: 8.25rem;
+  
+      ul {
+        list-style-type: none;
+        display: flex;
+  
+        li {
+          margin: 0 0.5rem;
+        }
+  
+        .circulo {
+          border-radius: 100%;
+          border: 1px solid #ffffff;
+          width: 33px;
+          height: 33px;
+          text-align: center;
+          font-size: 1.375rem;
+          color: #ffffff;
+          font-weight: 700;
+        }
+  
+        .active {
+          background-color: #ffffff;
+          color: $verde-alba;
+        }
+      }
+    }
+  
+    .session-simule {
+      .text-simule {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.875rem;
+        margin-bottom: 4.6875rem;
+  
+        .text {
+          font-size: 1.125rem;
+          font-weight: 300;
+          color: #ffffff;
+          max-width: 350px;
+          text-align: center;
+        }
+      }
+  
+      .formulario {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+  
+        .etapa {
+          display: none;
+        }
+  
+        .etapa.active {
+          display: block;
+        }
+  
+        .form-simule-left {
+          margin-left: 3rem;
+        }
+  
+        .form-simule,
+        .form-simule-left {
+          width: 406.69px;
+          margin-bottom: 2.3125rem;
+          background-color: #198c9a;
+          border-radius: 6px;
+          color: #ffffff;
+  
+          input {
+            border: none;
+            color: #ffffff;
+          }
+  
+          .form-control {
+            background-color: #198c9a;
+          }
+  
+          .form-control-file {
+            display: flex;
+            background: url("../images/home/clip.png") no-repeat #ffffff;
+          }
+  
+          #custom-select {
+            -webkit-appearance: none; /* Remove estilo padrão do Chrome */
+            -moz-appearance: none; /* Remove estilo padrão do FireFox */
+            appearance: none; /* Remove estilo padrão do FireFox*/
+            width: 100%; /* Tamanho do select, maior que o tamanho da div "div-select" */
+            height: 100%; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+            border: none;
+  
+            option {
+              background-color: $verde-alba;
+              color: #ffffff;
+            }
+          }
+        }
+  
+        select,
+        input::placeholder {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 0.625rem;
+            height: 100%;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+  
+        input[type="file"] {
+          opacity: 0 !important;
+        }
+  
+        .button-form {
+          display: flex;
+          justify-content: center;
+          margin-top: 0.5rem;
+          margin-bottom: 5.9375rem;
+  
+          a {
+            text-decoration: none;
+  
+            .btn-proximo {
+              background-color: $amarelo-alba;
+              color: $verde-alba;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-transform: uppercase;
+              border: none;
+              letter-spacing: 3px;
+              border-radius: 3px;
+              font-weight: 700;
+              width: 145.17px;
+              height: 39.16px;
+              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+            }
+  
+            .btn-simule {
+              background-color: $amarelo-alba;
+              color: $verde-alba;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-transform: uppercase;
+              border: none;
+              letter-spacing: 3px;
+              border-radius: 3px;
+              font-weight: 700;
+              width: 170.97px;
+              height: 39.16px;
+              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+            }
+  
+            .seta {
+              margin-left: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+}
+
+#imape{
+    width: 100%;
+    position: relative;
+    padding: 8.59375rem 0;
+
+    .session-imape{
+        position: absolute;
+        width: 100%;
+        z-index: -0;
+        top: -20.1875rem;
+    }
+}
+
+@media screen and(min-width: 1281px){
+    #banner-alba{
+
+        .text-banner{
+            margin-left: 24.5rem!important[];
+        }
+
+        .image{
+            right: 19.75rem;
+        }
+    }
+
+    #mapa{
+        
+        .image-mapa{
+            margin-left: 20rem;
+        }
+    }
+}
