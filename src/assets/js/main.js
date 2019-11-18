@@ -137,3 +137,23 @@ $(document).ready(function () {
     }
   });
 });
+
+$(function(){
+  $('.carroussel-tipbar').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      mobileFirst: true,
+      arrows: false,
+      dots: true,
+      autoplay: true,
+      responsive: [
+      {
+          breakpoint: 768,
+          settings: 'unslick'
+      }
+      ]
+  });
+  $(window).on('resize', function () {
+      $('.session-especialista').slick('resize');
+  });
+})
