@@ -74,6 +74,9 @@
                 top: -144px;
                 
             }
+            .image-mob{
+                display: none;
+            }
             .bg-banner{
                 background-color: $verde-alba;
                 width: 276px;
@@ -142,6 +145,7 @@
             justify-content: center;
             align-items: center;
             list-style-type: none;
+            flex-wrap: wrap;
 
             .btn-list{
                 font-size: 0.875rem;
@@ -152,10 +156,15 @@
                 display: flex;
                 align-items: flex-end;
 
-                span{
-                    vertical-align: bottom;
-                    margin-left: .3rem;
+                a{
+                    text-decoration: none;
+
+                    span{
+                        vertical-align: bottom;
+                        margin-left: .3rem;
+                    }
                 }
+                
             }
 
             .btn-list.active{
@@ -164,6 +173,10 @@
                 border-radius: 7px;
                 color: $verde-alba;
                 filter: grayscale(0%);
+
+                a{
+                    color: $verde-alba;
+                }
             }
         }
     }
@@ -199,6 +212,11 @@
                 margin-top: 1.375rem;
                 font-weight: bold;
                 margin-bottom: 0;
+            }
+
+
+            .mob{
+                display: none;
             }
 
             .card-body{
@@ -341,6 +359,10 @@
                         }
                     }
 
+                    .ler{
+                        display: none;
+                    }
+
                     .image-bg{
                         display: flex;
                         flex-wrap: wrap;
@@ -408,6 +430,10 @@
                 font-weight: bold;
                 color: $amarelo-alba;
                 line-height: 100%;
+            }
+
+            .text-mobile{
+                display: none;
             }
 
             .text{
@@ -745,7 +771,7 @@
     #banner-alba{
 
         .text-banner{
-            margin-left: 24.5rem!important[];
+            margin-left: 24.5rem!important;
         }
 
         .image{
@@ -753,10 +779,494 @@
         }
     }
 
+    #especialista{
+
+        h3, h2{
+            margin-left: 16.8rem!important;
+        }
+    }
+
     #mapa{
         
         .image-mapa{
             margin-left: 20rem;
+        }
+    }
+}
+
+@media screen and(max-width: 768px){
+
+    #banner-alba{
+        margin-bottom: 3rem;
+        .session-banner{
+            margin: 0 auto;
+            .text-banner{
+                margin-left: 0rem;
+                text-align: center;
+    
+                h2{
+                    font-size: 1.875rem;
+                    line-height: 120%;
+                    margin-top: 2.1875rem;
+                    max-width: 360px;
+                }
+    
+                .text{
+                    max-width: 278px;
+                    margin: 0 auto;
+                    margin-top: 24.125rem;
+                }
+    
+                .button-banner{
+                    margin-top: 0rem;
+                    a{
+                        .btn-banner{
+                            display: none;
+                        }
+                    }
+                }
+            }
+    
+            .banner-alba{
+                .image{
+                    display: none;
+                }
+
+                .image-mob{
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    position: absolute;
+                    max-width: 100%;
+                    width: 297px;
+                    top: -640px!important;
+                    right: -15px;
+                }
+                .bg-banner{
+                    top: -22.5rem;
+                }
+    
+            }
+            
+        }
+    }
+
+    #especialista{
+        background-image: url('../images/alba/bg-cinza-mobile.png')!important;
+        height: 774px;
+        text-align: center;
+
+        h3{
+            margin-left: 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        h2{
+            max-width: 278px;
+            margin: 0 auto;
+            font-size: 1.875rem;
+
+            &::before{
+                width: 254px;
+                left: 11px;
+                bottom: -15px;
+            }
+        }
+
+        .box-none{
+            display: none!important;
+        }
+
+        .lista-buttons{
+            margin-top: 1.5rem;
+
+            ul{
+                flex-direction: column;
+                padding: 0!important;
+
+                .btn-list{
+                    margin: 1rem auto;
+                }
+
+                .btn-list.active{
+                    border: 1px solid $verde-alba;
+                    width: 180px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .slick-initialized,
+        .slick-slide {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+        }
+
+        .slick-list{
+            padding: 1rem 0;
+        }
+
+        .session-especialista{
+            margin: 0 auto;
+
+            .card-left, .card-right{
+                margin-left: 0!important;
+            }
+            
+            .card{
+                width: 17.375rem;
+
+               
+                
+                .desk{
+                    display: none;
+                }
+
+                .mob{
+                    display: block;
+                }
+
+                .text-card{
+                    font-size: 1.8125rem;
+                    color: $verde-alba;
+                    margin-left: 1.125rem;
+                    margin-top: 1.375rem;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+
+                .card-body{
+
+                }
+            }
+        }
+
+    }
+
+    #mapa{
+        .session-mapa{
+            margin-bottom: 4rem;
+    
+            .image-mapa{
+                background-image: url('../images/alba/mapa-mobile.png');
+                width: 278px;
+                height: 279px;
+                position: absolute;
+                z-index: 1;
+                top: 11rem;
+                left: 4rem;
+            }
+    
+            .bg-amarelo{
+                background-image: url('../images/alba/bg-amarelo-mobile.png');
+                width: 100%;
+                height: 409px;
+                margin-top: 40.625rem;
+    
+                .bg-branco{
+                    width: 100%;
+                    max-height: 1101px;
+                    margin-left: 1.125rem;
+                    top: -43rem;
+    
+                    .text-bg{
+                        padding: 1.5625rem;
+    
+                        h4{
+                            font-size: 1.875rem;
+                            max-width: 278px;
+                            margin: 0 auto;
+                            text-align: center;
+                            padding-bottom: 22.1875rem;
+                        }
+    
+                        .text{
+                            max-width: 278px;
+                            margin: 0.75rem auto;
+                            text-align: center;
+    
+                            a{
+                               display: none;
+
+                            }
+                        }
+
+                        .ler{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 2rem;
+
+                            a{
+                                text-decoration: underline;
+                                color: $verde-alba;
+                                font-size: 1rem;
+                                font-weight: 500;
+                            }
+                        }
+    
+                        .image-bg{
+                            align-items: center;
+                            margin-top: 3rem;
+    
+                            .abgd{
+                                background-image: url('../images/alba/icon-abgd-mobile.png');
+                                width: 50%;
+                                height: 67px;
+                            }
+    
+                            .solar{
+                                background-image: url('../images/alba/icon-solar-mobile.png');
+                                width: 130px;
+                                height: 65px;
+                                margin-left: .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #time{
+        background-image: url('../images/alba/banner-tecnica-mobile.png');
+        height: 150px;
+        width: 100%;
+        margin-bottom: 50rem;
+    
+        .session-time{
+            display: flex;
+            justify-content: flex-end;
+    
+            .bg-verde{
+                background-image: url('../images/alba/bg-verde-mobile.png');
+                width: 500px;
+                height: 381px;
+                max-width: 100%;
+                padding: 3.5rem;
+                margin-top: 2rem;
+    
+                h3{
+                    display: none;
+                }
+    
+                h2{
+                   display: none;
+                }
+                .text-mobile{
+                    font-size: 1.875rem;
+                    font-weight: lighter;
+                    color: #ffffff;
+                    max-width: 278px;
+                    display: block;
+
+                    span{
+                        color: $amarelo-alba;
+                        font-weight: bold;
+                    }
+                }
+    
+                .text{
+                    font-size: 1rem;
+                    color: #ffffff;
+                    line-height: 150%;
+                    margin-top: 2.1875rem;
+                    max-width: 278px;
+                }
+            }
+        }
+    }
+
+    #comentarios{
+        width: 100%;
+        
+    
+        h4{
+            text-align: center;
+            margin-top: 5.6875rem;
+            font-size: 1rem;
+            color: $amarelo-alba;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+    
+        .text-h2{
+            display: flex;
+            justify-content: center;
+    
+            h2{
+                font-size: 2.5rem;
+                color: $verde-alba;
+                font-weight: bold;
+                max-width: 581px;
+                text-align: center;
+                line-height: 100%;
+                margin-top: 1rem;
+                position: relative;
+    
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    
+        .session-comentarios{
+           margin-top: 3.8125rem;
+           margin-bottom: 1rem;
+    
+            .carrousel-comentarios{
+    
+                .slick-initialized,
+                .slick-slide {
+                  display: flex;
+                  justify-content: center;
+                  flex-wrap: wrap;
+                }
+    
+                .card{
+                    border-radius: 15px;
+                    height: 347px;
+                    width: 17.2475rem;
+                    border: none;
+                    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+    
+                    .card-text{
+                        max-width: 220px;
+                        color: $cinza-alba;
+                        font-size: 1rem;
+                        line-height: 180%;
+                    }
+    
+                    .rodape{
+                        position: absolute;
+                        bottom: .5rem;
+                        right: 1rem;
+    
+                        .nome{
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            color: $verde-alba;
+                            font-size: 0.8125rem;
+                            font-weight: bold;
+    
+                            span{
+                                margin-left: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .button{
+            display: flex;
+            justify-content: center;
+    
+            a{
+                text-decoration: none;
+    
+                .btn-comentarios{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $verde-alba;
+                    background-color: $amarelo-alba;
+                    font-size: 0.875rem;
+                    width: 179.5px;
+                    height: 39.16px;
+                    letter-spacing: 3px;
+                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                    border: none;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    margin-bottom: 3rem;
+                }
+                
+                .seta{
+                    margin-left: .6rem;
+                }
+            }
+        }
+    }
+
+    #simule-verde {
+        margin-bottom: 11.5rem;
+        h2 {
+          font-size: 1.875rem;
+          margin: 1.5rem auto;
+          text-align: center;
+          max-width: 278px;
+    
+          &::before {
+            width: 278px;
+            left: 0px;
+          }
+        }
+    
+        .lista {
+          display: none;
+        }
+    
+        .session-simule {
+          .text-simule {
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+    
+            .text {
+              font-size: 1rem;
+              max-width: 270px;
+            }
+          }
+    
+          .formulario {
+            margin-bottom: 3rem;
+            .form-simule-left {
+              margin-left: 0;
+            }
+    
+            .form-simule,
+            .form-simule-left {
+              width: 278px !important;
+              margin-bottom: 2.3125rem;
+              border-radius: 6px;
+              margin: .5rem auto;
+    
+              #custom-select {
+                height: 43px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+              }
+            }
+    
+            .button-form {
+              display: flex;
+              justify-content: center;
+              margin-top: 2rem;
+              margin-bottom: 0;
+    
+              a {
+                .btn-proximo {
+                  width: 180px;
+                  height: 44px;
+                }
+              }
+            }
+          }
+        }
+      }
+    
+    #imape{
+        width: 100%;
+        position: relative;
+        padding: 8.59375rem 0;
+    
+        .session-imape{
+            position: absolute;
+            width: 92%!important;
+            top: -20.1875rem;
         }
     }
 }
