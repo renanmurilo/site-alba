@@ -850,6 +850,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  html{
+    overflow-x: hidden;
+  }
+
   #banner {
     .slick-list {
       padding: 0 0 !important;
