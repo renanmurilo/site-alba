@@ -700,9 +700,37 @@
             letter-spacing: 1px;
         }
   
-        input[type="file"] {
-          opacity: 0 !important;
-        }
+        .input-file {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+
+            + .js-labelFile {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 47.2%;
+                margin-left: 3rem;
+                background: #198c9a;
+                border-radius: 6px;
+                height: 38px;
+                cursor: pointer;
+                color: #ffffff;
+                font-size: 0.625rem;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                padding-left: .9rem;
+                letter-spacing: 1px;
+                font-weight: 900;
+                span{
+                    margin-left: .5rem;
+                }
+            }
+          }
   
         .button-form {
           display: flex;
@@ -768,22 +796,20 @@
 }
 
 @media screen and(min-width: 1281px){
+
+    #banner-alba .text-banner{
+        margin-left: 24.5rem;
+    }
     #banner-alba{
-
-        .text-banner{
-            margin-left: 24.5rem!important;
-        }
-
         .image{
             right: 19.75rem;
         }
     }
-
-    #especialista{
-
-        h3, h2{
-            margin-left: 16.8rem!important;
-        }
+    #especialista h3, #especialista h2{
+        margin-left: 21.5rem
+    }
+    #especialista .card-left{
+        margin-left: 23rem!important;
     }
 
     #mapa{
@@ -855,7 +881,6 @@
     #especialista{
         background-image: url('../images/alba/bg-cinza-mobile.png')!important;
         height: 774px;
-        text-align: center;
 
         h3{
             margin-left: 0;
@@ -867,6 +892,7 @@
             max-width: 278px;
             margin: 0 auto;
             font-size: 1.875rem;
+            text-align: center;
 
             &::before{
                 width: 254px;
@@ -887,7 +913,7 @@
                 padding: 0!important;
 
                 .btn-list{
-                    margin: 1rem auto;
+                    margin: .7rem auto;
                 }
 
                 .btn-list.active{
@@ -895,6 +921,7 @@
                     width: 180px;
                     display: flex;
                     justify-content: center;
+
                 }
             }
         }
@@ -911,7 +938,7 @@
         }
 
         .session-especialista{
-            margin: 0 auto;
+            margin: 0 0 1rem auto;
 
             .card-left, .card-right{
                 margin-left: 0!important;
@@ -919,8 +946,6 @@
             
             .card{
                 width: 17.375rem;
-
-               
                 
                 .desk{
                     display: none;
@@ -941,6 +966,34 @@
 
                 .card-body{
 
+                    .card-text{
+                        margin-left: 1.125rem;
+                    }
+
+                    .card-bottom{
+                        margin-left: 1.125rem;
+                        .raio{
+                            margin-right: 1.1rem;
+                            align-items: center;
+                            font-size: 0.75rem;
+                            display: flex;
+
+                            img{
+                                width: 15px;
+                            }
+                        }
+
+                        .paines{
+                            display: flex;
+                            align-items: center;
+                            font-size: 0.75rem;
+
+                            img{
+                                width: 24px;
+                            }
+                        }
+                    }
+
                 }
             }
         }
@@ -957,24 +1010,25 @@
                 height: 279px;
                 position: absolute;
                 z-index: 1;
-                top: 11rem;
-                left: 4rem;
+                top: 10rem;
+                left: 2.6rem;
             }
     
             .bg-amarelo{
                 background-image: url('../images/alba/bg-amarelo-mobile.png');
                 width: 100%;
                 height: 409px;
-                margin-top: 40.625rem;
+                margin-top: 39.625rem;
+                background-position: 100% center;
     
                 .bg-branco{
-                    width: 100%;
+                    width: 97.8%;
                     max-height: 1101px;
-                    margin-left: 1.125rem;
-                    top: -43rem;
+                    margin-left: .5rem;
+                    top: -41.7rem;
     
                     .text-bg{
-                        padding: 1.5625rem;
+                        padding: 1rem;
     
                         h4{
                             font-size: 1.875rem;
@@ -1033,21 +1087,23 @@
 
     #time{
         background-image: url('../images/alba/banner-tecnica-mobile.png');
-        height: 150px;
+        height: 130px;
+        max-height: 100%;
         width: 100%;
-        margin-bottom: 50rem;
+        margin-bottom: 20rem;
     
         .session-time{
-            display: flex;
-            justify-content: flex-end;
-    
+            margin: 0 auto;
             .bg-verde{
                 background-image: url('../images/alba/bg-verde-mobile.png');
-                width: 500px;
-                height: 381px;
-                max-width: 100%;
-                padding: 3.5rem;
-                margin-top: 2rem;
+                width: 100%;
+                height: 345px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 8.1rem;
+                position: absolute;
+                left: 0;
     
                 h3{
                     display: none;
@@ -1059,9 +1115,11 @@
                 .text-mobile{
                     font-size: 1.875rem;
                     font-weight: lighter;
+                    line-height: 100%;
                     color: #ffffff;
                     max-width: 278px;
                     display: block;
+                    margin-top: -2rem;
 
                     span{
                         color: $amarelo-alba;
@@ -1072,8 +1130,8 @@
                 .text{
                     font-size: 1rem;
                     color: #ffffff;
-                    line-height: 150%;
-                    margin-top: 2.1875rem;
+                    line-height: 140%;
+                    margin-top: .5rem;
                     max-width: 278px;
                 }
             }
@@ -1082,15 +1140,9 @@
 
     #comentarios{
         width: 100%;
-        
-    
+
         h4{
-            text-align: center;
-            margin-top: 5.6875rem;
-            font-size: 1rem;
-            color: $amarelo-alba;
-            text-transform: uppercase;
-            font-weight: 900;
+            margin-top: 4rem;
         }
     
         .text-h2{
@@ -1098,66 +1150,28 @@
             justify-content: center;
     
             h2{
-                font-size: 2.5rem;
-                color: $verde-alba;
-                font-weight: bold;
-                max-width: 581px;
-                text-align: center;
-                line-height: 100%;
-                margin-top: 1rem;
-                position: relative;
+                font-size: 1.875rem;
+                max-width: 278px;
+                margin-top: .5rem;
     
                 &::before{
-                    display: none;
+                    width: 100%;
                 }
             }
         }
     
         .session-comentarios{
-           margin-top: 3.8125rem;
+           margin-top: 1rem;
            margin-bottom: 1rem;
     
             .carrousel-comentarios{
-    
+                
                 .slick-initialized,
                 .slick-slide {
                   display: flex;
                   justify-content: center;
                   flex-wrap: wrap;
-                }
-    
-                .card{
-                    border-radius: 15px;
-                    height: 347px;
-                    width: 17.2475rem;
-                    border: none;
-                    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
-    
-                    .card-text{
-                        max-width: 220px;
-                        color: $cinza-alba;
-                        font-size: 1rem;
-                        line-height: 180%;
-                    }
-    
-                    .rodape{
-                        position: absolute;
-                        bottom: .5rem;
-                        right: 1rem;
-    
-                        .nome{
-                            display: flex;
-                            justify-content: flex-end;
-                            align-items: center;
-                            color: $verde-alba;
-                            font-size: 0.8125rem;
-                            font-weight: bold;
-    
-                            span{
-                                margin-left: 1.5rem;
-                            }
-                        }
-                    }
+                
                 }
             }
         }
@@ -1195,7 +1209,7 @@
     }
 
     #simule-verde {
-        margin-bottom: 11.5rem;
+        margin-bottom: -2.5rem;
         h2 {
           font-size: 1.875rem;
           margin: 1.5rem auto;
@@ -1240,6 +1254,13 @@
                 height: 43px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
               }
             }
+
+            .js-labelFile{
+                width: 77.2%!important;
+                margin-left: auto!important;
+                margin-right: auto!important;
+                margin-top: .5rem;
+              }
     
             .button-form {
               display: flex;
@@ -1266,7 +1287,7 @@
         .session-imape{
             position: absolute;
             width: 92%!important;
-            top: -20.1875rem;
+            top: -6.1875rem;
         }
     }
 }

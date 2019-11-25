@@ -372,6 +372,7 @@
         .conteudo-conversar{
             margin-left: 1.1875rem;
             display: flex;
+            flex-wrap: wrap;
           
             .mail{
                 display: flex; 
@@ -476,43 +477,157 @@
 }
 
 @media screen and(max-width: 768px){
+
+
     #formulario{
 
-        .selecione{
-            ul{
-                flex-direction: column;
+        .session-formulario{
+
+            h2{
+                font-size: 1.875rem;
+
+                &::before{
+                    width: 86%;
+                }
+            }
+
+            .text-formulario{
+                font-size: 1rem;
+                max-width: 250px;
+            }
+       
+
+            .selecione{
+                ul{
+                    flex-direction: column;
+
+
+                    .direita{
+                        margin: .5rem auto!important;
+                    }
+                }
+            }
+
+            .orcamento{
+                margin-left: auto;
+                margin-right: auto;
+                .session-orcamento{
+                 
+                    .form-group{
+                        display: block!important;
+                        margin: .2rem auto;
+                        width: 100%;
+        
+                        .custom-label,
+                        .custom-label-cidade,
+                        .custom-label-estado,
+                        .custom-label-nome,
+                        .custom-label-valor,
+                        .custom-label-telefone,
+                        .custom-label-anexar,
+                        .custom-label-email{
+                            margin: 0!important;
+                            width: 100%!important;
+                        }
+                    }
+        
+                    .button-simulacao{
+                        margin-top: 2rem;
+                        .btn-simulacao{
+                            width: 330px!important;
+                            height: 47.19px!important;
+                        }
+
+                        .seta{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .button-personalizado{
+
+                .btn-personalizado{
+                    width: 330px!important;
+                    height: 47.19px!important;
+                }
+            }
+        }
+    }
+
+    #quer-conversar{
+
+
+        .session-conversar{
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+
+            .conteudo-conversar{
+                margin: 0 auto;
+                .phone{
+                    margin-left: 0;
+                    margin-bottom: 3rem;
+                }
             }
         }
 
-        .session-orcamento{
-            .form-group{
-                display: block!important;
-                margin: 0 auto;
+        .button-ligue{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
 
-                .custom-label,
-                .custom-label-cidade,
-                .custom-label-estado,
-                .custom-label-nome,
-                .custom-label-valor,
-                .custom-label-telefone,
-                .custom-label-anexar,
-                .custom-label-email{
-                    margin: 0!important;
-                    width: 100%!important;
+            a{
+                text-decoration: none;
+
+                .btn-ligue{
+                    width: 290.06px!important;
                 }
 
-                .custom-label,
-                .custom-label-cidade,
-                .custom-label-estado,
-                .custom-label-nome,
-                .custom-label-valor,
-                .custom-label-telefone,
-                .custom-label-anexar,
-                .custom-label-email{
-                    max-width: 100% !important;
+                .ligue{
+                    margin-right: 0rem;
+                    margin-left: 1rem;
+                }
+
+                .seta{
+                    margin-left: 0rem;
+                    margin-bottom: .1rem;
                 }
             }
-           
+        }
+
+        .button-whats{
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            
+            a{
+                text-decoration: none;
+
+                .btn-whats{
+                    width: 290.06px!important;
+                }
+
+                .whats{
+                    margin-right: 0;
+                    margin-left: 1rem;
+                }
+
+                .seta{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    #imape{
+        width: 100%;
+        position: relative;
+        padding: 8.59375rem 0;
+    
+        .session-imape{
+            position: absolute;
+            width: 94%!important;
+            top: -8.6rem;
         }
     }
 }

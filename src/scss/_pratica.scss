@@ -587,6 +587,7 @@
     .session-componentes{
         display: flex;
         margin-top: 3rem;
+        flex-wrap: wrap;
 
         .conteudo{
             margin-left: 5.75rem;
@@ -856,4 +857,102 @@
             }
         }
     }
+}
+
+
+@media screen and(max-width: 768px){
+
+    #veja{
+        background-image: url('../images/na-pratica/banner-pratica.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 788px;
+        max-width: 100%;
+        background-position: top center;
+        position: relative;
+        
+        .image-banner{
+            background-image: url('../images/na-pratica/image-banner.png')!important;
+            background-repeat: no-repeat;
+            width: 100%;
+            max-width: 100%;
+            background-position: bottom right;
+            padding-bottom: 27.8rem!important;
+           
+        }
+    
+        .session-veja{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            h2{
+                font-size: 2.5rem;
+                color: $verde-alba;
+                line-height: 100%;
+                margin-top: 9rem;
+
+    
+                span{
+                    color: $amarelo-alba;
+                }
+            }
+
+            .text-mob{
+                font-size: 2.5rem;
+                color: $verde-alba;
+                line-height: 100%;
+                margin-top: 9rem;
+
+    
+                span{
+                    color: $amarelo-alba;
+                }
+            }
+    
+            .text-veja{
+                margin-top: 2.4rem;
+                .text{
+                   font-size: 1rem;
+                   color: $cinza-alba; 
+                   max-width: 325px;
+                }
+            }
+    
+            .lista-veja{
+                display: none;
+    
+            }
+    
+            .bg-branco{
+                position: absolute;
+                top: 22.1rem;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                padding: 2rem;
+                width: 378px;
+                height: 277px;
+                max-width: 100%;
+                left: 1.75rem;
+                background-color: #ffffff;
+    
+                h5{
+                    font-size: 1.375rem;
+                    color: $verde-alba;
+                    max-width: 232px;
+                    font-weight: bold;
+                }
+    
+                .text-bg{
+                    font-size: 1rem;
+                    color: $verde-alba;
+                    font-weight: regular;
+                    max-width: 294px;
+                    margin-top: 1.1875rem;
+                }
+            }
+        }
+    }
+
 }

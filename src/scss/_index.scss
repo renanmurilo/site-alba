@@ -723,7 +723,6 @@
 
       .etapa.active {
         display: block;
-
       }
 
       .form-simule-left {
@@ -776,8 +775,39 @@
         height: 100%;
       }
 
-      input[type="file"] {
-        opacity: 0 !important;
+      // input[type="file"] {
+      //   opacity: 0 !important;
+      // }
+
+      .input-file {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        
+        z-index: -1;
+        + .js-labelFile {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 47.2%;
+          margin-left: 3rem;
+          background: #E5F2F4;
+          border-radius: 6px;
+          height: 38px;
+          cursor: pointer;
+          color: $verde-alba;
+          font-size: 0.625rem;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          padding-left: .9rem;
+
+          span{
+            margin-left: .5rem;
+          }
+        }
       }
 
       .button-form {
@@ -1321,6 +1351,12 @@
           #custom-select {
             height: 43px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
           }
+        }
+
+        .js-labelFile{
+          width: 78.2%!important;
+          margin-left: auto!important;
+          margin-right: auto!important;
         }
 
         .button-form {
