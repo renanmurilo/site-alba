@@ -1,10 +1,28 @@
 #banner-segmentos {
     .caixa-banner {
         margin-top: 70px;
+        position: relative;
 
         img {
             width: 100%;
             height: auto;
+        }
+
+        .titulo-ban-segmentos {
+            position: absolute;
+            top: 90px;
+            left: 75px;
+            font-size: 40px;
+            color: $amarelo-alba;
+        }
+
+        .subtitulo-ban-segmentos {
+            position: absolute;
+            top: 150px;
+            left: 75px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #FFF;
         }
     }
 }
@@ -20,9 +38,9 @@
             color: #00808F;
             font-size: 40px;
             font-weight: bold;
-            border-bottom: 6px solid #FFD45E;
             padding: 60px 0 5px;
             width: 39%;
+            margin-left: 0 !important;
         }
         #qual-setor {
 
@@ -69,7 +87,13 @@
                     color: $verde-alba;
                     font-size: 28px;
                     font-weight: bold;
+                    margin-left: 0 !important;
                 }
+
+                .titulo-pq::before {
+                    content: none !important;
+                }
+
                 p {
                     color: $cinza-alba;
                 }
@@ -121,6 +145,7 @@
             border-bottom: 6px solid $amarelo-alba;
             width: 76%;
             margin-bottom: 10px;
+            margin-left: none !important;
         }
         
         .row {

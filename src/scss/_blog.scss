@@ -17,6 +17,22 @@
                 height: 100%;
             }
 
+            .titulo-ban-blog {
+                position: absolute;
+                top: 170px;
+                left: 100px;
+                color: $amarelo-alba;
+            }
+
+            .titulo-grande-blog {
+                position: absolute;
+                top: 200px;
+                left: 90px;
+                font-size: 70px;
+                color: #FFF;
+                line-height: 60px;
+            }
+
             .btn-leia-agora {
                 position: absolute;
                 bottom: 85px;
