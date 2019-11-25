@@ -1,0 +1,518 @@
+#formulario{
+    width: 100%;
+    position: relative;
+
+    .session-formulario{
+        margin-top: 9.125rem;
+
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+            color: $verde-alba;
+            position: relative;
+            font-weight: bold;
+           
+
+            &::before{
+                content: '';
+                background-color: $amarelo-alba;
+                width: 34%;
+                height: 5px;
+                position: absolute;
+                bottom: -10px;
+            }
+        }
+
+        .text-formulario{
+            margin: 1.5rem auto;
+            text-align: center;
+            font-size: 1.75rem;
+            line-height: 120%;
+            color: $verde-alba;
+            max-width: 570px;
+            font-weight: bold;
+        }
+
+        .orcamento{
+
+            .selecione{
+                margin-top: 2.8125rem;
+                
+                ul{
+                    display: flex;
+                    list-style-type: none;
+                    padding: 0;
+                    justify-content: space-between;
+                    max-width: 100%;
+                    align-items: center;
+
+                    .text{
+                        font-size: 1.375rem;
+                        color: $cinza-alba;
+                        font-weight: 300;
+                        margin-top: 1rem;
+
+                        span{
+                            color: #FF6565;
+                        }
+                    }
+
+                    .btn-selecione{
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        color: $cinza-alba;
+                        filter: grayscale(100%);
+                        display: flex;
+                        align-items: flex-end;
+
+                        a{
+                            text-decoration: none;
+
+                            span{
+                                vertical-align: text-bottom;
+                                margin-left: .3rem;
+                            }
+                        }
+                    }
+                    .direita{
+                        margin-left: 4rem;
+                    }
+                
+                    .btn-selecione.active{
+                        border: 1px solid $verde-alba;
+                        padding: .5rem 1.5rem;
+                        border-radius: 7px;
+                        color: $verde-alba;
+                        filter: grayscale(0%);
+                        cursor: pointer;
+        
+                        a{
+                            color: $verde-alba;
+                        }
+                    }
+                }
+            }
+
+            .session-orcamento{
+                display: flex;
+
+                .form-group{
+                    display: flex;
+                    align-items: flex-start;
+                   
+
+                    .form-color{
+                        background-color: #00808F;
+                        width: 100%;
+                        border: none;
+                        border-radius: 6px;
+                    }
+
+                    .form-control{
+                        opacity: 0.9;
+                    }
+
+                    input[type="file"] {
+                        opacity: 0 !important;
+                    }
+
+                    .form-color-file{
+                        background-color: #00808F;
+                        width: 100%;
+                        border: none;
+                        border-radius: 6px;
+                        opacity: 0.1;
+                    }
+
+                    input{
+                        border: none!important;
+                    }
+
+                    select,
+                    input::placeholder {
+                        color: $verde-alba;
+                        text-transform: uppercase;
+                        font-size: 0.625rem;
+                        height: 100%;
+                        font-weight: bold;
+                    }
+
+                    #custom-select {
+                        -webkit-appearance: none; /* Remove estilo padrão do Chrome */
+                        -moz-appearance: none; /* Remove estilo padrão do FireFox */
+                        appearance: none; /* Remove estilo padrão do FireFox*/
+                        background: url(../images/home/seta-select.png) no-repeat #ffffff; /* Imagem de fundo (Seta) */
+                        background-position: 95% center; /*Posição da imagem do background*/
+                        width: 100%; /* Tamanho do select, maior que o tamanho da div "div-select" */
+                        height: 40.57px!important; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+                        border: none;
+              
+                        option {
+                          background-color: $verde-alba;
+                          color: #ffffff;
+                        }
+                      }
+
+                    div.col-3{
+                        padding: 0!important;
+                        max-width: 100%!important;
+                    }
+
+                    .custom-label,
+                    .custom-label-cidade,
+                    .custom-label-estado,
+                    .custom-label-nome,
+                    .custom-label-valor,
+                    .custom-label-telefone,
+                    .custom-label-anexar,
+                    .custom-label-email{
+                        color: $cinza-alba;
+                        font-size: 1.375rem;
+                        font-weight: 300;
+                        display: flex;
+
+                        .red{
+                            color: #FF6565;
+                        }
+
+                        .tip-anexo{
+                            position: relative;
+                            text-decoration: none;
+                            margin-left: .1rem;
+
+
+                            &::after{
+                                background-color: #ffffff;
+                                box-sizing:border-box;
+                                content: attr(data-tooltip);
+                                display:none;
+                                color: $cinza-alba;
+                                font-size: 1.375rem;
+                                font-weight: 300;
+                                padding: .4rem 1rem;
+                                position:absolute;
+                                right: -16rem;
+                                width: 289px;
+                                height: 188px;
+                                top: 0;
+                                z-index:3;
+                                border-radius: 0px; 
+                                border: 1px solid $cinza-alba
+                            }
+
+                            &:hover::after{
+                                display: block;
+                            }
+                        }
+
+                        .tip-valor{
+                            position: relative;
+                            text-decoration: none;
+                            margin-left: .1rem;
+
+
+                            &::after{
+                                background-color: #ffffff;
+                                box-sizing:border-box;
+                                content: attr(data-tooltip);
+                                display:none;
+                                color: $cinza-alba;
+                                font-size: 1.375rem;
+                                font-weight: 300;
+                                padding: .6rem 1rem;
+                                position:absolute;
+                                right: -16rem;
+                                width: 252px;
+                                height: 55px;
+                                top: 0;
+                                z-index:3;
+                                border-radius: 0px; 
+                                border: 1px solid $cinza-alba
+                            }
+
+                            &:hover::after{
+                                display: block;
+                            }
+                        }
+                    }
+
+
+                    .custom-label-estado{
+                        margin-right: 16.2rem;
+                    }
+                    
+                    .custom-label-cidade{
+                        margin-left: 5.5rem;
+                        margin-right: 1.2rem;
+                    }
+
+                    .custom-label-valor{
+                        width: 160%!important;
+                    }
+
+                    .custom-label-anexar{
+                        margin-left: .3rem;
+                        width: 53%!important;
+
+                        .image{
+                            margin-right: .3rem;
+                        }
+                    }
+
+                    .custom-label-nome{
+                        width: 44%!important;
+                    }
+
+                    .custom-label-telefone{
+                        width: 112%!important;
+                    }
+
+                    .esquerda{
+                        margin-right: 15rem;
+                    }
+
+                    .custom-label-email{
+                        margin-left: .5rem;
+                        margin-right: 1.2rem;
+                    }
+
+                    .texto-menor{
+                        font-size: 1rem;
+                        color: $cinza-alba;
+                        font-weight: regular;
+
+                        span{
+                            color: #FF6565;;
+                        }
+                    }
+                }
+
+                .button-simulacao{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1rem;
+                    margin-bottom: 1.5rem;
+
+                    a{
+                        text-decoration: none;
+
+                        .btn-simulacao{
+                            background-color: $amarelo-alba;
+                            color: $verde-alba;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-transform: uppercase;
+                            border: none;
+                            letter-spacing: 3px;
+                            border-radius: 3px;
+                            font-weight: 900;
+                            width: 451.88px;
+                            font-size: 0.875rem;
+                            height: 39.16px;
+                            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                        }
+
+                        .seta{
+                            margin-left: .5rem;
+                            margin-bottom: .1rem;
+                        }
+                    }
+                }
+            }   
+
+            .button-personalizado{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 7.75rem;
+
+                a{
+                    text-decoration: none;
+
+                    .btn-personalizado{
+                        background-color: $verde-alba;
+                        color: #ffffff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: uppercase;
+                        border: none;
+                        font-size: 0.8125rem;
+                        letter-spacing: 3px;
+                        border-radius: 3px;
+                        font-weight: 900;
+                        width: 452.63px;
+                        height: 39.16px;
+                        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#quer-conversar{
+    width: 100%;
+    max-width: 100%;
+    background-color: $verde-alba;
+
+
+    .session-conversar{
+        display: flex;
+        margin-top: 5.0625rem;
+        margin-bottom: 4.6875rem;
+        flex-wrap: wrap;
+
+        h2{
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-left: 1.1875rem;
+        }
+
+        .conteudo-conversar{
+            margin-left: 1.1875rem;
+            display: flex;
+          
+            .mail{
+                display: flex; 
+                align-items: center;
+
+                .email{
+                    font-size: 1.125rem;
+                    color: #ffffff;
+                    margin-left: 1rem;
+                    line-height: 180%;
+                    margin-top: 1rem;
+                    font-weight: regular;
+                }
+            }
+
+            .phone{
+                display: flex; 
+                align-items: center;
+                margin-left: 2.875rem;
+
+                .telefone{
+                    font-size: 1.125rem;
+                    color: #ffffff;
+                    margin-left: 1rem;
+                    line-height: 180%;
+                    margin-top: 1rem;
+                    max-width: 200px;
+                    font-weight: regular;
+                }
+            }
+            
+        }
+
+        .button-ligue{
+            margin-top: .5rem;
+
+            a{
+                text-decoration: none;
+
+                .btn-ligue{
+                    background-color: $amarelo-alba;
+                    color: $verde-alba;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    border: none;
+                    letter-spacing: 3px;
+                    border-radius: 3px;
+                    font-weight: 900;
+                    width: 367.06px;
+                    font-size: 0.875rem;
+                    height: 47.16px;
+                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                }
+
+                .ligue{
+                    margin-right: 1rem;
+                }
+
+                .seta{
+                    margin-left: 3.5rem;
+                    margin-bottom: .1rem;
+                }
+            }
+        }
+
+        .button-whats{
+            margin-top: 2rem;
+            
+            a{
+                text-decoration: none;
+
+                .btn-whats{
+                    background-color: $amarelo-alba;
+                    color: $verde-alba;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    border: none;
+                    letter-spacing: 3px;
+                    border-radius: 3px;
+                    font-weight: 900;
+                    width: 367.06px;
+                    font-size: 0.875rem;
+                    height: 47.16px;
+                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                }
+
+                .whats{
+                    margin-right: .5rem;
+                }
+
+                .seta{
+                    margin-left: .5rem;
+                    margin-bottom: .1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 768px){
+    #formulario{
+
+        .selecione{
+            ul{
+                flex-direction: column;
+            }
+        }
+
+        .session-orcamento{
+            .form-group{
+                display: block!important;
+                margin: 0 auto;
+
+                .custom-label,
+                .custom-label-cidade,
+                .custom-label-estado,
+                .custom-label-nome,
+                .custom-label-valor,
+                .custom-label-telefone,
+                .custom-label-anexar,
+                .custom-label-email{
+                    margin: 0!important;
+                    width: 100%!important;
+                }
+
+                .custom-label,
+                .custom-label-cidade,
+                .custom-label-estado,
+                .custom-label-nome,
+                .custom-label-valor,
+                .custom-label-telefone,
+                .custom-label-anexar,
+                .custom-label-email{
+                    max-width: 100% !important;
+                }
+            }
+           
+        }
+    }
+}

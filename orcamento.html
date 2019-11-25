@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="src/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="src/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="src/assets/css/slick.css">
+    <link rel="stylesheet" href="src/assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="src/assets/css/app.css">
+    <link rel="stylesheet" href="src/assets/fontawesome/css/all.css">
+
+    <title>Alba</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="src/assets/images/logo.png" alt="Alba">
+                </a>
+                <input id="menu-hamburguer" type="checkbox">
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <div class="cx-itens" id="textoNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alba.html">A alba</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pratica.html">Na prática</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <a href="orcamento.html">
+                            <button type="button" class="btn-orcamento">Orçamento <span><img
+                                        src="src/assets/images/home/seta.png" alt="Seta"></span></button>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="formulario">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="session-formulario">
+                        <h2>Simule e comprove!</h2>
+                        <p class="text-formulario">Economia de até 99% na sua conta de luz e impacto positivo para todo
+                            mundo. </p>
+
+                        <div class="orcamento">
+                            <div class="selecione">
+                                <ul>
+                                    <li>
+                                        <p class="text">Selecione seu tipo de imóvel:<span>*</span> </p>
+                                    </li>
+                                    <li class="btn-selecione active"><a href=""><span><img
+                                                    src="src/assets/images/orcamento/comercio.png" alt=""></span>
+                                            Comércio</a></li>
+                                    <li class="btn-selecione direita"><a href=""><span><img
+                                                    src="src/assets/images/orcamento/agronegocio.png" alt=""></span>
+                                            Agronegócio</a></li>
+                                    <li class="btn-selecione direita"><a href=""><span><img
+                                                    src="src/assets/images/orcamento/industria.png" alt=""></span>
+                                            Indústria</a></li>
+                                    <li class="btn-selecione direita"><a href=""><span><img
+                                                    src="src/assets/images/orcamento/residencia.png" alt=""></span>
+                                            Residência</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="session-orcamento">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-estado">Estado <span class="red"> *</span></label>
+                                            <div class="form-color">
+                                                <select class="form-control" id="custom-select">
+                                                    <option desable>São Paulo</option>
+                                                    <option>Rio de Janeiro</option>
+                                                    <option>São Paulo</option>
+                                                    <option>Bahia</option>
+                                                    <option>Manaus</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-cidade">Cidade: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="São Paulo">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-valor">Valor da conta de energia: <span class="red">*</span> <a href="#" class="tip-valor" data-tooltip="Valor aproximado."><img src="src/assets/images/orcamento/icon.png" alt=""></a></label>
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="R$ 00,00">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-anexar"><span class="image"><img
+                                                        src="src/assets/images/orcamento/clip.png" alt=""></span>
+                                                <u>Anexar conta:</u> <a href="#" class="tip-anexo" data-tooltip="É possível anexar sua conta de luz dos últimos 12 meses para obter um resultado mais personalizado."><img src="src/assets/images/orcamento/icon.png" alt=""></a></label>
+                                            <div class="form-color-file">
+                                                <input type="file" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label class="custom-label-nome">Nome completo: <span class="red">*</span></label>
+
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="Joâo Silva">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-7">
+                                            <label class="custom-label-telefone">Telefone: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                    <input type="text" class="form-control esquerda" placeholder="(XX) XXXX-XXXX">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label class="custom-label-email">Email: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                <input type="email" class="form-control" placeholder="João@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label class="texto-menor"><span class="red">*</span> campos obrigatórios</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="button-simulacao">
+                                        <a href="">
+                                            <button type="button" class="btn-simulacao">Ver resultado da minha simulação <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span></button>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="button-personalizado">
+                                <a href="">
+                                    <button type="button" class="btn-personalizado">Receber um orçamento personalizado</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quer-conversar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="session-conversar">
+                        <div class="col-md-7">
+                            <h2>Quer conversar?</h2>
+
+                            <div class="conteudo-conversar">
+                                <div class="mail">
+                                    <img src="src/assets/images/orcamento/email.png" alt="">
+                                    <p class="email">Mande um email <br>
+                                    <span>Email: email@email.com</span></p>
+                                </div>
+
+                                <div class="phone">
+                                    <img src="src/assets/images/orcamento/phone.png" alt="">
+                                    <p class="telefone">Telefone de contato (XX) XXXX-XXXX</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="button-ligue">
+                                <a href="">
+                                    <button type="button" class="btn-ligue"><span class="ligue"><img src="src/assets/images/orcamento/phone-btn.png" alt=""></span> Ligue para mim agora <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span></button>
+                                </a>
+                            </div>
+
+                            <div class="button-whats">
+                                <a href="">
+                                    <button type="button" class="btn-whats"><span class="whats"><img src="src/assets/images/orcamento/whats.png" alt=""></span> Abrir o chat no whatsapp <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="imape">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="session-imape">
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.8514538392114!2d-46.56860438450763!3d-21.78600940431625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9dcef1b4153ab%3A0x6770e77d119983b2!2sAv.%20Francisco%20Salles%2C%20104%20-%20Centro%2C%20Po%C3%A7os%20de%20Caldas%20-%20MG%2C%2037701-704!5e0!3m2!1spt-BR!2sbr!4v1574025314289!5m2!1spt-BR!2sbr"
+                            width="98%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="mask-img object-mask">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="session-footer">
+                            <div class="col-md-3">
+                                <div class="logo-footer">
+                                    <img src="src/assets/images/footer/logo-footer.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="site-map">
+                                    <h2>Site Map</h2>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="alba.html">A Alba</a></li>
+                                        <li><a href="pratica.html">Na prática</a></li>
+                                        <li class="linha"><a href="blog.html">Blog</a></li>
+                                        <li><a href="">Comércio</a></li>
+                                        <li><a href="">Agronegócio</a></li>
+                                        <li><a href="">Indústria</a></li>
+                                        <li><a href="">Residência</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="unidades">
+                                    <h2>Unidades</h2>
+                                    <p><span>Pouso Alegre - MG</span> <br>
+                                        Rua Bom Jesus, 612, Centro <br>
+                                        <u>Tel: (35) 4102-1599 | (35) 9 9217-0063</u></p>
+                                </div>
+
+                                <div class="unidades">
+                                    <p><span>Poços de Caldas - MG</span><br>
+                                        Avenida Francisco Salles, 104, Centro <br>
+                                        <u> Tel: (35) 4141-1599 | (35) 9 9164-0006</u></p>
+                                </div>
+
+                                <div class="unidades-mobile">
+                                    <h2>Unidades</h2>
+                                    <p><span>Pouso Alegre - MG</span><br>
+                                        Rua Bom Jesus, 612, <br> Centro <br>
+                                        <u>Tel: (35) 4102-1599 <br> (35) 9 9217-0063</u></p>
+                                </div>
+
+                                <div class="unidades-mobile">
+                                    <p><span>Poços de Caldas - MG</span><br>
+                                        Avenida Francisco Salles, 104, <br> Centro <br>
+                                        <u> Tel: (35) 4141-1599 <br> (35) 9 9164-0006</u></p>
+                                </div>
+
+
+                                <div class="nossas-redes">
+                                    <h2>Nossas Redes</h2>
+
+                                    <div class="icones">
+                                        <div><a href=""><i class="fab fa-facebook-square"></i></a></div>
+                                        <div><a href=""><i class="fab fa-instagram"></i></a></div>
+                                        <div><a href=""><i class="fab fa-linkedin"></i></a></div>
+                                        <div><a href=""><i class="fab fa-whatsapp"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="contato">
+                                    <h2>Contato</h2>
+                                    <p><u>Entre em contato <br> com a gente!</u></p>
+                                </div>
+
+                                <div class="orcamento">
+                                    <h2>Orçamento</h2>
+                                    <p><a href="">Faça o seu orçamento</a></p>
+                                </div>
+
+                                <div class="faq">
+                                    <h2>Faq</h2>
+                                    <p><a href="">Tire suas dúvidas</a></p>
+                                </div>
+
+                                <div class="logo-weg">
+                                    <img src="src/assets/images/footer/logo-weg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/assets/js/jquery.min.js"></script>
+    <script src="src/assets/js/popper.min.js"></script>
+    <script src="src/assets/js/bootstrap.min.js"></script>
+    <script src="src/assets/js/slick.min.js"></script>
+    <script src="src/assets/js/main.js"></script>
+    <script src="src/assets/js/player.js"></script>
+</body>
+
+</html>
