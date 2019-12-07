@@ -105,24 +105,24 @@ $(function () {
 
 $(document).ready(function () {
   
-  $("#setor").change(function () {
+  $("#qual-setor").change(function () {
     // exibindo uma janela com o valor selecionado
-    if ($('#setor option:selected').val() == 1) {
+    if ($('li').val() == 1) {
       $('.row.setor.comercio').addClass('active');
       $('.row.setor.agro').removeClass('active');
       $('.row.setor.industria').removeClass('active');
       $('.row.setor.residencia').removeClass('active');
-    } else if ($('#setor option:selected').val() == 2) {
+    } else if ($('li').val() == 2) {
       $('.row.setor.agro').addClass('active');
       $('.row.setor.comercio').removeClass('active');
       $('.row.setor.industria').removeClass('active');
       $('.row.setor.residencia').removeClass('active');
-    } else if ($('#setor option:selected').val() == 3) {
+    } else if ($('li').val() == 3) {
       $('.row.setor.industria').addClass('active');
       $('.row.setor.comercio').removeClass('active');
       $('.row.setor.agro').removeClass('active');
       $('.row.setor.residencia').removeClass('active');
-    } else if ($('#setor option:selected').val() == 4) {
+    } else if ($('li').val() == 4) {
       $('.row.setor.residencia').addClass('active');
       $('.row.setor.comercio').removeClass('active');
       $('.row.setor.agro').removeClass('active');

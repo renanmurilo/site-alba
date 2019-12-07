@@ -166,176 +166,176 @@
                 color: $verde-alba;
             }
         }
-    }
-#banner-miolo.show {
-    height: auto;
-    overflow: visible;
-    opacity: 1;
-    transition: all .5s;
-}
-#maneira-geral.show {
-    height: auto;
-    overflow: visible;
-    opacity: 1;
-    transition: all .5s;
-}
-
-#banner-miolo {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all .5s;
-    margin: 30px 0;
-
-    img {
-        width: 100%;
-    }
-
-    .bg-miolo {
-        position: absolute;
-        top: 0;
-        right: 115px;
-        width: 494px;
-        height: 520px;
-    }
-
-    .texto-miolo {
-        position: absolute;
-        top: 60px;
-        right: 140px;
-        font-size: 40px;
-        color: #fff;
-
-        .asp1 {
-            color: #FFD45E;
-            position: absolute;
-            top: -30px;
-            left: 0;
-            font-size:100px;
+        #banner-miolo.show {
+            height: auto;
+            overflow: visible;
+            opacity: 1;
+            transition: all .5s;
+        }
+        #maneira-geral.show {
+            height: auto;
+            overflow: visible;
+            opacity: 1;
+            transition: all .5s;
         }
         
-        .asp2 {
-            color: #FFD45E;
-            position: absolute;
-            bottom: -120px;
-            right: 110px;
-            font-size: 100px;
+        #banner-miolo {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all .5s;
+            margin: 30px 0;
+        
+            img {
+                width: 100%;
+            }
+        
+            .bg-miolo {
+                position: absolute;
+                top: 0;
+                right: 115px;
+                width: 494px;
+                height: 520px;
+            }
+        
+            .texto-miolo {
+                position: absolute;
+                top: 60px;
+                right: 140px;
+                font-size: 40px;
+                color: #fff;
+        
+                .asp1 {
+                    color: #FFD45E;
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    font-size:100px;
+                }
+                
+                .asp2 {
+                    color: #FFD45E;
+                    position: absolute;
+                    bottom: -120px;
+                    right: 110px;
+                    font-size: 100px;
+                }
+            }
         }
-    }
-}
-#maneira-geral {
-
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all .5s;
-    padding-top: 50px;
-    
-    .btn-cont-lendo {
-        height: 40px;
-        width: 262px;
-        border: 0;
-        border-radius: 5px;
-        background-color: $amarelo-alba;
-        color: $verde-alba;
-    }
-
-    .container {
-        max-width: 90%;
-        margin: 0 auto;
-        padding: 0;
-
-        .texto-blog {
-            width: 100%;
-        }
-
-        .post-relacionados {
+        #maneira-geral {
+        
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all .5s;
+            padding-top: 50px;
             
-            max-width: 100%;
-            padding: 30px 0;
-            justify-content: space-between;
+            .btn-cont-lendo {
+                height: 40px;
+                width: 262px;
+                border: 0;
+                border-radius: 5px;
+                background-color: $amarelo-alba;
+                color: $verde-alba;
+            }
         
-                h5 {
-                    color: $verde-alba;
+            .container {
+                max-width: 90%;
+                margin: 0 auto;
+                padding: 0;
+        
+                .texto-blog {
                     width: 100%;
-                    margin: 0 0 30px;
-                    font-size: 22px;
-                    font-weight: 300;
                 }
         
-            .card {
-                border-radius: 15px !important;
-                width: 19.2475rem;
-                position: relative;
-                border: none;
-                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+                .post-relacionados {
+                    
+                    max-width: 100%;
+                    padding: 30px 0;
+                    justify-content: space-between;
+                
+                        h5 {
+                            color: $verde-alba;
+                            width: 100%;
+                            margin: 0 0 30px;
+                            font-size: 22px;
+                            font-weight: 300;
+                        }
+                
+                    .card {
+                        border-radius: 15px !important;
+                        width: 19.2475rem;
+                        position: relative;
+                        border: none;
+                        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+                
+                        .text-card {
+                          position: absolute;
+                          font-size: 0.75rem;
+                          color: $verde-alba;
+                          top: 6px;
+                          left: 7px;
+                          max-width: 30px;
+                          text-align: center;
+                          line-height: 120%;
+                          text-transform: uppercase;
+                
+                          span {
+                            font-weight: 900;
+                          }
+                        }
+                
+                        &::before {
+                          content: "";
+                          width: 47px;
+                          height: 42px;
+                          background-color: #ffffff;
+                          position: absolute;
+                          border-top-left-radius: 15px;
+                          border-bottom-right-radius: 15px;
+                        }
+                
+                        .card-body {
+                          text-align: center;
+                          min-height: 7.265rem;
+                
+                            .card-text {
+                                font-size: 1rem;
+                                color: $cinza-alba;
+                                font-weight: 500;
+                            }
+                        }
+                    }
         
-                .text-card {
-                  position: absolute;
-                  font-size: 0.75rem;
-                  color: $verde-alba;
-                  top: 6px;
-                  left: 7px;
-                  max-width: 30px;
-                  text-align: center;
-                  line-height: 120%;
-                  text-transform: uppercase;
+                    .caixa-botoes-blog {
+                        margin-top: 60px;
+                        margin-bottom: 30px;
+                        width: 100%;
         
-                  span {
-                    font-weight: 900;
-                  }
-                }
+                        .btn-voltar {
+                            background-color: $amarelo-alba;
+                            border: 0;
+                            border-radius: 5px;
+                            padding: 10px;
+                            height: 39px;
+                            width: 155px;
+                            margin: 0 20px 0 0;
+                            color: $verde-alba;
+                        }
         
-                &::before {
-                  content: "";
-                  width: 47px;
-                  height: 42px;
-                  background-color: #ffffff;
-                  position: absolute;
-                  border-top-left-radius: 15px;
-                  border-bottom-right-radius: 15px;
-                }
-        
-                .card-body {
-                  text-align: center;
-                  min-height: 7.265rem;
-        
-                    .card-text {
-                        font-size: 1rem;
-                        color: $cinza-alba;
-                        font-weight: 500;
+                        .btn-conheca {
+                            background-color: $amarelo-alba;
+                            border: 0;
+                            border-radius: 5px;
+                            padding:10px;
+                            heigth: 39px;
+                            width: 365px;
+                            margin: 0 0 0 20px;
+                            color: $verde-alba;
+                        }
                     }
                 }
             }
-
-            .caixa-botoes-blog {
-                margin-top: 60px;
-                margin-bottom: 30px;
-                width: 100%;
-
-                .btn-voltar {
-                    background-color: $amarelo-alba;
-                    border: 0;
-                    border-radius: 5px;
-                    padding: 10px;
-                    height: 39px;
-                    width: 155px;
-                    margin: 0 20px 0 0;
-                    color: $verde-alba;
-                }
-
-                .btn-conheca {
-                    background-color: $amarelo-alba;
-                    border: 0;
-                    border-radius: 5px;
-                    padding:10px;
-                    heigth: 39px;
-                    width: 365px;
-                    margin: 0 0 0 20px;
-                    color: $verde-alba;
-                }
-            }
         }
     }
-}
