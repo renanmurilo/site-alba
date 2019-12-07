@@ -33,10 +33,18 @@
                 <div class="cx-itens" id="textoNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="alba.html">A alba</a>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link" href="alba.html" id="navbarDropdownMenuLink">
+                              A alba
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Comercio</a>
+                              <a class="dropdown-item" href="#">Agronegócio</a>
+                              <a class="dropdown-item" href="#">Indústria</a>
+                              <a class="dropdown-item" href="#">Residência</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pratica.html">Na prática</a>
@@ -149,9 +157,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="session-especialista box-none">
                         <div class="col-md-6">
                             <div class="card-left">
                                 <div class="card">
@@ -359,9 +365,6 @@
                             <li class="circulo">
                                 2
                             </li>
-                            <li class="circulo">
-                                3
-                            </li>
                         </ul>
                     </div>
 
@@ -373,7 +376,7 @@
 
                         <div class="formulario">
                             <form>
-                                <div class="etapa ">
+                                <div class="etapa active">
                                     <div class="row">
                                         <div class="form-simule">
                                             <input type="text" class="form-control" placeholder="Cidade" required>
@@ -405,7 +408,7 @@
                                     </div>
                                 </div>
 
-                                <div class="etapa active">
+                                <div class="etapa">
                                     <div class="row">
                                         <div class="form-simule">
                                             <input type="text" class="form-control" placeholder="Nome" required>

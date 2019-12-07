@@ -4,13 +4,14 @@ function playVid() {
 
   if(vid.paused){
     vid.play();
-    $( ".btn-play" ).on( "click", function() {
-      $( this ).css("opacity", "0");
+    $( "#myVideo" ).click( "bg-play", function() {
+      $( ".btn-play" ).hide();
+      $(".title-video").hide();
     });
   }else {
     vid.pause();
-    $( ".btn-play").on( "click", function() {
-      $( this ).css("opacity", "1")
+    $( "#myVideo").click( function() {
+      $( ".btn-play" ).show();
     });
   }
 } 

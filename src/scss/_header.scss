@@ -32,16 +32,92 @@ header {
         position: relative;
         display: flex;
         justify-content: center;
+      }
 
-        .active {
-          &::before {
-            content: "";
-            position: absolute;
-            width: 70%;
-            height: 4px;
-            bottom: 5px;
-            text-align: center;
-            background-color: $amarelo-alba;
+      li:nth-child(1).active{
+        &::before{
+          content: '';
+          width: 46%;
+          left: 26%;
+          position: absolute;
+          height: 4px;
+          bottom: 5px;
+          background-color: $amarelo-alba;
+          animation: active .7s ease-in;
+
+          @keyframes active {
+            0%{
+              width: 0%;
+            }
+            100%{
+              width: 46%;
+            }
+          }
+        }
+      }
+
+      li:nth-child(2).active{
+        &::before{
+          content: '';
+          width: 52%;
+          left: 23%;
+          position: absolute;
+          height: 4px;
+          bottom: 5px;
+          background-color: $amarelo-alba;
+          animation: active .7s ease-in;
+
+          @keyframes active {
+            0%{
+              width: 0%;
+            }
+            100%{
+              width: 52%;
+            }
+          }
+        }
+      }
+
+      li:nth-child(3).active{
+        &::before{
+          content: '';
+          width: 64%;
+          left: 17%;
+          position: absolute;
+          height: 4px;
+          bottom: 5px;
+          background-color: $amarelo-alba;
+          animation: active .7s ease-in;
+
+          @keyframes active {
+            0%{
+              width: 0%;
+            }
+            100%{
+              width: 64%;
+            }
+          }
+        }
+      }
+
+      li:nth-child(4).active{
+        &::before{
+          content: '';
+          width: 44%;
+          left: 27%;
+          position: absolute;
+          height: 4px;
+          bottom: 5px;
+          background-color: $amarelo-alba;
+          animation: active .7s ease-in;
+
+          @keyframes active {
+            0%{
+              width: 0%;
+            }
+            100%{
+              width: 44%;
+            }
           }
         }
       }
@@ -54,6 +130,25 @@ header {
         text-transform: uppercase;
         letter-spacing: 4px;
         font-size: 0.875rem;
+      }
+
+      .dropdown-menu{
+        left: 29px;
+      }
+
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-item{
+        position: relative;
+        color: $verde-alba;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 0.875rem;
+        margin: 0;
       }
 
       a {
@@ -135,34 +230,86 @@ header {
 
 @media only screen and (max-width: 768px) {
 
-  .menu {
-    display: block !important;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-  }
+  header{
 
-  .cx-itens {
-    position: absolute;
-    z-index: -1;
-    min-height: 20px;
-    top: 60px;
-    text-align: center;
-    right: -100%;
-    transition: all .5s;
-  }
-  
-  .cx-itens.show {
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    min-height: 400px;
-    z-index: -1;
-    text-align: center;
-    right: 0;
-    opacity: .9;
+    .navbar-brand{
+      margin-left: 1.7rem!important;
+    }
+
+    a{
+      margin: 0!important;
+    }
+    li:nth-child(2){
+
+        &::before{
+          bottom: 85px!important;
+          width: 25%!important;
+          left: 37%!important;
+        }
+    }
+
+    .nav-link{
+      margin: .2rem 1.5rem!important;
+    }
+
+    .btn-orcamento{
+      margin-top: .6rem;
+    }
+
+    .dropdown{
+      flex-direction: column!important;
+      justify-content: center;
+    }
+
+    .dropdown-menu{
+      display: grid!important;
+      grid-template-columns: 1fr 1fr!important;
+      grid-area: 150px;
+      border: none;
+      border-radius: none;
+      background-color: transparent;
+      text-align: center;
+      left: 0;
+
+      .dropdown-item{
+        padding: .4rem .5rem;
+        color: $cinza-alba!important;
+      }
+
+      a:nth-child(3){
+        margin-left: 1rem;
+      }
+    }
+    
+    .menu {
+      display: block !important;
+      background: #fff;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+
+    .cx-itens {
+      position: absolute;
+      z-index: -1;
+      min-height: 20px;
+      top: 70px;
+      text-align: center;
+      right: -100%;
+      transition: all .5s;
+    }
+    
+    .cx-itens.show {
+      position: absolute;
+      background-color: #fff;
+      width: 100%;
+      min-height: 400px;
+      z-index: -1;
+      text-align: center;
+      right: 0;
+      opacity: .9;
+    }
   }
 }

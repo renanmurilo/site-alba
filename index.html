@@ -32,11 +32,19 @@
                 </label>
                 <div class="cx-itens" id="textoNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="alba.html">A alba</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="alba.html" id="navbarDropdownMenuLink">
+                              A alba
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Comercio</a>
+                              <a class="dropdown-item" href="#">Agronegócio</a>
+                              <a class="dropdown-item" href="#">Indústria</a>
+                              <a class="dropdown-item" href="#">Residência</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pratica.html">Na prática</a>
@@ -236,7 +244,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="session-video">
-                    <video poster="src/assets/images/home/banner-video.png" id="myVideo">
+                    <div class="title-video">
+                        <h2>Olha só como funciona a geração distribuída fotovoltaica:</h2>
+                    </div>
+                    <video poster="src/assets/images/home/banner-video.png" id="myVideo" onclick="playVid()" >
                         <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
                             type="video/mp4" size="576">
                     </video>
@@ -416,9 +427,6 @@
                             </li>
                             <li class="circulo">
                                 2
-                            </li>
-                            <li class="circulo">
-                                3
                             </li>
                         </ul>
                     </div>

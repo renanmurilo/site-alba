@@ -150,3 +150,10 @@ $(function(){
       $('.session-especialista').slick('resize');
   });
 })
+
+$(function(){
+    $('a.nav-link').click(function(){
+      $(this).parents("li").addClass("active").siblings().removeClass("active");
+    });
+});
+
