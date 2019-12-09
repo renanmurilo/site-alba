@@ -1,545 +1,500 @@
-// .pratica {
-//     opacity: 0;
-//     overflow: hidden;
-//     height: 0;
-//     -webkit-transition: all .9s;
-//     transition: all .9s;
-// }
-
-// .pratica.active {
-//     display: block;
-//     opacity: 1;
-//     overflow: visible;
-//     height: auto;
-// }
-
-#veja{
-    background-image: url('../images/na-pratica/banner-pratica.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 788px;
-    max-width: 100%;
+#conteudo-pratica{
     position: relative;
+
+    .lista-veja{
+        margin-top: 11.8rem;
+        right: 6.3rem;
+        position: absolute;
+        width: 50%;
+        z-index: 20;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            justify-content: space-between;
+            max-width: 91%;
+            
+            li{
+                line-height: 190%;
+                position: relative;
+            }
+
+            li:nth-child(1), li:nth-child(2), li:nth-child(3){
+               
+                &::before{
+                    content: '';
+                    width: 41px;
+                    height: 1px;
+                    position: absolute;
+                    background-color: $verde-alba;
+                    right: -4rem;
+                    top: 1.7rem;
+                    opacity: .5;
+                }
+            }
+
+
+            .numero{
+                font-size: 0.625rem;
+                color: $verde-alba;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                max-width: 100px;
+                opacity: .5;
+
+
+                a{
+                    text-decoration: none;
+                    color: $verde-alba;
+                }
+            }
+
+            .numero.active{
+                opacity: 1;
+            }
+
+        }
+
+    }
     
-    .image-banner{
-        background-image: url('../images/na-pratica/image-banner.png')!important;
+    .pratica {
+        opacity: 0;
+        overflow: hidden;
+        height: 0;
+        -webkit-transition: all .9s;
+        transition: all .9s;
+      }
+
+      .pratica.active {
+        display: block;
+        opacity: 1;
+        overflow: visible;
+        height: auto;
+      }
+
+    #veja{
+        background-image: url('../images/na-pratica/banner-pratica.png');
         background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
+        min-height: 788px;
         max-width: 100%;
-        background-position: bottom right;
-        padding-bottom: 27.8rem!important;
-       
-    }
-
-    .session-veja{
-        display: flex;
-
-        h2{
-            font-size: 3rem;
-            color: $verde-alba;
-            line-height: 100%;
-            margin-top: 8rem;
-
-            span{
-                color: $amarelo-alba;
-            }
-        }
-
-        .text-mob{
-            display: none;
-        }
-
-        .text-veja{
-            margin-top: 3.4rem;
-            .text{
-               font-size: 1rem;
-               color: $cinza-alba; 
-               max-width: 325px;
-            }
-        }
-
-        .lista-veja{
-            margin-top: 11.8rem;
-            margin-left: .5rem;
-
-            ul{
-                display: flex;
-                list-style-type: none;
-                padding: 0;
-                justify-content: space-between;
-                max-width: 91%;
-                
-                li{
-                    line-height: 120%;
-                    position: relative;
-                }
-
-                li:nth-child(1), li:nth-child(2), li:nth-child(3){
-                   
-                    &::before{
-                        content: '';
-                        width: 41px;
-                        height: 1px;
-                        position: absolute;
-                        background-color: $verde-alba;
-                        right: -5rem;
-                        top: 1.7rem;
-                        opacity: .5;
-                    }
-                }
-
-
-                .numero{
-                    font-size: 0.625rem;
-                    color: $verde-alba;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    max-width: 100px;
-                    opacity: .5;
-
-
-                    a{
-                        text-decoration: none;
-                        color: $verde-alba;
-                    }
-                }
-
-                .numero.active{
-                    opacity: 1;
-                }
-
-            }
-
-        }
-
-        .bg-branco{
-            position: absolute;
-            top: 22.3rem;
-            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            padding: 2rem;
-            width: 350px;
-            height: 277px;
-            max-width: 100%;
-            left: 1.75rem;
-            background-color: #ffffff;
-
-            h5{
-                font-size: 1.375rem;
-                color: $verde-alba;
-                max-width: 232px;
-                font-weight: bold;
-            }
-
-            .text-bg{
-                font-size: 1rem;
-                color: $verde-alba;
-                font-weight: regular;
-                max-width: 294px;
-                margin-top: 1.1875rem;
-            }
-        }
-    }
-}
-
-#veja1{
-    background-image: url('../images/na-pratica/banner-pratica.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 788px;
-    max-width: 100%;
-    background-position: top center;
-    position: relative;
-
-    .image-banner-1{
-        background-image: url('../images/na-pratica/image-banner-1.png')!important;
-        background-repeat: no-repeat;
-        width: 100%;
-        max-width: 100%;
-        background-position: bottom right;
-        padding-bottom: 27.8rem!important;
-    }
-
-    .session-veja-1{
-        display: flex;
-
-        h2{
-            font-size: 3rem;
-            color: $verde-alba;
-            line-height: 100%;
-            margin-top: 9rem;
-
-            span{
-                color: $amarelo-alba;
-            }
-        }
-
-        .text-veja{
-            margin-top: 2.4rem;
-            .text{
-               font-size: 1rem;
-               color: $cinza-alba; 
-               max-width: 325px;
-            }
-        }
-
-        .lista-veja{
-            margin-top: 11.8rem;
-            margin-left: .5rem;
-
-            ul{
-                display: flex;
-                list-style-type: none;
-                padding: 0;
-                justify-content: space-between;
-                max-width: 95%;
-                
-                li{
-                    line-height: 120%;
-                    position: relative;
-                }
-
-                li:nth-child(1), li:nth-child(2), li:nth-child(3){
-                   
-                    &::before{
-                        content: '';
-                        width: 41px;
-                        height: 1px;
-                        position: absolute;
-                        background-color: $verde-alba;
-                        right: -5rem;
-                        top: 1.7rem;
-                        opacity: .5;
-                    }
-                }
-
-                .numero{
-                    font-size: 0.625rem;
-                    color: $verde-alba;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    max-width: 100px;
-                    opacity: .5;
-
-                    a{
-                        text-decoration: none;
-                        color: $verde-alba;
-                    }
-                }
-
-                .numero.active{
-                    opacity: 1;
-                }
-
-            }
-
-        }
-
-        .bg-branco{
-            position: absolute;
-            top: 22.1rem;
-            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            padding: 2rem;
-            width: 378px;
-            height: 223px;
-            max-width: 100%;
-            left: 1.75rem;
-            background-color: #ffffff;
-
-            h5{
-                font-size: 1.375rem;
-                color: $verde-alba;
-                max-width: 232px;
-                font-weight: bold;
-            }
-
-            .text-bg{
-                font-size: 1rem;
-                color: $verde-alba;
-                font-weight: regular;
-                max-width: 304px;
-                margin-top: 1.1875rem;
-            }
-        }
-    }
-}
-
-#veja2{
-    background-image: url('../images/na-pratica/banner-pratica-cinza.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 788px;
-    max-width: 100%;
-    background-position: top center;
-    position: relative;
-
-    .image-banner-1{
-        background-image: url('../images/na-pratica/image-banner-2.png')!important;
-        background-repeat: no-repeat;
-        width: 100%;
-        max-width: 100%;
-        background-position: bottom right;
-        padding-bottom: 27.8rem!important;
-    }
-
-    .session-veja-2{
-        display: flex;
-
-        h2{
-            font-size: 3rem;
-            color: $amarelo-alba;
-            line-height: 100%;
-            margin-top: 9rem;
-        }
-
-        .text-veja{
-            margin-top: 2.4rem;
-            .text{
-               font-size: 1rem;
-               color: #ffffff; 
-               max-width: 325px;
-            }
-        }
-
-        .lista-veja{
-            margin-top: 11.8rem;
-            margin-left: .5rem;
-
-            ul{
-                display: flex;
-                list-style-type: none;
-                padding: 0;
-                justify-content: space-between;
-                max-width: 95%;
-                
-                li{
-                    line-height: 120%;
-                    position: relative;
-                }
-
-                li:nth-child(1), li:nth-child(2), li:nth-child(3){
-                   
-                    &::before{
-                        content: '';
-                        width: 41px;
-                        height: 1px;
-                        position: absolute;
-                        background-color: #fff;
-                        right: -5rem;
-                        top: 1.7rem;
-                        opacity: .5;
-                    }
-                }
-
-                .numero{
-                    font-size: 0.625rem;
-                    color: #ffffff;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    max-width: 100px;
-                    opacity: .5;
-
-                    a{
-                        text-decoration: none;
-                        color: #ffffff;
-                    }
-                }
-
-                .numero.active{
-                    opacity: 1;
-                }
-
-            }
-
-        }
-
-        .bg-branco{
-            position: absolute;
-            top: 22.1rem;
-            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            padding: 2rem;
-            width: 368px;
-            height: 272px;
-            max-width: 100%;
-            left: 1.75rem;
-            background-color: #737273;
-
-            h5{
-                font-size: 1.375rem;
-                color: #ffffff;
-                max-width: 304px;
-                font-weight: bold;
-            }
-
-            .text-bg{
-                font-size: 1rem;
-                color: #ffffff;
-                font-weight: regular;
-                max-width: 304px;
-                margin-top: 1.1875rem;
-            }
-        }
-    }
-}
-
-#veja3{
-    background-image: url('../images/na-pratica/image-banner-3.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 764px;
-    max-width: 100%;
-    background-position: top center;
-    position: relative;
-    margin-top: 4rem;
-
-    .session-veja-3{
-        display: flex;
-        width: 100%;
-
-        // video{
-        //     display: none;
-        // }
-
-        // .btn-play {
-        //     .bg-play {
+        position: relative;
         
-        //       position: absolute;
-        //       display: flex;
-        //       justify-content: center;
-        //       align-items: flex-start;
-        //       align-items: center;
-        //       background-color: $verde-alba;
-        //       width: 95.31px;
-        //       height: 95.31px;
-        //       overflow: hidden;
-        //       top: 50%;
-        //       left: 50%;
-        //       border: none;
-        //       background-position: center center;
-        //       border-radius: 100%;
-        //       transform: translate(-50%, -50%);
-      
-        //       span {
-        //         position: absolute;
-        //         left: 35px;
-        //         width: 0;
-        //         height: 0;
-        //         border-style: solid;
-        //         border-width: 20.46px 0 20.46px 32.58px;
-        //         border-color: transparent transparent transparent #ffffff;
-        //       }
-        //     }
-        //   }
-
-        h2{
-            font-size: 3rem;
-            color: $amarelo-alba;
-            line-height: 100%;
-            margin-top: 6rem;
-        }
-
-        .text-veja{
-            margin-top: 2.4rem;
-            .text{
-               font-size: 1rem;
-               color: $verde-alba; 
-               max-width: 325px;
-            }
-        }
-
-        .lista-veja{
-            margin-top: 9.8rem;
-            margin-left: .5rem;
-
-            ul{
-                display: flex;
-                list-style-type: none;
-                padding: 0;
-                justify-content: space-between;
-                max-width: 91%;
-                
-                li{
-                    line-height: 120%;
-                }
-
-                .numero{
-                    font-size: 0.625rem;
-                    color: $verde-alba;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    max-width: 100px;
-                    opacity: .5;
-
-                    a{
-                        text-decoration: none;
-                        color: $verde-alba;
-                    }
-                }
-
-                .numero.active{
-                    opacity: 1;
-                }
-
-            }
-
-        }
-
-        .bg-branco{
-            position: absolute;
-            top: 19.1rem;
-            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            padding: 2rem;
-            width: 368px;
-            height: 247px;
+        .image-banner{
+            background-image: url('../images/na-pratica/image-banner.png')!important;
+            background-repeat: no-repeat;
+            width: 100%;
             max-width: 100%;
-            left: 1.75rem;
-            background-color: #ffffff;
-
-            h5{
-                font-size: 1.375rem;
+            background-position: bottom right;
+            padding-bottom: 27.8rem!important;
+           
+        }
+    
+        .session-veja{
+            display: flex;
+    
+            h2{
+                font-size: 3rem;
                 color: $verde-alba;
-                max-width: 304px;
-                font-weight: bold;
-            }
-
-            .text-bg{
-                font-size: 1rem;
-                color: $verde-alba;
-                font-weight: regular;
-                max-width: 304px;
-                margin-top: 1.1875rem;
-            }
-
-            a{
-                text-decoration: none;
-
-                .btn-bg{
-                    color: $verde-alba;
-                    background-color: $amarelo-alba;
-                    font-size: 0.875rem;
-                    width: 286.5px;
-                    height: 47.16px;
-                    letter-spacing: 3px;
-                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
-                    border: none;
-                    border-radius: 3px;
-                    text-transform: uppercase;
-                    font-weight: 900;
+                line-height: 100%;
+                margin-top: 8rem;
+    
+                span{
+                    color: $amarelo-alba;
                 }
+            }
+    
+            .text-mob{
+                display: none;
+            }
+    
+            .text-veja{
+                margin-top: 3.4rem;
+                .text{
+                   font-size: 1rem;
+                   color: $cinza-alba; 
+                   max-width: 325px;
+                }
+            }
 
-                .seta{
-                    margin-left: .5rem;
+    
+            .bg-branco{
+                position: absolute;
+                top: 22.3rem;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                padding: 2rem;
+                width: 350px;
+                height: 277px;
+                max-width: 100%;
+                left: 1.75rem;
+                background-color: #ffffff;
+    
+                h5{
+                    font-size: 1.375rem;
+                    color: $verde-alba;
+                    max-width: 232px;
+                    font-weight: bold;
+                }
+    
+                .text-bg{
+                    font-size: 1rem;
+                    color: $verde-alba;
+                    font-weight: regular;
+                    max-width: 294px;
+                    margin-top: 1.1875rem;
+                }
+            }
+        }
+    }
+    
+    #veja1{
+        background-image: url('../images/na-pratica/banner-pratica.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 788px;
+        max-width: 100%;
+        background-position: top center;
+        position: relative;
+    
+        .image-banner-1{
+            background-image: url('../images/na-pratica/image-banner-1.png')!important;
+            background-repeat: no-repeat;
+            width: 100%;
+            max-width: 100%;
+            background-position: bottom right;
+            padding-bottom: 27.8rem!important;
+        }
+    
+        .session-veja-1{
+            display: flex;
+    
+            h2{
+                font-size: 3rem;
+                color: $verde-alba;
+                line-height: 100%;
+                margin-top: 9rem;
+    
+                span{
+                    color: $amarelo-alba;
+                }
+            }
+    
+            .text-veja{
+                margin-top: 2.4rem;
+                .text{
+                   font-size: 1rem;
+                   color: $cinza-alba; 
+                   max-width: 325px;
+                }
+            }
+    
+            .bg-branco{
+                position: absolute;
+                top: 22.1rem;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                padding: 2rem;
+                width: 368px;
+                height: 376.79px;
+                max-width: 100%;
+                left: 1.75rem;
+                background-color: #ffffff;
+    
+                h5{
+                    font-size: 1.375rem;
+                    color: $verde-alba;
+                    max-width: 232px;
+                    font-weight: bold;
+                }
+    
+                .text-bg{
+                    font-size: 1rem;
+                    color: $verde-alba;
+                    font-weight: regular;
+                    max-width: 304px;
+                    margin-top: 1.1875rem;
+                }
+            }
+        }
+    }
+    
+    #veja2{
+        background-image: url('../images/na-pratica/banner-pratica-cinza.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 788px;
+        max-width: 100%;
+        background-position: top center;
+        position: relative;
+    
+        .image-banner-1{
+            background-image: url('../images/na-pratica/image-banner-2.png')!important;
+            background-repeat: no-repeat;
+            width: 100%;
+            max-width: 100%;
+            background-position: bottom right;
+            padding-bottom: 27.8rem!important;
+        }
+    
+        .session-veja-2{
+            display: flex;
+    
+            h2{
+                font-size: 3rem;
+                color: $amarelo-alba;
+                line-height: 100%;
+                margin-top: 9rem;
+            }
+    
+            .text-veja{
+                margin-top: 2.4rem;
+                .text{
+                   font-size: 1rem;
+                   color: #ffffff; 
+                   max-width: 325px;
+                }
+            }
+    
+            .lista-veja{
+                margin-top: 11.8rem;
+                margin-left: .5rem;
+    
+                ul{
+                    display: flex;
+                    list-style-type: none;
+                    padding: 0;
+                    justify-content: space-between;
+                    max-width: 95%;
+                    
+                    li{
+                        line-height: 120%;
+                        position: relative;
+                    }
+    
+                    li:nth-child(1), li:nth-child(2), li:nth-child(3){
+                       
+                        &::before{
+                            content: '';
+                            width: 41px;
+                            height: 1px;
+                            position: absolute;
+                            background-color: #fff;
+                            right: -5rem;
+                            top: 1.7rem;
+                            opacity: .5;
+                        }
+                    }
+    
+                    .numero{
+                        font-size: 0.625rem;
+                        color: #ffffff;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        max-width: 100px;
+                        opacity: .5;
+    
+                        a{
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                    }
+    
+                    .numero.active{
+                        opacity: 1;
+                    }
+    
+                }
+    
+            }
+    
+            .bg-branco{
+                position: absolute;
+                top: 22.1rem;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                padding: 2rem;
+                width: 368px;
+                height: 272px;
+                max-width: 100%;
+                left: 1.75rem;
+                background-color: #737273;
+    
+                h5{
+                    font-size: 1.375rem;
+                    color: #ffffff;
+                    max-width: 304px;
+                    font-weight: bold;
+                }
+    
+                .text-bg{
+                    font-size: 1rem;
+                    color: #ffffff;
+                    font-weight: regular;
+                    max-width: 304px;
+                    margin-top: 1.1875rem;
+                }
+            }
+        }
+    }
+    
+    #veja3{
+        background-image: url('../images/na-pratica/image-banner-3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 764px;
+        max-width: 100%;
+        background-position: top center;
+        position: relative;
+        margin-top: 4rem;
+    
+        .session-veja-3{
+            display: flex;
+            width: 100%;
+    
+            // video{
+            //     display: none;
+            // }
+    
+            // .btn-play {
+            //     .bg-play {
+            
+            //       position: absolute;
+            //       display: flex;
+            //       justify-content: center;
+            //       align-items: flex-start;
+            //       align-items: center;
+            //       background-color: $verde-alba;
+            //       width: 95.31px;
+            //       height: 95.31px;
+            //       overflow: hidden;
+            //       top: 50%;
+            //       left: 50%;
+            //       border: none;
+            //       background-position: center center;
+            //       border-radius: 100%;
+            //       transform: translate(-50%, -50%);
+          
+            //       span {
+            //         position: absolute;
+            //         left: 35px;
+            //         width: 0;
+            //         height: 0;
+            //         border-style: solid;
+            //         border-width: 20.46px 0 20.46px 32.58px;
+            //         border-color: transparent transparent transparent #ffffff;
+            //       }
+            //     }
+            //   }
+    
+            h2{
+                font-size: 3rem;
+                color: $amarelo-alba;
+                line-height: 100%;
+                margin-top: 6rem;
+            }
+    
+            .text-veja{
+                margin-top: 2.4rem;
+                .text{
+                   font-size: 1rem;
+                   color: $verde-alba; 
+                   max-width: 325px;
+                }
+            }
+    
+            .lista-veja{
+                margin-top: 9.8rem;
+                margin-left: .5rem;
+    
+                ul{
+                    display: flex;
+                    list-style-type: none;
+                    padding: 0;
+                    justify-content: space-between;
+                    max-width: 91%;
+                    
+                    li{
+                        line-height: 120%;
+                    }
+    
+                    .numero{
+                        font-size: 0.625rem;
+                        color: $verde-alba;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        max-width: 100px;
+                        opacity: .5;
+    
+                        a{
+                            text-decoration: none;
+                            color: $verde-alba;
+                        }
+                    }
+    
+                    .numero.active{
+                        opacity: 1;
+                    }
+    
+                }
+    
+            }
+    
+            .bg-branco{
+                position: absolute;
+                top: 19.1rem;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                padding: 2rem;
+                width: 368px;
+                height: 247px;
+                max-width: 100%;
+                left: 1.75rem;
+                background-color: #ffffff;
+    
+                h5{
+                    font-size: 1.375rem;
+                    color: $verde-alba;
+                    max-width: 304px;
+                    font-weight: bold;
+                }
+    
+                .text-bg{
+                    font-size: 1rem;
+                    color: $verde-alba;
+                    font-weight: regular;
+                    max-width: 304px;
+                    margin-top: 1.1875rem;
+                }
+    
+                a{
+                    text-decoration: none;
+    
+                    .btn-bg{
+                        color: $verde-alba;
+                        background-color: $amarelo-alba;
+                        font-size: 0.875rem;
+                        width: 286.5px;
+                        height: 47.16px;
+                        letter-spacing: 3px;
+                        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                        border: none;
+                        border-radius: 3px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                    }
+    
+                    .seta{
+                        margin-left: .5rem;
+                    }
                 }
             }
         }

@@ -157,3 +157,10 @@ $(function(){
     });
 });
 
+$(function () {
+  $('ul .numero, .conteudo-pratica').click(function (e) {
+    e.preventDefault();
+    $('.numero.active').removeClass('active').next('li').addClass('active');
+    $('.pratica.active').removeClass('active').next('div').addClass('active');
+  });
+});

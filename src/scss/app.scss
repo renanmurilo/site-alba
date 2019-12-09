@@ -4,7 +4,7 @@ $cinza-alba: #7A8B99;
 
 html, body{
     font-family: 'Sua Test';
-    overflow-x: hidden!important;
+    overflow-x: hidden;
     max-width: 100%;
 }
   
@@ -21,4 +21,5 @@ html, body{
 @import 'alba';
 @import 'pratica';
 @import 'orcamento';
+@import 'resultado';
 
