@@ -174,9 +174,10 @@ $(function(){
 
     if ($('#veja2').hasClass(classActive)){
       $('.lista-veja ul li a').css('color', '#fff');
-      // $(' li').before('background-color', '#fff')
+      $('.lista-veja ul li span').css('background-color', '#fff');
     } else {
       $('.lista-veja ul li a').css('color', '#00808F');
+      $('.lista-veja ul li span').css('background-color', '#00808F');
     }
   });
 });
@@ -185,15 +186,15 @@ $(function(){
 $(function(){
   var classActive = 'active';
 
-  $('#componentes .lista li').first().addClass(classActive);
+  $('#componentes .lista li a').first().addClass(classActive);
   $('.item').first().addClass(classActive);
 
 
-  $('#componentes .lista li').click(function(e){
+  $('#componentes .lista li a').click(function(e){
     e.preventDefault();
     var itemId = $(this).attr('href');
 
-    $('#componentes ul li, .item').removeClass(classActive);
+    $('#componentes ul li a, .item').removeClass(classActive);
     $(this).addClass(classActive);
     $(itemId).addClass(classActive);
   });

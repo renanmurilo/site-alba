@@ -25,20 +25,7 @@
                 letter-spacing: 1px;
                 max-width: 100px;
 
-                a{ 
-                    text-decoration: none;
-                    color: $verde-alba;
-                    opacity: .5;
-                }
-                a.active{
-                    opacity: 1;
-                }
-            }
-
-            li:nth-child(1), li:nth-child(2), li:nth-child(3){
-               
-                &::before{
-                    content: '';
+                span{
                     width: 41px;
                     height: 1px;
                     position: absolute;
@@ -46,6 +33,15 @@
                     right: -4rem;
                     top: 1.7rem;
                     opacity: .5;
+                }
+
+                a{ 
+                    text-decoration: none;
+                    color: $verde-alba;
+                    opacity: .5;
+                }
+                a.active{
+                    opacity: 1;
                 }
             }
         }
@@ -83,6 +79,7 @@
     
         .session-veja{
             display: flex;
+            flex-wrap: wrap;
     
             h2{
                 font-size: 3rem;
@@ -120,6 +117,10 @@
                 max-width: 100%;
                 left: 1.75rem;
                 background-color: #ffffff;
+
+                .lista-mobile{
+                    display: none;
+                }
     
                 h5{
                     font-size: 1.375rem;
@@ -438,6 +439,10 @@
     }
 }
 
+.box-mobile{
+    display: none;
+}
+
 #vale-a-pena{
     width: 100%;
     position: relative;
@@ -447,6 +452,7 @@
         background-image: url('../images/na-pratica/bg-verde.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 100% center;
         width: 100%;
         height: 645px;
         position: absolute;
@@ -610,6 +616,10 @@
             align-items: center;
             margin-top: 2.6rem;
             margin-left: 3.8rem;
+
+            .mobile{
+                display: none;
+            }
 
             .item{
                 display: flex;
@@ -777,51 +787,125 @@
     }
 }
 
-#conversar{
-    background-image: url('../images/na-pratica/banner-conversar.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+#quer-conversar{
     width: 100%;
-    height: 455px;
     max-width: 100%;
-    background-position: top center;
-    position: relative;
+    background-color: $verde-alba;
+
 
     .session-conversar{
-        text-align: center;
+        display: flex;
+        margin-top: 5.0625rem;
+        margin-bottom: 4.6875rem;
+        flex-wrap: wrap;
 
         h2{
             font-size: 2.5rem;
             color: #ffffff;
-            margin-top: 9rem;
+            margin-left: 1.1875rem;
         }
 
-        .text-conversar{
-            font-size: 1.125rem;
-            color: #ffffff;
-            margin-top: 1rem;
+        .conteudo-conversar{
+            margin-left: 1.1875rem;
+            display: flex;
+            flex-wrap: wrap;
+          
+            .mail{
+                display: flex; 
+                align-items: center;
+
+                .email{
+                    font-size: 1.125rem;
+                    color: #ffffff;
+                    margin-left: 1rem;
+                    line-height: 180%;
+                    margin-top: 1rem;
+                    font-weight: regular;
+                }
+            }
+
+            .phone{
+                display: flex; 
+                align-items: center;
+                margin-left: 2.875rem;
+
+                .telefone{
+                    font-size: 1.125rem;
+                    color: #ffffff;
+                    margin-left: 1rem;
+                    line-height: 180%;
+                    margin-top: 1rem;
+                    max-width: 200px;
+                    font-weight: regular;
+                }
+            }
+            
         }
 
-        .button-conversar{
-            margin-top: 2rem;
+        .button-ligue{
+            margin-top: .5rem;
+
             a{
                 text-decoration: none;
 
-                .btn-conversar{
-                    color: $verde-alba;
+                .btn-ligue{
                     background-color: $amarelo-alba;
-                    font-size: 0.875rem;
-                    width: 268.97px;
-                    height: 39.16px;
-                    letter-spacing: 3px;
-                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
-                    border: none;
-                    border-radius: 3px;
+                    color: $verde-alba;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     text-transform: uppercase;
+                    border: none;
+                    letter-spacing: 3px;
+                    border-radius: 3px;
                     font-weight: 900;
+                    width: 367.06px;
+                    font-size: 0.875rem;
+                    height: 47.16px;
+                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
                 }
+
+                .ligue{
+                    margin-right: 1rem;
+                }
+
+                .seta{
+                    margin-left: 3.5rem;
+                    margin-bottom: .1rem;
+                }
+            }
+        }
+
+        .button-whats{
+            margin-top: 2rem;
+            
+            a{
+                text-decoration: none;
+
+                .btn-whats{
+                    background-color: $amarelo-alba;
+                    color: $verde-alba;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    border: none;
+                    letter-spacing: 3px;
+                    border-radius: 3px;
+                    font-weight: 900;
+                    width: 367.06px;
+                    font-size: 0.875rem;
+                    height: 47.16px;
+                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                }
+
+                .whats{
+                    margin-right: .5rem;
+                }
+
                 .seta{
                     margin-left: .5rem;
+                    margin-bottom: .1rem;
                 }
             }
         }
@@ -831,85 +915,344 @@
 
 @media screen and(max-width: 768px){
 
-    #veja{
-        background-image: url('../images/na-pratica/banner-pratica.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 788px;
-        max-width: 100%;
-        background-position: top center;
+    #conteudo-pratica{
         position: relative;
+    
+        .lista-veja{
+           display: none;
+        }
         
-        .image-banner{
-            background-image: url('../images/na-pratica/image-banner.png')!important;
-            background-repeat: no-repeat;
-            width: 100%;
-            max-width: 100%;
-            background-position: bottom right;
-            padding-bottom: 27.8rem!important;
-           
+        .pratica {
+            display: none;
+            overflow: hidden;
         }
     
-        .session-veja{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        .pratica.active {
+            display: block;
+            visibility: visible;
+            transition: .3s;
+        }
     
-            h2{
-                font-size: 2.5rem;
-                color: $verde-alba;
-                line-height: 100%;
-                margin-top: 9rem;
+        #veja{
+            background-image: url('../images/na-pratica/banner-pratica-mobile.png')!important;
+            min-height: 443px;
+            margin-top: 5rem;
 
+            
+            .image-banner{
+                background-image: url('../images/na-pratica/image-banner-mobile.png')!important;
+                background-repeat: no-repeat;
+                width: 100%;
+                max-width: 100%;
+                background-position: 175% bottom;
+                padding-bottom: 16rem!important;
+               
+            }
+        
+            .session-veja{
+                display: flex;
+                margin-top: 2rem;
+        
+                h2{
+                    display: none;
+                }
+
+                .text-mob{
+                    display: block!important;
+
+                    h2{
+                        font-size: 1.875rem;
+                        color: $verde-alba;
+                        line-height: 100%;
+                        display: block!important;
+                        margin: 0 auto;
+                        text-align: center;
+            
+                        span{
+                            color: $amarelo-alba;
+                        }
+                    }
+                }
+        
+                .text-veja{
+                   margin: 0 auto;
+                   text-align: center;
+                    .text{
+                        margin: 1rem auto 0 auto;
+                       max-width: 278px;
+                    }
+                }
     
-                span{
-                    color: $amarelo-alba;
+        
+                .bg-branco{
+                   display: none;
                 }
             }
-
-            .text-mob{
-                font-size: 2.5rem;
-                color: $verde-alba;
-                line-height: 100%;
-                margin-top: 9rem;
-
-    
-                span{
-                    color: $amarelo-alba;
+        }
+        
+        #veja1{
+            background-image: url('../images/na-pratica/banner-pratica.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 788px;
+            max-width: 100%;
+            background-position: top center;
+            position: relative;
+        
+            .image-banner-1{
+                background-image: url('../images/na-pratica/image-banner-1.png')!important;
+                background-repeat: no-repeat;
+                width: 100%;
+                max-width: 100%;
+                background-position: bottom right;
+                padding-bottom: 27.8rem!important;
+            }
+        
+            .session-veja-1{
+                display: flex;
+        
+                h2{
+                    font-size: 3rem;
+                    color: $verde-alba;
+                    line-height: 100%;
+                    margin-top: 9rem;
+        
+                    span{
+                        color: $amarelo-alba;
+                    }
                 }
+        
+                .text-veja{
+                    margin-top: 2.4rem;
+                    .text{
+                       font-size: 1rem;
+                       color: $cinza-alba; 
+                       max-width: 325px;
+                    }
+                }
+        
+                .bg-branco{
+                    position: absolute;
+                    top: 22.1rem;
+                    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                    border-radius: 8px;
+                    padding: 2rem;
+                    width: 368px;
+                    height: 376.79px;
+                    max-width: 100%;
+                    left: 1.75rem;
+                    background-color: #ffffff;
+        
+                    h5{
+                        font-size: 1.375rem;
+                        color: $verde-alba;
+                        max-width: 232px;
+                        font-weight: bold;
+                    }
+        
+                    .text-bg{
+                        font-size: 1rem;
+                        color: $verde-alba;
+                        font-weight: regular;
+                        max-width: 304px;
+                        margin-top: 1.1875rem;
+                    }
+                }
+            }
+        }
+        
+        #veja2{
+            background-image: url('../images/na-pratica/banner-pratica-cinza.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 788px;
+            max-width: 100%;
+            background-position: top center;
+            position: relative;
+        
+            .image-banner-2{
+                background-image: url('../images/na-pratica/image-banner-2.png')!important;
+                background-repeat: no-repeat;
+                width: 100%;
+                max-width: 100%;
+                background-position: bottom right;
+                padding-bottom: 27.8rem!important;
+            }
+        
+            .session-veja-2{
+                display: flex;
+        
+                h2{
+                    font-size: 3rem;
+                    color: $amarelo-alba;
+                    line-height: 100%;
+                    margin-top: 9rem;
+                }
+        
+                .text-veja{
+                    margin-top: 2.4rem;
+                    .text{
+                       font-size: 1rem;
+                       color: #ffffff; 
+                       max-width: 325px;
+                    }
+                }
+        
+                .lista-veja{
+                    margin-top: 11.8rem;
+                    margin-left: .5rem;
+        
+                    ul{
+                        display: flex;
+                        list-style-type: none;
+                        padding: 0;
+                        justify-content: space-between;
+                        max-width: 95%;
+                        
+                        li{
+                            line-height: 120%;
+                            position: relative;
+                        }
+        
+                        li:nth-child(1), li:nth-child(2), li:nth-child(3){
+                           
+                            &::before{
+                                content: '';
+                                width: 41px;
+                                height: 1px;
+                                position: absolute;
+                                background-color: #fff;
+                                right: -5rem;
+                                top: 1.7rem;
+                                opacity: .5;
+                            }
+                        }
+        
+                        .numero{
+                            font-size: 0.625rem;
+                            color: #ffffff;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            max-width: 100px;
+                            opacity: .5;
+        
+                            a{
+                                text-decoration: none;
+                                color: #ffffff;
+                            }
+                        }
+        
+                        .numero.active{
+                            opacity: 1;
+                        }
+        
+                    }
+        
+                }
+        
+                .bg-branco{
+                    position: absolute;
+                    top: 22.1rem;
+                    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+                    border-radius: 8px;
+                    padding: 2rem;
+                    width: 368px;
+                    height: 272px;
+                    max-width: 100%;
+                    left: 1.75rem;
+                    background-color: #737273;
+        
+                    h5{
+                        font-size: 1.375rem;
+                        color: #ffffff;
+                        max-width: 304px;
+                        font-weight: bold;
+                    }
+        
+                    .text-bg{
+                        font-size: 1rem;
+                        color: #ffffff;
+                        font-weight: regular;
+                        max-width: 304px;
+                        margin-top: 1.1875rem;
+                    }
+                }
+            }
+        }
+        
+        #veja3{
+            background-image: url('../images/na-pratica/image-banner-3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 764px;
+            max-width: 100%;
+            background-position: 100% center;
+            position: relative;
+    
+            
+            .session-video{
+    
+                #myVideo{
+                    width: 100%;
+                    margin-top: 3.4rem;
+                    opacity: 0;
+                    position: absolute;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+            }
+    
+            .active{
+                opacity: 0;
+                overflow: hidden;
+            }
+           
+            h2{
+                font-size: 3rem;
+                color: $amarelo-alba;
+                line-height: 100%;
+                margin-top: 7.5rem;
+                display: block;
+                opacity: 1;
+                overflow: visible;
             }
     
             .text-veja{
-                margin-top: 2.4rem;
+                display: block;
+                opacity: 1;
+                overflow: visible;
+                margin-top: 1.4rem;
                 .text{
-                   font-size: 1rem;
-                   color: $cinza-alba; 
-                   max-width: 325px;
+                    font-size: 1rem;
+                    color: $verde-alba; 
+                    max-width: 325px;
                 }
             }
     
-            .lista-veja{
-                display: none;
-    
-            }
-    
             .bg-branco{
+                display: block;
+                opacity: 1;
+                overflow: visible;
                 position: absolute;
-                top: 22.1rem;
+                top: 19.6rem;
                 box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
                 border-radius: 8px;
                 padding: 2rem;
-                width: 378px;
-                height: 277px;
+                width: 368px;
+                height: 247px;
                 max-width: 100%;
+                z-index: 2;
                 left: 1.75rem;
                 background-color: #ffffff;
     
                 h5{
                     font-size: 1.375rem;
                     color: $verde-alba;
-                    max-width: 232px;
+                    max-width: 304px;
                     font-weight: bold;
                 }
     
@@ -917,11 +1260,457 @@
                     font-size: 1rem;
                     color: $verde-alba;
                     font-weight: regular;
-                    max-width: 294px;
+                    max-width: 304px;
                     margin-top: 1.1875rem;
+                }
+    
+                a{
+                    text-decoration: none;
+    
+                    .btn-bg{
+                        color: $verde-alba;
+                        background-color: $amarelo-alba;
+                        font-size: 0.875rem;
+                        width: 286.5px;
+                        height: 47.16px;
+                        letter-spacing: 3px;
+                        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                        border: none;
+                        border-radius: 3px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                    }
+    
+                    .seta{
+                        margin-left: .5rem;
+                    }
                 }
             }
         }
     }
 
+    .box-mobile{
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .bg-branco{
+            position: absolute;
+            top: 30rem;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 2rem;
+            width: 310px;
+            height: 420px;
+            max-width: 100%;
+            background-color: #ffffff;
+
+            .lista-mobile{
+                display: block;
+                text-align: center;
+                line-height: 190%;
+                color: $verde-alba;
+                font-size: 0.875rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                max-width: 100px;
+                margin: .5rem auto;
+            }
+
+            h5{
+                max-width: 230px;
+                margin: 0 auto;
+                text-align: left;
+                font-size: 1.375rem;
+                color: $verde-alba;
+                font-weight: bold;
+            }
+
+            .text-bg{
+                font-size: 1rem;
+                color: $verde-alba;
+                font-weight: regular;
+                max-width: 230px;
+                margin-top: 1.1875rem;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    #vale-a-pena{
+        width: 100%;
+        position: relative;
+        margin-bottom: 5rem;
+    
+        .bg-verde{
+            background-image: url('../images/na-pratica/bg-verde-mobile.png');
+            background-position: 100% bottom;
+            height: 759px;
+            z-index: -1;
+            top: -4rem;
+        }
+    
+        .session-vale{
+            margin-top: 25.5rem;
+    
+            h2{
+                font-size: 1.875rem;
+            }
+    
+            .text{
+                margin-top: 1rem;
+                font-size: 1rem;
+                max-width: 278px;
+            }
+    
+            .button{
+                margin-top: 1.5rem;
+            }
+        }
+    
+    }
+
+    #componentes{
+        width: 100%;
+        position: relative;
+        margin-bottom: 6rem;
+    
+        .bg-componente{
+            background-image: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 700px;
+            position: absolute;
+            z-index: -1;
+            top: -13rem;
+    
+            .bg-cinza{
+                background-image: url('../images/na-pratica/bg-cinza-mobile.png');
+                background-repeat: no-repeat;
+                width: 100%;
+                background-position: 85% bottom;
+                height: 100%;
+                padding-bottom: 50rem!important;
+            }
+    
+        }
+        .session-componentes{
+            display: flex;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            .col-md-5{
+                padding-right: 0!important;
+                padding-left: 0!important;
+            }
+    
+            .conteudo{
+                margin: 0 auto;
+    
+                h2{
+                    font-size: 1.875rem;
+                    text-align: center;
+    
+                    &::before{
+                        width: 86%;
+                        left: 20px;
+                    }
+                }
+    
+                .text-componentes{
+                    font-size: 1rem;
+                    color: $cinza-alba;
+                    max-width: 278px;
+                    line-height: 120%;
+                    text-align: center;
+                    margin: 2rem auto;
+                }
+            
+    
+                .lista{
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: flex-start;
+                   flex-wrap: wrap;
+    
+                    li{
+                        color: $cinza-alba;
+                        font-size: 1rem;
+                        line-height: 240%;
+                        
+    
+                        a{
+                            text-decoration: none;
+                            color: $cinza-alba;
+                        }
+    
+                        a.active{
+                            color: $verde-alba;
+                            font-weight: bold;
+                        }
+                    }    
+                }
+
+                li:nth-child(1){
+                    order: 1;
+                }
+
+                li:nth-child(2){
+                    order: 3;
+                }
+                li:nth-child(3){
+                    order:5;
+                }
+
+                li:nth-child(4){
+                    order: 2;
+                }
+
+                li:nth-child(5){
+                    order: 4;
+                }
+
+                li:nth-child(6){
+                    order: 6;
+                }
+    
+                .button-comp{
+                    margin-top: 20rem;
+                    position: absolute;
+                    left: 17%;
+
+    
+                    .btn-componentes{
+                        color: $verde-alba;
+                        background-color: $amarelo-alba;
+                        font-size: 0.875rem;
+                        width: 179.5px;
+                        height: 39.16px;
+                        letter-spacing: 3px;
+                        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                        border: none;
+                        border-radius: 3px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                    }
+    
+                    .seta{
+                        margin-left: .6rem;
+                    }
+                }
+            }
+    
+            .conteudo-bg{
+                margin: 1.5rem auto;
+
+                .desk{
+                    display: none;
+                }
+
+                .mobile{
+                    display: block!important;
+                    width: 126px;
+                    height: 162px;
+                    margin-right: 1rem;
+                }
+    
+                .item{
+                    display: flex;
+                    align-items: center;
+                    opacity: 0;
+                    overflow: hidden;
+                    width: 0;
+                    transform: translate3d(-50px, 0, 0);
+                }
+    
+                .item.active{
+                    opacity: 1;
+                    visibility: visible;
+                    width: auto;
+                    transition: .3s;
+                    transform: translate3d(0px, 0, 0);
+                }
+    
+                .text-bg{
+                    font-size: 1rem;
+                    max-width: 210px;
+                    color: $cinza-alba;
+                    line-height: 140%;
+                    margin: 0 auto;
+    
+                    .image{
+                        img{
+                            display: none;
+                        }
+                    }
+                }
+            }
+          
+        }
+    }
+
+    #medida{
+        width: 100%;
+        margin-bottom: 2rem;
+    
+        .session-medida{
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+    
+            h2{
+                font-size: 1.875rem;
+                text-align: center;
+                max-width: 278px;
+                margin: 0 auto;
+                
+    
+                &::before{
+                    width: 85%;
+                }
+            }
+    
+            .text-medida{
+                font-size: 1rem;
+                max-width: 278px;
+                margin: 2rem auto;
+                text-align: center;
+            }
+    
+            .text-verde{
+                font-size: 1rem;
+                text-align: center;
+                margin: 1.5rem auto 3rem auto;
+            }
+    
+            .session-accordion{
+    
+                #accordion{
+                    
+                    .card{
+                        .card-header{
+    
+                            .card-link{
+                                span{
+                                    margin: 0 1rem 0 auto;
+                                    font-size: 0.75rem;
+                                }
+                            }
+                            
+                        }
+    
+                        .card-header.active{
+    
+                            .card-link{
+                                color: $verde-alba;
+                                font-weight: bold;
+                            }
+    
+                            span{
+                                color: $amarelo-alba;
+                                font-weight: bold;
+                            }
+                        }
+    
+                        .card-body{
+                            margin: 0 auto;
+    
+                            .button-accordion{
+                                display: flex;
+                                margin-top: 1rem;
+                                margin-bottom: 1rem;
+                                justify-content: space-between;
+    
+                                .btn-accordion{
+                                    color: $verde-alba;
+                                    background-color: $amarelo-alba;
+                                    font-size: 0.875rem;
+                                    width: 179.5px;
+                                    height: 39.16px;
+                                    letter-spacing: 3px;
+                                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                                    border: none;
+                                    border-radius: 3px;
+                                    text-transform: uppercase;
+                                    font-weight: 900;
+                                }
+    
+                                .seta{
+                                    margin-left: .6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #quer-conversar{
+
+
+        .session-conversar{
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+
+            .conteudo-conversar{
+                margin: 0 auto;
+                .phone{
+                    margin-left: 0;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        .button-ligue{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            a{
+                text-decoration: none;
+
+                .btn-ligue{
+                    width: 290.06px!important;
+                }
+
+                .ligue{
+                    margin-right: 0rem;
+                    margin-left: 1rem;
+                }
+
+                .seta{
+                    margin-left: 0rem;
+                    margin-bottom: .1rem;
+                }
+            }
+        }
+
+        .button-whats{
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            
+            a{
+                text-decoration: none;
+
+                .btn-whats{
+                    width: 290.06px!important;
+                }
+
+                .whats{
+                    margin-right: 0;
+                    margin-left: 1rem;
+                }
+
+                .seta{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }
