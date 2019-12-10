@@ -79,13 +79,13 @@ $(function () {
   });
 });
 
-$(function () {
-  $('.btn-simule').click(function (e) {
-    e.preventDefault();
-    $('.circulo.active').removeClass('active').next('li').addClass('active');
-    $('.etapa.active').removeClass('active').next('div').addClass('active');
-  });
-})
+// $(function () {
+//   $('.btn-simule').click(function (e) {
+//     e.preventDefault();
+//     $('.circulo.active').removeClass('active').next('li').addClass('active');
+//     $('.etapa.active').removeClass('active').next('div').addClass('active');
+//   });
+// })
 
 $(function () {
   $('.btn-cont-lendo').click(function () {
@@ -166,10 +166,62 @@ $(function () {
   });
 });
 
-$(function () {
-  $('ul .numero, .conteudo-pratica').click(function (e) {
+$(function(){
+  var classActive = 'active';
+
+  $('.lista-veja a').first().addClass(classActive);
+  $('#conteudo-pratica .pratica').first().addClass(classActive);
+
+
+  $('.lista-veja a').click(function(e){
     e.preventDefault();
-    $('.numero.active').removeClass('active').next('li').addClass('active');
-    $('.pratica.active').removeClass('active').next('div').addClass('active');
+    var itemId = $(this).attr('href');
+
+    $('.lista-veja ul li a, #conteudo-pratica .pratica').removeClass(classActive);
+    $(this).addClass(classActive);
+    $(itemId).addClass(classActive);
+
+    if ($('#veja2').hasClass(classActive)){
+      $('.lista-veja ul li a').css('color', '#fff');
+      // $(' li').before('background-color', '#fff')
+    } else {
+      $('.lista-veja ul li a').css('color', '#00808F');
+    }
   });
 });
+
+
+$(function(){
+  var classActive = 'active';
+
+  $('#componentes .lista li').first().addClass(classActive);
+  $('.item').first().addClass(classActive);
+
+
+  $('#componentes .lista li').click(function(e){
+    e.preventDefault();
+    var itemId = $(this).attr('href');
+
+    $('#componentes ul li, .item').removeClass(classActive);
+    $(this).addClass(classActive);
+    $(itemId).addClass(classActive);
+  });
+});
+
+
+$(function(){
+  var classActive = 'active';
+
+  $('.card-header').first().addClass(classActive);
+
+  $('.card-header').click(function(e) {
+    e.preventDefault();
+
+    var itemId = $(this).hasClass(classActive);
+  
+    $('.card-header').removeClass(classActive);
+    $(this).addClass(classActive);
+    $(itemId).addClass(classActive);
+  });
+});
+
