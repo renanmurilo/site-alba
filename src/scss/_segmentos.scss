@@ -51,6 +51,11 @@
                 font-weight: bold;
                 padding:0 10px;
             }
+
+            li > a {
+                color: $verde-alba;
+                text-decoration: none;
+            }
             .comercio, .agro, .industria, .residencia {
                 width: 170px;
                 height: 48px;
