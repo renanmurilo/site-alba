@@ -912,6 +912,31 @@
     }
 }
 
+@media screen and (min-width: 1281px){
+    #conteudo-pratica #veja .image-banner{
+        background-position: 63% bottom;
+    }
+
+    #conteudo-pratica #veja1 .image-banner-1{
+        background-position: 63% bottom;
+    }
+
+    #conteudo-pratica #veja2 .image-banner-2{
+        background-position: 63% bottom;
+    }
+
+    #conteudo-pratica #veja3 .image-banner-3{
+        background-position: 63% bottom;
+    }
+
+    #conteudo-pratica .lista-veja ul{
+        max-width: 60%;
+    }
+
+    #componentes .bg-componente .bg-cinza{
+        background-position: 76% center;
+    }
+}
 
 @media screen and(max-width: 768px){
 

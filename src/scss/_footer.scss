@@ -153,6 +153,14 @@ footer{
     }
 }
 
+@media screen and (min-width: 1281px){
+    
+    footer{
+        .mask-img {
+            min-height: 646px;
+        }
+    }
+}
 
 @media screen and (max-width:768px) {
 

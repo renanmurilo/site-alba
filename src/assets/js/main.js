@@ -225,4 +225,3 @@ $(function(){
     $(itemId).addClass(classActive);
   });
 });
-
