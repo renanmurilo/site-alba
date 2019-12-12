@@ -2,24 +2,27 @@
   width: 100%;
 
   .carrousel-banner {
-    .image {
+    max-width: 100%;
+    
+    .caixa-image {
       position: relative;
-      background-image: url("../images/home/banner.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 531px;
-      margin-top: 1.3rem;
-      width: 100%;
+
+      .mobile{
+        display: none;
+      }
+      
+      img {
+          width: 100%;
+          height: 100%;
+      }
 
       .mascara {
         background-image: url("../images/home/mascara-banner.png");
         position: absolute;
         background-position: 100% center;
         top: 0;
-        left: 0;
         width: 100%;
-        min-height: 531px;
+        height: 100%;
         background-repeat: no-repeat;
       }
 
@@ -29,6 +32,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
+        top: 0px;
 
         h5 {
           color: $amarelo-alba;
@@ -92,6 +96,8 @@
 
             span {
               img {
+                height: 13px;
+                width: 13px;
                 margin-left: 0.5rem;
               }
             }
@@ -849,7 +855,13 @@
 @media screen and(min-width: 1281px) {
   #banner {
     .carrousel-banner {
-      .image {
+
+      .caixa-image{
+
+        .mascara{
+          top: 133px;
+        }
+  
         .text-banner {
           h5,
           h1,
@@ -858,6 +870,7 @@
           }
         }
       }
+      
     }
   }
   #conheca {
@@ -877,54 +890,66 @@
       padding: 0 0 !important;
     }
 
-    .image {
-      background-image: url("../images/home/banner-mob.png") !important;
-      background-repeat: no-repeat;
-      height: 430px !important;
-      width: 100%;
-      margin-top: 0 !important;
+    .carrousel-banner{
 
-      .mascara {
-        background-image: url("../images/home/mascara-mobile.png") !important;
-        min-height: 328px;
-        width: 100% !important;
+      .mobile{
+        display: block!important;
       }
 
-      .text-banner {
-        h5 {
-          margin-left: 1.25rem !important;
-          margin-top: 7.1875rem !important;
+      .desk{
+        display: none;
+      }
+
+      .caixa-image {
+        margin-top: 4rem;
+
+        img{
+          width: 100%;
+          height: 329px;
         }
-
-        h1 {
-          font-size: 30px !important;
-          margin-left: 1.25rem !important;
-          line-height: 120% !important;
-          max-width: 270px !important;
-          padding-right: 0 !important;
-          margin-top: 1.125rem !important;
+  
+        .mascara {
+          background-image: url("../images/home/mascara-mobile.png") !important;
+          min-height: 328px;
+          width: 100% !important;
         }
-
-        .text-button {
-          margin-bottom: 2rem !important;
-          margin-left: 1.25rem !important;
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-
-          p {
-            font-size: 1rem !important;
-            max-width: 280px !important;
-            margin-bottom: 1.5625rem;
+  
+        .text-banner {
+          h5 {
+            margin-left: 1.25rem !important;
+            margin-top: 2.1875rem !important;
           }
-
-          a {
-            margin-left: 0 !important;
-
-            .btn-banner {
-              width: 277.78px !important;
-              height: 44px !important;
-              justify-content: center !important;
+  
+          h1 {
+            font-size: 30px !important;
+            margin-left: 1.25rem !important;
+            line-height: 120% !important;
+            max-width: 270px !important;
+            padding-right: 0 !important;
+            margin-top: 1.125rem !important;
+          }
+  
+          .text-button {
+            margin-bottom: 2rem !important;
+            margin-left: 1.25rem !important;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+  
+            p {
+              font-size: 1rem !important;
+              max-width: 280px !important;
+              margin-bottom: 1.5625rem;
+            }
+  
+            a {
+              margin-left: 0 !important;
+  
+              .btn-banner {
+                width: 277.78px !important;
+                height: 44px !important;
+                justify-content: center !important;
+              }
             }
           }
         }
