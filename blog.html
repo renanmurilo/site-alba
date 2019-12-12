@@ -94,11 +94,18 @@
         </div>
         <div class="tip-bar">
             <div class="area-texto">
-                <p class="active"><a href="javascript:void()">TODAS</a></p>
-                <p><a href="blog-sustentabilidade.html">SUSTENTABILIDADE</a></p>
-                <p><a href="javascript:void()">CASES E INSTITUCIONAL</a></p>
-                <p><a href="javascript:void()">NOTICIAS E INFORMAÇÕES</a></p>
-                <p><a href="javascript:void()">ENERGIA SOLAR</a></p>
+                <span class="todos">TODOS <i class="fas fa-angle-down"></i></span>
+                <ul>
+                    <li class="active"><a href="javascript:void()">TODAS</a></li>
+                    <li><a href="blog-sustentabilidade.html">SUSTENTABILIDADE</a></li>
+                    <li><a href="javascript:void()">CASES E INSTITUCIONAL</a></li>
+                    <li><a href="javascript:void()">NOTICIAS E INFORMAÇÕES</a></li>
+                    <li><a href="javascript:void()">ENERGIA SOLAR</a></li>
+                </ul>
+                <form id="pesquisa">
+                    <input type="text" id="search-bar">
+                    <button type="button" class="btn-search"><i class="fas fa-search"></i></button>
+                </form>
             </div>
         </div>
     </section>
@@ -107,6 +114,8 @@
             <div class="row artigos-blog">
                 <div class="caixa-artigo">
                     <h1>A IMPORTÂNCIA DA SUSTENTABILIDADE</h1>
+                    <h1 class="mobile">A importância <br>
+                        da sustentabilidade</h1>
                     <br />
                     <p class="data-postagem">10/10/2019</p>
 
