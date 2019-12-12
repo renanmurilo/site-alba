@@ -225,3 +225,7 @@ $(function(){
     $(itemId).addClass(classActive);
   });
 });
+
+$('.todos').click(function () {
+	$('ul').toggleClass('mob');
+});

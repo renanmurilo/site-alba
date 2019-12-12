@@ -50,45 +50,72 @@
         background-color: $verde-alba;
 
         .area-texto {
-            display: flex;
-            justify-content: space-around;
             height: 70px;
             align-items: center;
 
-            p {
-                margin-top: 5px;
-                position: relative;
+            ul {
+
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+                margin: 0;
+
+                li {
+                    margin-top: 5px;
+                    position: relative;
+                }
+
+                li.active:before {
+                    content: '';
+                    position: absolute;
+                    width: 35px;
+                    height: 30px;
+                    left: -25px;
+                    background-color: $verde-alba;
+                }
+    
+                li.active:after {
+                    content: '';
+                    position: absolute;
+                    width: 35px;
+                    height: 30px;
+                    right: -25px;
+                    background-color: $verde-alba;
+                }    
+
+                li.active {
+                    border-bottom: 2px solid $amarelo-alba;
+
+                    .fas.fa-angle-down {
+                        display: none;
+                    }
+                }
+
+                li>a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    margin: 0 10px;
+                    color: $amarelo-alba;
+                    font-weight: bold;
+                }
             }
 
-            p.active:before {
-                content: '';
-                position: absolute;
-                width: 35px;
-                height: 30px;
-                left: -25px;
-                background-color: $verde-alba;
+            .todos {
+                display: none;
             }
 
-            p.active:after {
-                content: '';
-                position: absolute;
-                width: 35px;
-                height: 30px;
-                right: -25px;
-                background-color: $verde-alba;
-            }
+            #pesquisa {
+                display: none;
+             }
 
-            p>a {
-                text-decoration: none;
-                font-size: 14px;
-                margin: 0 10px;
-                color: $amarelo-alba;
-                font-weight: bold;
-            }
+             #search-bar {
+                 display: none;
+             }
 
-            p.active {
-                border-bottom: 2px solid $amarelo-alba;
-            }
+             .btn-search {
+                 display: none;
+             }
         }
     }
 }
@@ -101,6 +128,10 @@
                 .caixa-artigo {
 
                     width: 100%;
+
+                    .mobile {
+                        display: none;
+                    }
                     
                     h1 {
                         width: 100%;
@@ -152,4 +183,172 @@
         font-size: 14px;
     }
   }
+}
+
+@media only screen and (max-width: 767px) {
+
+    #banner-home-blog {
+        padding-top: 75px;
+
+        .carrossel-banner-blog {
+
+            .caixa-banners {
+                
+                .titulo-ban-blog {
+                    position: absolute;
+                    top: 15px;
+                    left: 20px;
+                    color: #FFD45E;
+                    font-size: 16px;
+                }
+
+                .titulo-grande-blog {
+                    position: absolute;
+                    top: 40px;
+                    left: 20px;
+                    font-size: 15px;
+                    color: #FFF;
+                    line-height: 15px;
+                }
+
+                .btn-leia-agora {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 20px;
+                    width: 125px;
+                    height: 35px;
+                    border: 0;
+                    border-radius: 5px;
+                    color: #00808F;
+                    background-color: #FFD45E;
+                    font-size: 14px;                 }
+            }
+        }
+
+        .tip-bar {
+
+            .area-texto {
+
+                position: relative;
+
+                    .todos {
+                        display: block;
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        color: $amarelo-alba;
+                        font-weight: bold;
+                        border-bottom: 3px solid $amarelo-alba;
+
+                        .fas.fa-angle-down {
+                            display: inline-block;
+                        }
+                    }
+
+                ul {
+                    display: none;
+                }
+                
+                ul.mob {
+                    position: absolute;
+                    left: 0;
+                    top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #fff;
+                    width: 100%;
+                    z-index: 3;
+
+                    li.active:before, li.active:after {
+                        display: none;
+                    }
+
+                    li>a {
+                        color: $verde-alba;
+                    }
+
+                    li.active {
+                        border: none;
+                    }
+                }
+
+                #pesquisa {
+                    display: block;
+                    position: absolute;
+                    top: 25px;
+                    right: -30px;
+                    width: 50%;
+                }
+
+                #search-bar {
+                    display: block !important;
+                    float: left;
+                    width: 70%;
+                    background: transparent;
+                    border: 1px solid $amarelo-alba;
+                    border-radius: 5px;
+                    text-indent: 10px;
+                }
+
+                .btn-search {
+                    display: block;
+                    background: transparent;
+                    border: none;
+                    color: $amarelo-alba;
+                    position: absolute;
+                    top: 2px;
+                    right: 60px;
+                }
+            }
+        }
+    }
+
+    #conteudo-blog {
+
+        .container {
+
+            .artigos-blog {
+
+                .caixa-artigo {
+
+                    h1 {
+                        display: none;
+                    }
+
+                    h1.mobile {
+                        display: block;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+
+                    h1:before {
+                        content: '';
+                        position: absolute;
+                        width: 215px;
+                        height: 4px;
+                        background: #FFD45E;
+                        bottom: 0;
+                    }
+
+                    .data-postagem {
+                        font-size: 12px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    .caixa-img {
+                        display: none;
+                    }
+                }
+            }
+
+            .caixa-botao {
+                margin: 25px 0;
+                text-align: center;
+            }
+        }
+    }
+
 }
