@@ -534,15 +534,24 @@
                         }
                     }
         
-                    .button-simulacao{
-                        margin-top: 2rem;
-                        .btn-simulacao{
-                            width: 330px!important;
-                            height: 47.19px!important;
-                        }
+                    .botoes{
+                        margin-bottom: 2rem;
+                        margin-top: 0;
 
-                        .seta{
-                            display: none;
+                        .button-simulacao{
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            .btn-simulacao{
+                                width: 330px!important;
+                                height: 47.19px!important;
+                            }
+    
+                            .seta{
+                                display: none;
+                            }
                         }
                     }
                 }

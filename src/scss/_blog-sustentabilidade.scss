@@ -1,617 +1,607 @@
 #banner-principal-blog {
-    .cx-banner {
-        padding: 60px 0 0;
+  .cx-banner {
+    padding: 60px 0 0;
 
-        .desktop {
-            display: block;
-            width: 100%;
-            height: 338px;
+    .desktop {
+      display: block;
+      width: 100%;
+      height: 338px;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+
+  .tip-bar {
+    background-color: $verde-alba;
+
+    .area-texto {
+      height: 70px;
+      align-items: center;
+
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        margin: 0;
+
+        li {
+          margin-top: 5px;
+          position: relative;
         }
 
-        .mobile {
+        li.active:before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 30px;
+          left: -5px;
+          background-color: $verde-alba;
+        }
+
+        li.active:after {
+          content: "";
+          position: absolute;
+          width: 35px;
+          height: 30px;
+          right: -25px;
+          background-color: $verde-alba;
+        }
+
+        li.active {
+          border-bottom: 2px solid $amarelo-alba;
+
+          .fas.fa-angle-down {
             display: none;
+          }
         }
-    }
 
-    .tip-bar {
-        background-color: $verde-alba;
-
-        .area-texto {
-            height: 70px;
-            align-items: center;
-
-            ul {
-
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                padding: 15px;
-                margin: 0;
-
-                li {
-                    margin-top: 5px;
-                    position: relative;
-                }
-
-                li.active:before {
-                    content: '';
-                    position: absolute;
-                    width: 15px;
-                    height: 30px;
-                    left: -5px;
-                    background-color: $verde-alba;
-                }
-    
-                li.active:after {
-                    content: '';
-                    position: absolute;
-                    width: 35px;
-                    height: 30px;
-                    right: -25px;
-                    background-color: $verde-alba;
-                }    
-
-                li.active {
-                    border-bottom: 2px solid $amarelo-alba;
-
-                    .fas.fa-angle-down {
-                        display: none;
-                    }
-                }
-
-                li>a {
-                    text-decoration: none;
-                    font-size: 14px;
-                    margin: 0 10px;
-                    color: $amarelo-alba;
-                    font-weight: bold;
-                }
-            }
-
-            .todos {
-                display: none;
-            }
-            
-            #pesquisa {
-                display: none;
-             }
-
-             #search-bar {
-                 display: none;
-             }
-
-             .btn-search {
-                 display: none;
-             }
+        li > a {
+          text-decoration: none;
+          font-size: 14px;
+          margin: 0 10px;
+          color: $amarelo-alba;
+          font-weight: bold;
         }
+      }
+
+      .todos {
+        display: none;
+      }
+
+      #pesquisa {
+        display: none;
+      }
+
+      #search-bar {
+        display: none;
+      }
+
+      .btn-search {
+        display: none;
+      }
     }
+  }
 }
 
 #importancia {
-    padding-top: 50px;
-    
-    .container {
-        max-width: 95%;
+  padding-top: 50px;
 
-        .titulo-blog {
-            font-size: 40px;
-            font-weight: bold;
-            color: $verde-alba;
-            position: relative;
-        }
+  .container {
+    max-width: 95%;
 
-        .titulo-blog::before {
-            content: '';
-            position: absolute;
-            width: 785px;
-            background: $amarelo-alba;
-            height: 5px;
-            bottom: -5px;
-        }
-
-        .texto-blog {
-            color: $cinza-alba;
-        }
-
-        .data-blog {
-            font-size: 22px;
-            color: $cinza-alba;
-            font-weight:300;
-        }
-
-        .nome-blog {
-            font-size: 16px;
-            color: $amarelo-alba;
-            font-weight: 600;
-        }
-
-        .caixa-tags {
-            padding: 20px;
-            height: 350px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px $cinza-alba;
-
-            #busca-tag {
-                #barra-busca {
-                    float: left;
-                    display: block;
-                    border: 2px solid $amarelo-alba;
-                    border-radius: 5px;
-                    height: 30px;
-                    width: 100%;
-                    text-indent: 10px;
-                }
-
-                .btn-busca {
-                    float: left;
-                    background: transparent;
-                    border: 0;
-                    position: absolute;
-                    right: 50px;
-                    top: 27px;
-                    color: $amarelo-alba;
-                    }
-                }
-
-                .caixa-links {
-                    margin-top: 50px;
-                    display: inline-flex;
-                    flex-wrap: wrap;
-                    align-items: baseline;
-
-                    .tag-blog {
-                        color: $verde-alba;
-                        font-size: 22px;
-                        font-weight: 300;
-                        margin: 0;
-                    }
-
-                    .s-tags>a {
-                        text-decoration: underline;
-                        color: $cinza-alba;
-                        margin: 5px 10px;
-                    }
-                }
-
-                .veja-tbm {
-                    margin-top: 40px;
-
-                    .titulo-veja {
-                        color: $verde-alba;
-                        font-weight: bold;
-                        margin: 0;
-                    }
-
-                    .link-veja>a {
-                        font-size: 12px;
-                        color: $cinza-alba;
-                        text-decoration: underline;
-                    }
-                }
-            }
-            .btn-cont-lendo {
-                height: 40px;
-                width: 262px;
-                border: 0;
-                border-radius: 5px;
-                background-color: $amarelo-alba;
-                color: $verde-alba;
-            }
-        }
-        #banner-miolo.show {
-            height: auto;
-            overflow: visible;
-            opacity: 1;
-            transition: all .5s;
-        }
-        #maneira-geral.show {
-            height: auto;
-            overflow: visible;
-            opacity: 1;
-            transition: all .5s;
-        }
-        
-        #banner-miolo {
-            position: relative;
-            height: 0;
-            overflow: hidden;
-            opacity: 0;
-            transition: all .5s;
-            margin: 30px 0;
-        
-            .desktop {
-                display: block;
-                width: 100%;
-            }
-
-            .mobile {
-                display: none;
-            }
-        
-            .bg-miolo {
-                position: absolute;
-                top: 0;
-                right: 115px;
-                width: 494px;
-                height: 520px;
-            }
-        
-            .texto-miolo {
-                position: absolute;
-                top: 60px;
-                right: 140px;
-                font-size: 40px;
-                color: #fff;
-        
-                .asp1 {
-                    color: #FFD45E;
-                    position: absolute;
-                    top: -30px;
-                    left: 0;
-                    font-size:100px;
-                }
-                
-                .asp2 {
-                    color: #FFD45E;
-                    position: absolute;
-                    bottom: -120px;
-                    right: 110px;
-                    font-size: 100px;
-                }
-            }
-        }
-        #maneira-geral {
-        
-            height: 0;
-            overflow: hidden;
-            opacity: 0;
-            transition: all .5s;
-            padding-top: 50px;
-            
-            .btn-cont-lendo {
-                height: 40px;
-                width: 262px;
-                border: 0;
-                border-radius: 5px;
-                background-color: $amarelo-alba;
-                color: $verde-alba;
-            }
-        
-            .container {
-                max-width: 90%;
-                margin: 0 auto;
-                padding: 0;
-        
-                .texto-blog {
-                    width: 100%;
-                }
-        
-                .post-relacionados {
-                    
-                    max-width: 100%;
-                    padding: 30px 0;
-                    justify-content: space-between;
-                
-                        h5 {
-                            color: $verde-alba;
-                            width: 100%;
-                            margin: 0 0 30px;
-                            font-size: 22px;
-                            font-weight: 300;
-                        }
-                
-                    .card {
-                        border-radius: 15px !important;
-                        width: 19.2475rem;
-                        position: relative;
-                        border: none;
-                        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
-                
-                        .text-card {
-                          position: absolute;
-                          font-size: 0.75rem;
-                          color: $verde-alba;
-                          top: 6px;
-                          left: 7px;
-                          max-width: 30px;
-                          text-align: center;
-                          line-height: 120%;
-                          text-transform: uppercase;
-                
-                          span {
-                            font-weight: 900;
-                          }
-                        }
-                
-                        &::before {
-                          content: "";
-                          width: 47px;
-                          height: 42px;
-                          background-color: #ffffff;
-                          position: absolute;
-                          border-top-left-radius: 15px;
-                          border-bottom-right-radius: 15px;
-                        }
-                
-                        .card-body {
-                          text-align: center;
-                          min-height: 7.265rem;
-                
-                            .card-text {
-                                font-size: 1rem;
-                                color: $cinza-alba;
-                                font-weight: 500;
-                            }
-                        }
-                    }
-        
-                    .caixa-botoes-blog {
-                        margin-top: 60px;
-                        margin-bottom: 30px;
-                        width: 100%;
-        
-                        .btn-voltar {
-                            background-color: $amarelo-alba;
-                            border: 0;
-                            border-radius: 5px;
-                            padding: 10px;
-                            height: 39px;
-                            width: 155px;
-                            margin: 0 20px 0 0;
-                            color: $verde-alba;
-                        }
-        
-                        .btn-conheca {
-                            background-color: $amarelo-alba;
-                            border: 0;
-                            border-radius: 5px;
-                            padding:10px;
-                            heigth: 39px;
-                            width: 365px;
-                            margin: 0 0 0 20px;
-                            color: $verde-alba;
-                        }
-                    }
-                }
-            }
-        }
+    .titulo-blog {
+      font-size: 40px;
+      font-weight: bold;
+      color: $verde-alba;
+      position: relative;
     }
+
+    .titulo-blog::before {
+      content: "";
+      position: absolute;
+      width: 785px;
+      background: $amarelo-alba;
+      height: 5px;
+      bottom: -5px;
+    }
+
+    .texto-blog {
+      color: $cinza-alba;
+    }
+
+    .data-blog {
+      font-size: 22px;
+      color: $cinza-alba;
+      font-weight: 300;
+    }
+
+    .nome-blog {
+      font-size: 16px;
+      color: $amarelo-alba;
+      font-weight: 600;
+    }
+
+    .caixa-tags {
+      padding: 20px;
+      height: 350px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px $cinza-alba;
+
+      #busca-tag {
+        #barra-busca {
+          float: left;
+          display: block;
+          border: 2px solid $amarelo-alba;
+          border-radius: 5px;
+          height: 30px;
+          width: 100%;
+          text-indent: 10px;
+        }
+
+        .btn-busca {
+          float: left;
+          background: transparent;
+          border: 0;
+          position: absolute;
+          right: 50px;
+          top: 27px;
+          color: $amarelo-alba;
+        }
+      }
+
+      .caixa-links {
+        margin-top: 50px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        .tag-blog {
+          color: $verde-alba;
+          font-size: 22px;
+          font-weight: 300;
+          margin: 0;
+        }
+
+        .s-tags > a {
+          text-decoration: underline;
+          color: $cinza-alba;
+          margin: 5px 10px;
+        }
+      }
+
+      .veja-tbm {
+        margin-top: 40px;
+
+        .titulo-veja {
+          color: $verde-alba;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        .link-veja > a {
+          font-size: 12px;
+          color: $cinza-alba;
+          text-decoration: underline;
+        }
+      }
+    }
+    .btn-cont-lendo {
+      height: 40px;
+      width: 262px;
+      border: 0;
+      border-radius: 5px;
+      background-color: $amarelo-alba;
+      color: $verde-alba;
+    }
+  }
+  #banner-miolo.show {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  #maneira-geral.show {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  #banner-miolo {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    margin: 30px 0;
+
+    .desktop {
+      display: block;
+      width: 100%;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .bg-miolo {
+      position: absolute;
+      top: 0;
+      right: 115px;
+      width: 494px;
+      height: 520px;
+    }
+
+    .texto-miolo {
+      position: absolute;
+      top: 60px;
+      right: 140px;
+      font-size: 40px;
+      color: #fff;
+
+      .asp1 {
+        color: #ffd45e;
+        position: absolute;
+        top: -30px;
+        left: 0;
+        font-size: 100px;
+      }
+
+      .asp2 {
+        color: #ffd45e;
+        position: absolute;
+        bottom: -120px;
+        right: 110px;
+        font-size: 100px;
+      }
+    }
+  }
+  #maneira-geral {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    padding-top: 50px;
+
+    .btn-cont-lendo {
+      height: 40px;
+      width: 262px;
+      border: 0;
+      border-radius: 5px;
+      background-color: $amarelo-alba;
+      color: $verde-alba;
+    }
+
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 0;
+
+      .texto-blog {
+        width: 100%;
+      }
+
+      .post-relacionados {
+        max-width: 100%;
+        padding: 30px 0;
+        justify-content: space-between;
+
+        h5 {
+          color: $verde-alba;
+          width: 100%;
+          margin: 0 0 30px;
+          font-size: 22px;
+          font-weight: 300;
+        }
+
+        .card {
+          border-radius: 15px !important;
+          width: 19.2475rem;
+          position: relative;
+          border: none;
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+
+          .text-card {
+            position: absolute;
+            font-size: 0.75rem;
+            color: $verde-alba;
+            top: 6px;
+            left: 7px;
+            max-width: 30px;
+            text-align: center;
+            line-height: 120%;
+            text-transform: uppercase;
+
+            span {
+              font-weight: 900;
+            }
+          }
+
+          &::before {
+            content: "";
+            width: 47px;
+            height: 42px;
+            background-color: #ffffff;
+            position: absolute;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+
+          .card-body {
+            text-align: center;
+            min-height: 7.265rem;
+
+            .card-text {
+              font-size: 1rem;
+              color: $cinza-alba;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .caixa-botoes-blog {
+          margin-top: 60px;
+          margin-bottom: 30px;
+          width: 100%;
+
+          .btn-voltar {
+            background-color: $amarelo-alba;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+            height: 39px;
+            width: 155px;
+            margin: 0 20px 0 0;
+            color: $verde-alba;
+          }
+
+          .btn-conheca {
+            background-color: $amarelo-alba;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+            heigth: 39px;
+            width: 365px;
+            margin: 0 0 0 20px;
+            color: $verde-alba;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 767px) {
+  #banner-principal-blog {
+    .cx-banner {
+      .mobile {
+        display: block;
+      }
 
-    #banner-principal-blog {
-
-        .cx-banner {
-            .mobile {
-                display: block;
-            }
-
-            .desktop {
-                display: none;
-            }
-        }
-
-        .tip-bar {
-
-            .area-texto {
-
-                position: relative;
-
-                    .todos {
-                        display: block;
-                        position: absolute;
-                        top: 20px;
-                        left: 20px;
-                        color: $amarelo-alba;
-                        font-weight: bold;
-                        font-size: 10px;
-                        border-bottom: 3px solid $amarelo-alba;
-
-                        .fas.fa-angle-down {
-                            display: inline-block;
-                        }
-                    }
-
-                ul {
-                    display: none;
-                }
-                
-                ul.mob {
-                    position: absolute;
-                    left: 0;
-                    top: 50px;
-                    display: flex;
-                    flex-direction: column;
-                    background-color: #fff;
-                    width: 100%;
-                    z-index: 3;
-
-                    li.active:before, li.active:after {
-                        display: none;
-                    }
-
-                    li>a {
-                        color: $verde-alba;
-                    }
-
-                    li.active {
-                        border: none;
-                    }
-                }
-
-                #pesquisa {
-                    display: block;
-                    position: absolute;
-                    top: 25px;
-                    right: -30px;
-                    width: 50%;
-                }
-
-                #search-bar {
-                    display: block !important;
-                    float: left;
-                    width: 70%;
-                    background: transparent;
-                    border: 1px solid $amarelo-alba;
-                    border-radius: 5px;
-                    text-indent: 10px;
-                }
-
-                .btn-search {
-                    display: block;
-                    background: transparent;
-                    border: none;
-                    color: $amarelo-alba;
-                    position: absolute;
-                    top: 2px;
-                    right: 60px;
-                }
-            }
-        }
+      .desktop {
+        display: none;
+      }
     }
 
-    #importancia {
-        padding-top: 50px;
-        
-        .container {
-    
-            h1 {
-                display: none;
-            }
+    .tip-bar {
+      .area-texto {
+        position: relative;
 
-            .mobile {
-                display: block !important;
-                font-size: 28px;
-                text-align: center;
-                font-weight: bold;
-                color: $verde-alba;
-                position: relative;
-            }
+        .todos {
+          display: block;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: $amarelo-alba;
+          font-weight: bold;
+          font-size: 10px;
+          border-bottom: 3px solid $amarelo-alba;
 
-            .mobile::before {
-                content: '';
-                position: absolute;
-                width: 200px;
-                background: $amarelo-alba;
-                height: 5px;
-                bottom: -5px;
-            }
-    
-            .texto-blog {
-                color: $cinza-alba;
-            }
-    
-            .data-blog {
-                font-size: 12px;
-            }
-    
-            .nome-blog {
-                font-size: 12px;
-            }
-    
-            .caixa-tags {
-                display: none;
-                }
-                .btn-cont-lendo {
-                    height: 40px;
-                    width: 262px;
-                    border: 0;
-                    border-radius: 5px;
-                    background-color: $amarelo-alba;
-                    color: $verde-alba;
-                }
-            }
-            #banner-miolo.show {
-                height: auto;
-                overflow: visible;
-                opacity: 1;
-                transition: all .5s;
-            }
-            #maneira-geral.show {
-                height: auto;
-                overflow: visible;
-                opacity: 1;
-                transition: all .5s;
-            }
-            
-            #banner-miolo {
-                position: relative;
-                height: 0;
-                overflow: hidden;
-                opacity: 0;
-                transition: all .5s;
-                margin: 30px 0;
-            
-                .desktop {
-                    display: none;
-                }
-
-                .mobile {
-                    display: block;
-                    width: 100%;
-                }
-            
-                .bg-miolo {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    width: 170px;
-                    height: 173px;
-                }
-            
-                .texto-miolo {
-                    position: absolute;
-                    top: 0px;
-                    right: 5px;
-                    font-size: 14px;
-                    color: #fff;
-            
-                    .asp1 {
-                        color: #FFD45E;
-                        position: absolute;
-                        top: -10px;
-                        left: 0;
-                        font-size: 40px;
-                    }
-                    
-                    .asp2 {
-                        color: #FFD45E;
-                        position: absolute;
-                        bottom: -50px;
-                        right: 35px;
-                        font-size: 40px;
-                    }
-                }
-            }
-            #maneira-geral {
-            
-                        .caixa-botoes-blog {
-                            text-align: center;
-            
-                            .btn-voltar {
-                                background-color: $amarelo-alba;
-                                border: 0;
-                                border-radius: 5px;
-                                padding: 10px;
-                                height: auto;
-                                width: 155px;
-                                margin: 10px 0;
-                                color: $verde-alba;
-                            }
-            
-                            .btn-conheca {
-                                background-color: $amarelo-alba;
-                                border: 0;
-                                border-radius: 5px;
-                                padding: 10px;
-                                heigth: auto;
-                                width: 160px;
-                                margin: 10px 0;
-                                color: $verde-alba;
-                            }
-                        }
-                    }
-                }
-            }
+          .fas.fa-angle-down {
+            display: inline-block;
+          }
         }
+
+        ul {
+          display: none;
+        }
+
+        ul.mob {
+          position: absolute;
+          left: 0;
+          top: 50px;
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+          width: 100%;
+          z-index: 3;
+
+          li.active:before,
+          li.active:after {
+            display: none;
+          }
+
+          li > a {
+            color: $verde-alba;
+          }
+
+          li.active {
+            border: none;
+          }
+        }
+
+        #pesquisa {
+          display: block;
+          position: absolute;
+          top: 25px;
+          right: -30px;
+          width: 50%;
+        }
+
+        #search-bar {
+          display: block !important;
+          float: left;
+          width: 70%;
+          background: transparent;
+          border: 1px solid $amarelo-alba;
+          border-radius: 5px;
+          text-indent: 10px;
+        }
+
+        .btn-search {
+          display: block;
+          background: transparent;
+          border: none;
+          color: $amarelo-alba;
+          position: absolute;
+          top: 2px;
+          right: 60px;
+        }
+      }
+    }
+  }
+
+  #importancia {
+    padding-top: 50px;
+
+    .container {
+      h1 {
+        display: none;
+      }
+
+      .mobile {
+        display: block !important;
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+        color: $verde-alba;
+        position: relative;
+      }
+
+      .mobile::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        background: $amarelo-alba;
+        height: 5px;
+        bottom: -5px;
+      }
+
+      .texto-blog {
+        color: $cinza-alba;
+      }
+
+      .data-blog {
+        font-size: 12px;
+      }
+
+      .nome-blog {
+        font-size: 12px;
+      }
+
+      .caixa-tags {
+        display: none;
+      }
+      .btn-cont-lendo {
+        height: 40px;
+        width: 262px;
+        border: 0;
+        border-radius: 5px;
+        background-color: $amarelo-alba;
+        color: $verde-alba;
+      }
+    }
+    #banner-miolo.show {
+      height: auto;
+      overflow: visible;
+      opacity: 1;
+      transition: all 0.5s;
+    }
+    #maneira-geral.show {
+      height: auto;
+      overflow: visible;
+      opacity: 1;
+      transition: all 0.5s;
+    }
+
+    #banner-miolo {
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s;
+      margin: 30px 0;
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+        width: 100%;
+      }
+
+      .bg-miolo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 170px;
+        height: 173px;
+      }
+
+      .texto-miolo {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        font-size: 14px;
+        color: #fff;
+
+        .asp1 {
+          color: #ffd45e;
+          position: absolute;
+          top: -10px;
+          left: 0;
+          font-size: 40px;
+        }
+
+        .asp2 {
+          color: #ffd45e;
+          position: absolute;
+          bottom: -50px;
+          right: 35px;
+          font-size: 40px;
+        }
+      }
+    }
+    #maneira-geral {
+      .caixa-botoes-blog {
+        text-align: center;
+
+        .btn-voltar {
+          background-color: $amarelo-alba;
+          border: 0;
+          border-radius: 5px;
+          padding: 10px;
+          height: auto;
+          width: 155px;
+          margin: 10px 0;
+          color: $verde-alba;
+        }
+
+        .btn-conheca {
+          background-color: $amarelo-alba;
+          border: 0;
+          border-radius: 5px;
+          padding: 10px;
+          heigth: auto;
+          width: 160px;
+          margin: 10px 0;
+          color: $verde-alba;
+        }
+      }
+    }
+  }
 }

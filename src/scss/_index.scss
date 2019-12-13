@@ -1164,18 +1164,10 @@
   }
 
   #video {
+    margin-bottom: 0!important;
     .session-video {
-      .btn-play {
-        .bg-play {
-          width: 48px;
-          height: 48px;
-
-          span {
-            left: 17px;
-            border-width: 10.465px 0 10.465px 16.66px;
-          }
-        }
-      }
+      
+      margin-top: 0!important;
     }
   }
 
@@ -1331,7 +1323,8 @@
     }
 
     .lista {
-      display: none;
+      top: 103%;
+      right: 37.5%;
     }
 
     .session-simule {

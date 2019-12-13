@@ -957,7 +957,7 @@
         }
 
         .session-especialista{
-            margin: 0 0 1rem auto;
+            margin: -2rem 0 0rem auto;
 
             .card-left, .card-right{
                 margin-left: 0!important;
@@ -1015,6 +1015,11 @@
 
                 }
             }
+        }
+
+        .button{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
 
     }
@@ -1120,6 +1125,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                background-position: 100% center;
                 margin-top: 8.1rem;
                 position: absolute;
                 left: 0;
@@ -1138,7 +1144,7 @@
                     color: #ffffff;
                     max-width: 278px;
                     display: block;
-                    margin-top: -2rem;
+                    margin-top: 0rem;
 
                     span{
                         color: $amarelo-alba;
@@ -1149,8 +1155,8 @@
                 .text{
                     font-size: 1rem;
                     color: #ffffff;
-                    line-height: 140%;
-                    margin-top: .5rem;
+                    line-height: 150%;
+                    margin-top: 2rem;
                     max-width: 278px;
                 }
             }
@@ -1161,7 +1167,7 @@
         width: 100%;
 
         h4{
-            margin-top: 4rem;
+            margin-top: 14rem;
         }
     
         .text-h2{
@@ -1228,7 +1234,7 @@
     }
 
     #simule-verde {
-        margin-bottom: -2.5rem;
+        margin-bottom: 0rem;
         h2 {
           font-size: 1.875rem;
           margin: 1.5rem auto;

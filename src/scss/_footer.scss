@@ -123,6 +123,12 @@ footer{
             }
         }
 
+        .contato{
+            .mobile{
+                display: none;
+            }
+        }
+
         .contato, .orcamento, .faq{
             
             h2{
@@ -167,19 +173,24 @@ footer{
     footer{
         width: 100%;
         height: 100%;
+
     
         .mask-img {
-            height: 811px;
+            height: 707px;
+            background-color: #fff!important;
         }
           
         .object-mask {
-            mask-image: url(../images/footer/mask-footer-mobile.svg)!important;
+            mask-image: none!important;
+            background-image: url('../images/footer/banner-footer.png');
+            background-position: 100%;
+            background-repeat: no-repeat;
         }
     
         .session-footer{
             margin-top: 3.3125rem;
             margin-bottom: 2.5125rem;
-            margin-left: 2.375rem;
+            margin-left: 0rem;
     
             .logo-footer{
                 margin-top: 1.375rem;
@@ -191,41 +202,38 @@ footer{
                display: none;
             }
 
-            .unidades{
-                display: none;
-            }
-    
-            .unidades-mobile{
-                display: block;
-                line-height: 150%;
+            .unidade-mobile{
+                display: flex;
+                margin: 0 auto;
+                align-items: center;
 
-                h2{
-                    font-size: 0.875rem;
-                    color: $amarelo-alba;
-                    text-transform: uppercase;
-                    letter-spacing: 3px;
-                    font-weight: 900;
+                .uni-2{
+                    padding-top: .9rem;
+                    margin-left: .3rem;
                 }
-
-                p{
-                    font-size: 1rem;
-                    color: #ffffff;
-                    margin: 1rem 0;                    
-                }
-               
             }
     
             .nossas-redes{
                 position: absolute;
-                top: 32rem;
+                top: 16rem;
+                z-index: 1;
             }
 
+        
             .contato{
-                margin-top: 2rem;
+                .desk{
+                    display: none;
+                }
+                margin-top: 1rem;
+
+                .mobile{
+                    display: block!important;
+                    margin-top: 1rem;
+                }
             }
 
             .faq{
-                margin-top: 2.5rem;
+               display: none;
             }
 
             .orcamento{
@@ -233,7 +241,7 @@ footer{
             }
 
             .logo-weg{
-                display: none;
+                margin-top: 8rem;
             }
         }
     }    
