@@ -103,7 +103,8 @@
     </section>
 
     <section id="especialista">
-        <div class="container">
+        <!-- Itens no desktop -->
+        <div class="container desktop">
             <div class="row setor comercio active">
                 <div class="col-md-4">
                     <div class="caixa-pq">
@@ -221,6 +222,46 @@
                 <div class="col-md-8">
                     <div class="caixa-imagem">
                         <img src="/src/assets/images/segmentos/Residencia.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Itens no mobile -->
+        <div class="container mobile">
+            <form>
+                <label for="setores">Setor:</label>
+                <select id="setores">
+                    <option value="1">Comércio</option>
+                    <option value="2">Agropecuário</option>
+                    <option value="3">Industria</option>
+                    <option value="4">Residência</option>
+                </select>
+            </form>
+            <div class="row comercio">
+                <h2>Por que a Alba Energia <br>
+                    é experiente <br>
+                    nesse segmento?</h2>
+                <div class="cx-img">
+                    <img src="/src/assets/images/segmentos/setor-mobile.jpg" alt="">
+                </div>
+                <div class="cx-txt">
+                    <p>
+                        Os painéis captam a energia do sol e <br>
+                        transformam em energia elétrica <br><br>
+
+                        O inversor converte a energia elétrica dos <br>
+                        painéis para o mesmo formato utilizado no <br>
+                        seu imóvel. <br><br>
+                    </p>
+                    <span class="vantagens">Vantagens:</span>
+                    <div class="img-btm">
+                        <span class="especialidade">
+                            <img src="/src/assets/images/segmentos/especialidade.png" alt="">
+                            Especialidade
+                        </span>
+                        <span class="tomada">
+                            <img src="/src/assets/images/segmentos/tomada.png" alt=""> Tomada
+                        </span>
                     </div>
                 </div>
             </div>
@@ -408,9 +449,8 @@
     <section id="conversar">
         <div class="container">
             <div class="row">
-
-                <div class="col-md-6">
-                    <h2>Quer conversar?</h2>
+                <h2>Quer conversar?</h2>
+                <div class="col-md-6 email-tel">
                     <div class="col-sm-6 caixa-email-tel">
                         <div class="caixa-email">
                             <i class="far fa-envelope"></i>
