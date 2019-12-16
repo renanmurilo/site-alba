@@ -230,3 +230,31 @@ $(function(){
 $('.todos').click(function () {
 	$('ul').toggleClass('mob');
 });
+
+$(document).ready(function () {        
+  getUrlVars()
+});
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+
+    if(vars.narrat == 'industria') {
+        $('.row.setor.comercio').removeClass('active');
+        $('.row.setor.industria').addClass('active');
+    }
+    if(vars.narrat == 'comercio') {
+        $('.row.setor.comercio').removeClass('active');
+        $('.row.setor.comercio').addClass('active');
+    }
+    if(vars.narrat == 'agro') {
+        $('.row.setor.comercio').removeClass('active');
+        $('.row.setor.agro').addClass('active');
+    }
+    if(vars.narrat == 'residencia') {
+        $('.row.setor.comercio').removeClass('active');
+        $('.row.setor.residencia').addClass('active');
+    }
+
+}
