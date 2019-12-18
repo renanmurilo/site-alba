@@ -97,7 +97,7 @@
             }
     
             .text-veja{
-                margin-top: 3.4rem;
+                margin-top: 2.4rem;
                 .text{
                    font-size: 1rem;
                    color: $cinza-alba; 
@@ -108,7 +108,7 @@
     
             .bg-branco{
                 position: absolute;
-                top: 22.3rem;
+                top: 21.3rem;
                 box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
                 border-radius: 8px;
                 padding: 2rem;
@@ -166,7 +166,7 @@
                 font-size: 3rem;
                 color: $verde-alba;
                 line-height: 100%;
-                margin-top: 9rem;
+                margin-top: 8rem;
     
                 span{
                     color: $amarelo-alba;
@@ -184,7 +184,7 @@
     
             .bg-branco{
                 position: absolute;
-                top: 22.1rem;
+                top: 21.3rem;
                 box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
                 border-radius: 8px;
                 padding: 2rem;
@@ -238,7 +238,7 @@
                 font-size: 3rem;
                 color: $amarelo-alba;
                 line-height: 100%;
-                margin-top: 9rem;
+                margin-top: 8rem;
             }
     
             .text-veja{
@@ -250,62 +250,9 @@
                 }
             }
     
-            .lista-veja{
-                margin-top: 11.8rem;
-                margin-left: .5rem;
-    
-                ul{
-                    display: flex;
-                    list-style-type: none;
-                    padding: 0;
-                    justify-content: space-between;
-                    max-width: 95%;
-                    
-                    li{
-                        line-height: 120%;
-                        position: relative;
-                    }
-    
-                    li:nth-child(1), li:nth-child(2), li:nth-child(3){
-                       
-                        &::before{
-                            content: '';
-                            width: 41px;
-                            height: 1px;
-                            position: absolute;
-                            background-color: #fff;
-                            right: -5rem;
-                            top: 1.7rem;
-                            opacity: .5;
-                        }
-                    }
-    
-                    .numero{
-                        font-size: 0.625rem;
-                        color: #ffffff;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        letter-spacing: 1px;
-                        max-width: 100px;
-                        opacity: .5;
-    
-                        a{
-                            text-decoration: none;
-                            color: #ffffff;
-                        }
-                    }
-    
-                    .numero.active{
-                        opacity: 1;
-                    }
-    
-                }
-    
-            }
-    
             .bg-branco{
                 position: absolute;
-                top: 22.1rem;
+                top: 21.3rem;
                 box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
                 border-radius: 8px;
                 padding: 2rem;
@@ -365,7 +312,7 @@
             font-size: 3rem;
             color: $amarelo-alba;
             line-height: 100%;
-            margin-top: 7.5rem;
+            margin-top: 8rem;
             display: block;
             opacity: 1;
             overflow: visible;
@@ -375,7 +322,7 @@
             display: block;
             opacity: 1;
             overflow: visible;
-            margin-top: 1.4rem;
+            margin-top: 2.4rem;
             .text{
                 font-size: 1rem;
                 color: $verde-alba; 
@@ -388,7 +335,7 @@
             opacity: 1;
             overflow: visible;
             position: absolute;
-            top: 19.6rem;
+            top: 21.3rem;
             box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
             border-radius: 8px;
             padding: 2rem;
@@ -911,6 +858,235 @@
         }
     }
 }
+
+#simule-pratica {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+
+  h2 {
+    color: $verde-alba;
+    text-align: center;
+    font-size: 2.5rem;
+    position: relative;
+    margin-top: 4.8125rem;
+
+    &::before {
+      content: "";
+      width: 34%;
+      height: 5px;
+      background-color: $amarelo-alba;
+      bottom: -12px;
+      position: absolute;
+    }
+  }
+
+  .lista {
+    position: absolute;
+    top: 27%;
+    right: 45.5%;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+
+      li {
+        margin: 0 0.5rem;
+      }
+
+      .circulo {
+        border-radius: 100%;
+        border: 1px solid $verde-alba;
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        font-size: 1.375rem;
+        color: $verde-alba;
+        font-weight: 700;
+      }
+
+      .active {
+        background-color: $verde-alba;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .session-simule {
+    position: relative;
+   
+    .text-simule {
+      display: flex;
+      justify-content: center;
+      margin-top: 2.875rem;
+      margin-bottom: 1rem;
+
+      .text {
+        font-size: 1.125rem;
+        font-weight: 300;
+        color: $cinza-alba;
+        max-width: 350px;
+        text-align: center;
+        margin-top: 2.59375rem;
+      }
+    }
+
+    .formulario {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+
+      .etapa {
+        opacity: 0;
+        overflow: hidden;
+        height: 0;
+        -webkit-transition: all .9s;
+        transition: all .9s;
+      }
+
+      .etapa.active {
+        display: block;
+        opacity: 1;
+        overflow: visible;
+        height: auto;
+      }
+
+      .form-simule-left {
+        margin-left: 3rem;
+      }
+
+      .form-simule,
+      .form-simule-left {
+        width: 406.69px;
+        margin-bottom: 2.3125rem;
+        background-color: #00808f;
+        border-radius: 6px;
+        
+
+        input {
+          border: none;
+        }
+
+        .form-control {
+          opacity: 0.9;
+        }
+
+        .form-control-file {
+          display: flex;
+          background: url("../images/home/clip.png") no-repeat #ffffff;
+        }
+
+        #custom-select {
+          -webkit-appearance: none; /* Remove estilo padrão do Chrome */
+          -moz-appearance: none; /* Remove estilo padrão do FireFox */
+          appearance: none; /* Remove estilo padrão do FireFox*/
+          background: url(../images/home/seta-select.png) no-repeat #ffffff; /* Imagem de fundo (Seta) */
+          background-position: 95% center; /*Posição da imagem do background*/
+          width: 100%; /* Tamanho do select, maior que o tamanho da div "div-select" */
+          height: 100%; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+          border: none;
+
+          option {
+            background-color: $verde-alba;
+            color: #ffffff;
+          }
+        }
+      }
+
+      select,
+      input::placeholder {
+        color: $verde-alba;
+        text-transform: uppercase;
+        font-size: 0.625rem;
+        height: 100%;
+      }
+
+      // input[type="file"] {
+      //   opacity: 0 !important;
+      // }
+
+      .input-file {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        
+        z-index: -1;
+        + .js-labelFile {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 47.2%;
+          margin-left: 3rem;
+          background: #E5F2F4;
+          border-radius: 6px;
+          height: 38px;
+          cursor: pointer;
+          color: $verde-alba;
+          font-size: 0.625rem;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          padding-left: .9rem;
+
+          span{
+            margin-left: .5rem;
+          }
+        }
+      }
+
+      .button-form {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+        margin-bottom: 5.9375rem;
+
+        a {
+          text-decoration: none;
+
+          .btn-proximo {
+            background-color: $amarelo-alba;
+            color: $verde-alba;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            border: none;
+            letter-spacing: 3px;
+            border-radius: 3px;
+            font-weight: 700;
+            width: 145.17px;
+            height: 39.16px;
+            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+          }
+
+          .btn-simule {
+            background-color: $amarelo-alba;
+            color: $verde-alba;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            border: none;
+            letter-spacing: 3px;
+            border-radius: 3px;
+            font-weight: 700;
+            width: 170.97px;
+            height: 39.16px;
+            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+          }
+
+          .seta {
+            margin-left: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (min-width: 1281px){
     #conteudo-pratica #veja .image-banner{
@@ -1738,4 +1914,74 @@
             }
         }
     }
+
+     #simule-pratica {
+    margin-bottom: 4rem;
+    h2 {
+      font-size: 1.875rem;
+      margin-top: 3rem;
+      text-align: center;
+
+      &::before {
+        width: 290px;
+      }
+    }
+
+    .lista {
+      top: 103%;
+      right: 37.5%;
+    }
+
+    .session-simule {
+      .text-simule {
+        margin-top: 1.25rem;
+        margin-bottom: 0.5rem;
+
+        .text {
+          font-size: 1rem;
+          max-width: 270px;
+        }
+      }
+
+      .formulario {
+        margin: 0 auto;
+        .form-simule-left {
+          margin-left: 0;
+        }
+
+        .form-simule,
+        .form-simule-left {
+          width: 278px !important;
+          margin-bottom: 2.3125rem;
+          border-radius: 6px;
+          margin-left: auto;
+          margin-right: auto;
+
+          #custom-select {
+            height: 43px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+          }
+        }
+
+        .js-labelFile{
+          width: 78.2%!important;
+          margin-left: auto!important;
+          margin-right: auto!important;
+        }
+
+        .button-form {
+          display: flex;
+          justify-content: center;
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+
+          a {
+            .btn-proximo {
+              width: 180px;
+              height: 44px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
