@@ -522,13 +522,14 @@
     #especialista {
         background-color: #F6F7F8;
         padding-bottom: 40px;
-        height: 100%;
+        height: auto !important;
     
         .container.desktop {
             display: none;
             }
 
         .container.mobile {
+            display: block;
             text-align: center;
 
             form {
@@ -556,9 +557,16 @@
                 }                
             }
 
+            .row.active {
+                display: block;
+            }
+
             .row {
 
                 padding-top: 30px;
+                width: 100%;
+                margin: 0;
+                display: none;
 
                 h2 {
                     font-size: 20px;

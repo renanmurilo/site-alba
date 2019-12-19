@@ -230,3 +230,25 @@ $(function(){
 $('.todos').click(function () {
 	$('ul').toggleClass('mob');
 });
+
+if($('#setores option:selected').val() == 1) {
+  $('.row.comercio').addClass('active');
+  $('.row.agro').removeClass('active');
+  $('.row.industria').removeClass('active');
+  $('.row.residencia').removeClass('active');
+} else if($('#setores option:selected').val() == 2) {
+  $('.row.comercio').removeClass('active');
+  $('.row.agro').addClass('active');
+  $('.row.industria').removeClass('active');
+  $('.row.residencia').removeClass('active');
+} else if($('#setores option:selected').val() == 3) {
+  $('.row.comercio').removeClass('active');
+  $('.row.agro').removeClass('active');
+  $('.row.industria').addClass('active');
+  $('.row.residencia').removeClass('active');
+} else if($('#setores option:selected').val() == 4) {
+  $('.row.comercio').removeClass('active');
+  $('.row.agro').removeClass('active');
+  $('.row.industria').removeClass('active');
+  $('.row.residencia').addClass('active');
+}
