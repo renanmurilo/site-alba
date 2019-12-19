@@ -60,6 +60,20 @@ $(function () {
           slidesToShow: 1,
           arrows: false
         }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          arrows: true
+        }
       }
     ]
   });

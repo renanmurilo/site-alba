@@ -92,6 +92,10 @@
   .container {
     max-width: 95%;
 
+    .mobile {
+      display: none;
+    }
+
     .titulo-blog {
       font-size: 40px;
       font-weight: bold;
