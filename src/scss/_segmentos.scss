@@ -219,6 +219,19 @@
     .container {
       max-width: 100%;
       padding-bottom: 30px;
+
+      .mais-cont.active {
+        height: 100%;
+        overflow: visible;
+        opacity: 1;
+      }
+
+      .mais-cont {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: .2s;
+      }
   
       .row {
           margin-top: 30px;
@@ -597,11 +610,18 @@
 
         .row.setor-mob.active {
           display: block;
+          height: 100%;
+          overflow: visible;
+          opacity: 1;
+
         }
         
         .row.setor-mob {
-
-          display: none;
+          display: block;
+          height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: all .2s;
 
           h2 {
             font-size: 22px;

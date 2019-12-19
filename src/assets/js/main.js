@@ -144,14 +144,14 @@ $(function () {
   });
 });
 
-$(function(){
+$(function () {
   var classActive = 'active';
 
   $('.lista-veja a').first().addClass(classActive);
   $('#conteudo-pratica .pratica').first().addClass(classActive);
 
 
-  $('.lista-veja a').click(function(e){
+  $('.lista-veja a').click(function (e) {
     e.preventDefault();
     var itemId = $(this).attr('href');
 
@@ -159,7 +159,7 @@ $(function(){
     $(this).addClass(classActive);
     $(itemId).addClass(classActive);
 
-    if ($('#veja2').hasClass(classActive)){
+    if ($('#veja2').hasClass(classActive)) {
       $('.lista-veja ul li a').css('color', '#fff');
       $('.lista-veja ul li span').css('background-color', '#fff');
     } else {
@@ -170,14 +170,14 @@ $(function(){
 });
 
 
-$(function(){
+$(function () {
   var classActive = 'active';
 
   $('#qual-setor li a').first().addClass(classActive);
   $('#segmentos-especialista .setor').first().addClass(classActive);
 
 
-  $('#qual-setor li a').click(function(e){
+  $('#qual-setor li a').click(function (e) {
     e.preventDefault();
     var itemId = $(this).attr('href');
 
@@ -189,14 +189,14 @@ $(function(){
 
 
 
-$(function(){
+$(function () {
   var classActive = 'active';
 
   $('#componentes .lista li a').first().addClass(classActive);
   $('.item').first().addClass(classActive);
 
 
-  $('#componentes .lista li a').click(function(e){
+  $('#componentes .lista li a').click(function (e) {
     e.preventDefault();
     var itemId = $(this).attr('href');
 
@@ -207,16 +207,16 @@ $(function(){
 });
 
 
-$(function(){
+$(function () {
   var classActive = 'active';
 
   $('.card-header').first().addClass(classActive);
 
-  $('.card-header').click(function(e) {
+  $('.card-header').click(function (e) {
     e.preventDefault();
 
     var itemId = $(this).hasClass(classActive);
-  
+
     $('.card-header').removeClass(classActive);
     $(this).addClass(classActive);
     $(itemId).addClass(classActive);
@@ -224,27 +224,40 @@ $(function(){
 });
 
 $('.todos').click(function () {
-	$('ul').toggleClass('mob');
+  $('ul').toggleClass('mob');
 });
 
-if($('#setores option:selected').val() == 1) {
-  $('.row.comercio').addClass('active');
-  $('.row.agro').removeClass('active');
-  $('.row.industria').removeClass('active');
-  $('.row.residencia').removeClass('active');
-} else if($('#setores option:selected').val() == 2) {
-  $('.row.comercio').removeClass('active');
-  $('.row.agro').addClass('active');
-  $('.row.industria').removeClass('active');
-  $('.row.residencia').removeClass('active');
-} else if($('#setores option:selected').val() == 3) {
-  $('.row.comercio').removeClass('active');
-  $('.row.agro').removeClass('active');
-  $('.row.industria').addClass('active');
-  $('.row.residencia').removeClass('active');
-} else if($('#setores option:selected').val() == 4) {
-  $('.row.comercio').removeClass('active');
-  $('.row.agro').removeClass('active');
-  $('.row.industria').removeClass('active');
-  $('.row.residencia').addClass('active');
-}
+//Capturando e alterando setores no mobile;
+
+$('#setores').change(function () {
+  var selecionado = ($(this).val());
+
+  if (selecionado == 1) {
+    $('.row.setor-mob.comercio').addClass('active');
+    $('.row.setor-mob.agro').removeClass('active');
+    $('.row.setor-mob.industria').removeClass('active');
+    $('.row.setor-mob.residencia').removeClass('active');
+  } else if (selecionado == 2) {
+    $('.row.setor-mob.comercio').removeClass('active');
+    $('.row.setor-mob.agro').addClass('active');
+    $('.row.setor-mob.industria').removeClass('active');
+    $('.row.setor-mob.residencia').removeClass('active');
+  } else if (selecionado == 3) {
+    $('.row.setor-mob.comercio').removeClass('active');
+    $('.row.setor-mob.agro').removeClass('active');
+    $('.row.setor-mob.industria').addClass('active');
+    $('.row.setor-mob.residencia').removeClass('active');
+  } else if (selecionado == 4) {
+    $('.row.setor-mob.comercio').removeClass('active');
+    $('.row.setor-mob.agro').removeClass('active');
+    $('.row.setor-mob.industria').removeClass('active');
+    $('.row.setor-mob.residencia').addClass('active');
+  }
+});
+
+//Evento no botão ver mais
+
+$('.btn-vermais').click(function () {
+  $(this).hide();
+  $('.mais-cont').addClass('active');
+});
