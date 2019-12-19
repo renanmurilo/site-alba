@@ -492,476 +492,220 @@
     }
 }
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px ) {
   #banner-segmentos {
-    background-color: #f6f7f8;
     .caixa-banner {
       margin-top: 70px;
       position: relative;
-
+  
       img {
         width: 100%;
-        min-height: 200px;
+        height: 200px;
       }
-
+  
       .titulo-ban-segmentos {
         position: absolute;
-        width: 100%;
-        text-align: center;
-        top: 40px;
-        left: 0;
-        font-size: 22px;
+        top: 15px;
+        left: 10px;
+        font-size: 30px;
         color: $amarelo-alba;
-        font-weight: bold;
       }
-
+  
       .subtitulo-ban-segmentos {
         position: absolute;
-        top: 80px;
-        left: 0;
-        font-size: 14px;
-        font-weight: 300;
-        color: #fff;
         width: 100%;
+        top: 105px;
+        left: 0;
+        font-size: 13px;
+        font-weight: bold;
         text-align: center;
+        color: #fff;
       }
     }
   }
 
   #titulo-mais {
-    margin: 0 !important;
-    padding-top: 30px;
-    background-color: #f6f7f8;
-
+    margin-top: 0;
+    background-color: #F6F7F8;
+  
     .container {
       .titulo-especialista {
-        color: #00808f;
+        color: $verde-alba;
         font-size: 30px;
         font-weight: bold;
-        padding: 0px 0 5px;
-        margin: 0 !important;
-        text-align: center;
+        padding: 40px 0 5px;
+        margin: 0;
         position: relative;
+        text-align: center;
+  
+        &::before {
+          content: "";
+          position: absolute;
+          width: 90%;
+          left: 10px;
+          background-color: $amarelo-alba;
+          height: 6px;
+          bottom: -8px;
+        }
       }
-
-      .titulo-especialista::before {
-        content: "";
-        position: absolute;
-        width: 270px;
-        height: 3px;
-        background-color: #ffd45e;
-        bottom: 0;
-        left: 10px;
+  
+      .sub-title {
+        display: none;
       }
-
+  
       #qual-setor {
         display: none;
-
-        .setor {
-          color: $verde-alba;
-          font-weight: bold;
-          padding: 0 10px;
-        }
-
-        li > a {
-          color: $verde-alba;
-          text-decoration: none;
-        }
-        .comercio,
-        .agro,
-        .industria,
-        .residencia {
-          width: 170px;
-          height: 48px;
-          border: 1px solid $verde-alba;
-          border-radius: 5px;
-          padding: 10px;
-          text-align: center;
-          margin: 0 10px;
-          color: $verde-alba;
-          font-size: 14px;
-          font-weight: 500;
-
-          .i-left {
-            float: left;
-          }
-        }
+  
       }
     }
   }
 
-  #especialista {
+  #segmentos-especialista {
     background-color: #f6f7f8;
-    padding-bottom: 40px;
-    height: 100%;
-
+    
     .container.desktop {
       display: none;
     }
-
+  
     .container.mobile {
+      display: block;
+      padding-top: 40px;
       text-align: center;
 
-      form {
-        padding-top: 40px;
+        form {
 
-        label {
-          color: $verde-alba !important;
-          font-weight: bold;
-        }
-
-        #setores {
-          -webkit-appearance: none;
-          height: 48px;
-          width: 177px;
-          background-color: #f6f7f8;
-          border-color: $verde-alba;
-          border-radius: 5px;
-          color: $verde-alba;
-          font-weight: bold;
-          background-image: url(/src/assets/images/segmentos/arrow-down.png);
-          background-repeat: no-repeat;
-          background-size: auto;
-          background-position: 150px;
-          text-indent: 10px;
-        }
-      }
-
-      .row {
-        padding-top: 30px;
-
-        h2 {
-          font-size: 20px;
-          font-weight: 400;
-        }
-        h2:before {
-          display: none;
-        }
-
-        .cx-img {
-          width: 100%;
-
-          img {
-            max-width: 100%;
-            height: auto;
-          }
-        }
-
-        .cx-txt {
-          width: 100%;
-
-          p {
-            font-size: 14px;
-            color: #7a8b99;
-            margin: 0;
-          }
-
-          .vantagens {
-            display: block;
-            width: 100%;
-            padding-bottom: 20px;
-            color: $amarelo-alba;
-            letter-spacing: 5px;
-          }
-
-          .img-btm {
-            width: 80%;
-            clear: both;
-            margin: 0 auto;
+          label {
+            font-weight: bold;
             color: $verde-alba;
+          }
 
-            .especialidade {
-              float: left;
-            }
-
-            .tomada {
-              float: right;
-            }
+          #setores {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url(/src/assets/images/segmentos/arrow-down.png);
+            background-repeat: no-repeat;
+            background-position: 125px;
+            width: 150px;
+            text-indent: 15px;
+            height: 40px;
+            border-radius: 5px;
+            border-color: $verde-alba;
+            background-color: transparent;
+            color: $verde-alba;
           }
         }
-      }
-    }
-  }
 
-  #projetos {
-    background-color: #f6f7f8;
+        .row.setor-mob.active {
+          display: block;
+        }
+        
+        .row.setor-mob {
 
-    .container {
-      max-width: 95%;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      text-align: center;
+          display: none;
 
-      .titulo-projetos {
-        color: $verde-alba;
-        font-size: 22px !important;
-        width: 100% !important;
-        border: none !important;
-        position: relative;
-        text-align: center;
-        margin-bottom: 40px !important;
-      }
+          h2 {
+            font-size: 22px;
+            width: 100%;
+            padding-top: 20px;
+            color: $verde-alba;
+          }
+          .cx-img {
 
-      .titulo-projetos:before {
-        content: "";
-        position: absolute;
-        width: 200px;
-        left: 40px;
-        bottom: -5px;
-        height: 3px;
-        background-color: $amarelo-alba;
-      }
-
-      .row {
-        padding: 0 !important;
-        margin-right: 0;
-        margin-left: 0;
-        justify-content: space-between;
-
-        .caixa-projeto {
-          width: 100%;
-          min-height: 400px !important;
-          background-color: #fff;
-          border-radius: 20px;
-          box-shadow: 0px 0px 10px $cinza-alba;
-          margin-bottom: 20px;
-
-          .area-img {
             img {
-              width: 100%;
+              max-width: 100% !important;
               height: auto;
             }
           }
-        }
-      }
-      .btn-vermais {
-        width: 170px;
-        height: 47px;
-        font-size: 14px;
-        color: $verde-alba;
-        border: 0;
-        border-radius: 5px;
-        background-color: $amarelo-alba;
-      }
-    }
-  }
 
-  #mais-sobre {
-    background-color: #fff;
-    width: 100%;
-    max-width: 100%;
-    padding-bottom: 5rem !important;
+          .cx-txt {
 
-    h2 {
-      color: $verde-alba;
-      text-align: center;
-      font-size: 25px !important;
-      position: relative;
-      margin-top: 20px !important;
-
-      &::before {
-        content: "";
-        width: 100% !important;
-        left: 0;
-        height: 5px;
-        background-color: #ffd45e;
-        bottom: -12px;
-        position: absolute;
-      }
-    }
-
-    .session-sobre {
-      .carroussel-sobre {
-        margin-top: 3.4375rem;
-        .slick-initialized,
-        .slick-slide {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-        }
-
-        .card {
-          border-radius: 15px !important;
-          width: 19.2475rem;
-          position: relative;
-          border: none;
-          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
-
-          .text-card {
-            position: absolute;
-            font-size: 0.75rem;
-            color: $verde-alba;
-            top: 6px;
-            left: 7px;
-            max-width: 30px;
-            text-align: center;
-            line-height: 120%;
-            text-transform: uppercase;
-
-            span {
-              font-weight: 900;
+            p {
+              color: #7A8B99;
             }
-          }
 
-          &::before {
-            content: "";
-            width: 47px;
-            height: 42px;
-            background-color: #ffffff;
-            position: absolute;
-            border-top-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-          }
+            .vantagens {
+              display: block;
+              color: $amarelo-alba;
+              letter-spacing: 5px;
+              padding-bottom: 20px;
+            }
 
-          .card-body {
-            text-align: center;
-            min-height: 7.265rem;
+            .img-btm {
+              width: 85%;
+              margin: 0 auto;
+              color: $verde-alba;
 
-            .card-text {
-              font-size: 1rem;
-              color: $cinza-alba;
-              font-weight: 500;
+              .especialidade {
+                float: left;
+              }
+              .tomada {
+                float: right;
+              }
             }
           }
         }
-      }
     }
-  }
-
-  #quer-conversar{
-
-
-    .session-conversar{
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-
-        .conteudo-conversar{
-            margin: 0 auto;
-            .phone{
-                margin-left: 0;
-                margin-bottom: 3rem;
-            }
-        }
-    }
-
-    .button-ligue{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2rem;
-
-        a{
-            text-decoration: none;
-
-            .btn-ligue{
-                width: 290.06px!important;
-            }
-
-            .ligue{
-                margin-right: 0rem;
-                margin-left: 1rem;
-            }
-
-            .seta{
-                margin-left: 0rem;
-                margin-bottom: .1rem;
-            }
-        }
-    }
+  
+  
+    #projetos {
+      padding-bottom: 5rem;
+      .container {
+        max-width: 100%;
+        padding-bottom: 30px;
     
-    #especialista {
-        background-color: #F6F7F8;
-        padding-bottom: 40px;
-        height: auto !important;
+        .row {
+            margin-top: 30px;
+          padding-bottom: 30px;
     
-        .container.desktop {
-            display: none;
+          .caixa-projeto {
+            margin: 1.5625rem 3.1rem 1.5625rem 2.8rem;
+            height: 355px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px $cinza-alba;
+    
+            .area-img {
+              min-height: 248.3px;
             }
-
-        .container.mobile {
-            display: block;
-            text-align: center;
-
-    .button-whats{
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        
-        a{
-            text-decoration: none;
-
-            .btn-whats{
-                width: 290.06px!important;
-            }
-
-            .row.active {
-                display: block;
-            }
-
-            .row {
-
-                padding-top: 30px;
-                width: 100%;
+    
+            .area-texto {
+              background-color: #fff;
+              padding: 10px 30px;
+    
+              .city-project {
                 margin: 0;
-                display: none;
-
-                h2 {
-                    font-size: 20px;
-                    font-weight: 400;
-
-                }
-                h2:before {
-                    display: none;
-                }
-
-                .cx-img {
-
-                    width: 100%;
-
-                    img {
-                        max-width: 100%;
-                        height: auto;
-                    }
-                }
-
-                .cx-txt {
-                    width: 100%;
-
-                    p {
-                        font-size: 14px;
-                        color: #7A8B99;
-                        margin: 0;
-                    }
-
-                    .vantagens {
-                        display: block;
-                        width: 100%;
-                        padding-bottom: 20px;
-                        color: $amarelo-alba;
-                        letter-spacing: 5px;
-                    }
-
-                    .img-btm {
-                        width: 80%;
-                        clear: both;
-                        margin: 0 auto;
-                        color: $verde-alba;
-
-                        .especialidade {
-                            float: left;
-                        }
+                font-size: 14px;
+                color: $cinza-alba;
+              }
     
-                        .tomada {
-                            float:right
-                        }
-                    }
-                }
+              .setor-projeto {
+                margin: 0;
+                font-size: 18px;
+                font-weight: bold;
+                color: $verde-alba;
+              }
             }
-
-            .seta{
-                margin-left: 0;
+            .energia-paineis {
+              background-color: #fff;
+              padding: 0 20px;
+              display: flex;
+              justify-content: space-between;
             }
+          }
         }
+        .btn-vermais {
+          width: 170px;
+          height: 47px;
+          font-size: 14px;
+          color: $verde-alba;
+          border: 0;
+          border-radius: 5px;
+          background-color: $amarelo-alba;
+          font-weight: 900;
+          letter-spacing: 3px;
+          margin-left: 1.7rem;
+        }
+      }
     }
-}
+  }  
 }
