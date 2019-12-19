@@ -33,7 +33,7 @@
                 line-height: 60px;
             }
 
-            .btn-leia-agora {
+            a.btn-leia-agora {
                 position: absolute;
                 bottom: 85px;
                 left: 90px;
@@ -43,6 +43,14 @@
                 border-radius: 5px;
                 color: $verde-alba;
                 background-color: $amarelo-alba;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i{
+                    margin-left: 1rem;
+                }
             }
         }
     }
@@ -181,6 +189,18 @@
         background-color: $amarelo-alba;
         color: $verde-alba;
         font-size: 14px;
+    }
+
+    .more-link{
+        width: 164px;
+        height: 40px;
+        border: 0;
+        border-radius: 5px;
+        background-color: $amarelo-alba;
+        color: $verde-alba;
+        font-size: 14px;
+        padding: 15px 50px;
+        text-decoration: none;
     }
   }
 }

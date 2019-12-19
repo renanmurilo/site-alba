@@ -103,43 +103,6 @@ $(function () {
   })
 });
 
-if ($('li.comercio').val() === 1) {
-  $('li.comercio>a').click(function () {
-    $('.row.setor.comercio').addClass('active');
-    $('.row.setor.agro').removeClass('active');
-    $('.row.setor.industria').removeClass('active');
-    $('.row.setor.residencia').removeClass('active');
-  });
-}
-
-if ($('li.agro').val() === 2) {
-  $('li.agro>a').click(function () {
-    $('.row.setor.comercio').removeClass('active');
-    $('.row.setor.agro').addClass('active');
-    $('.row.setor.industria').removeClass('active');
-    $('.row.setor.residencia').removeClass('active');
-  });
-}
-
-if ($('li.industria').val() === 3) {
-  $('li.industria>a').click(function () {
-    $('.row.setor.industria').removeClass('active');
-    $('.row.setor.agro').removeClass('active');
-    $('.row.setor.industria').addClass('active');
-    $('.row.setor.residencia').removeClass('active');
-  });
-}
-
-if ($('li.residencia').val() === 4) {
-  $('li.residencia>a').click(function () {
-    $('.row.setor.residencia').removeClass('active');
-    $('.row.setor.agro').removeClass('active');
-    $('.row.setor.industria').removeClass('active');
-    $('.row.setor.residencia').addClass('active');
-
-  });
-}
-
 $(function () {
   $('.carroussel-tipbar').slick({
     slidesToShow: 1,
@@ -191,6 +154,25 @@ $(function(){
     }
   });
 });
+
+
+$(function(){
+  var classActive = 'active';
+
+  $('#qual-setor li a').first().addClass(classActive);
+  $('#segmentos-especialista .setor').first().addClass(classActive);
+
+
+  $('#qual-setor li a').click(function(e){
+    e.preventDefault();
+    var itemId = $(this).attr('href');
+
+    $('#qual-setor li a, .setor').removeClass(classActive);
+    $(this).addClass(classActive);
+    $(itemId).addClass(classActive);
+  });
+});
+
 
 
 $(function(){

@@ -76,39 +76,40 @@
     <section id="titulo-mais">
         <div class="container">
             <h2 class="titulo-especialista">Somos especialistas em:</h2>
+            <p class="sub-title">Selecione o seu tipo de imóvel e conheça mais sobre a experiência da Alba nesse setor:</p>
             <ul id="qual-setor">
                 <li class="setor">Setor:</li>
                 <li class="comercio" value="1">
-                    <a href="javascript:void(0)">
-                        <img src="/src/assets/images/segmentos/lar.png" alt="" class="i-left"> Comércio
+                    <a href="#comercio" class="active">
+                        <img src="/src/assets/images/segmentos/lar.png" alt="" class="i-left"> <span>Comércio</span> 
                     </a>
                 </li>
-                <li class="agro" value="2">
-                    <a href="javascript:void(0)">
-                        <img src="/src/assets/images/segmentos/arvore.png" alt="" class="i-left"> Agropecuário
+                <li class="agro direita" value="2">
+                    <a href="#agro">
+                        <img src="/src/assets/images/segmentos/arvore.png" alt="" class="i-left"> <span>Agropecuário</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </li>
-                <li class="industria" value="3">
-                    <a href="javascript:void(0)">
-                        <img src="/src/assets/images/segmentos/ind.png" alt="" class="i-left"> Indústria
+                <li class="industria direita" value="3">
+                    <a href="#industria">
+                        <img src="/src/assets/images/segmentos/ind.png" alt="" class="i-left"> <span>Indústria</span><i class="fas fa-arrow-right"></i>
                     </a>
                 </li>
-                <li class="residencia" value="4">
-                    <a href="javascript:void(0)">
-                        <img src="/src/assets/images/segmentos/casa.png" alt="" class="i-left"> Residência
+                <li class="residencia direita" value="4">
+                    <a href="#residencia">
+                        <img src="/src/assets/images/segmentos/casa.png" alt="" class="i-left"> <span>Residência</span><i class="fas fa-arrow-right"></i>
                     </a>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section id="especialista">
+    <section id="segmentos-especialista">
         <!-- Itens no desktop -->
         <div class="container desktop">
-            <div class="row setor comercio active">
+            <div class="row setor" id="comercio">
                 <div class="col-md-4">
                     <div class="caixa-pq">
-                        <h2 class="titulo-pq">Por que a Alba Energia é <br>
+                        <h2 class="titulo-pq">Por que a Alba Energia é
                             experiente <br>
                             nesse segmento?</h2>
 
@@ -134,11 +135,61 @@
                         <img src="/src/assets/images/segmentos/Comercio.png" alt="">
                     </div>
                 </div>
+                <h2 class="titulo-projetos">Conheça alguns de nossos projetos em comércio:</h2>
+                <section id="projetos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-vermais">VER MAIS</button>
+                    </div>
+                </section>
             </div>
-            <div class="row setor agro">
+            <div class="row setor" id="agro">
                 <div class="col-md-4">
                     <div class="caixa-pq">
-                        <h2 class="titulo-pq">Por que a Alba Energia é <br>
+                        <h2 class="titulo-pq">Por que a Alba Energia é
                             experiente <br>
                             nesse segmento?</h2>
 
@@ -164,11 +215,61 @@
                         <img src="/src/assets/images/segmentos/Agropecuaria.png" alt="">
                     </div>
                 </div>
+                <h2 class="titulo-projetos">Conheça alguns de nossos projetos em agronegócio:</h2>
+                <section id="projetos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-vermais">VER MAIS</button>
+                    </div>
+                </section>
             </div>
-            <div class="row setor industria">
+            <div class="row setor" id="industria">
                 <div class="col-md-4">
                     <div class="caixa-pq">
-                        <h2 class="titulo-pq">Por que a Alba Energia é <br>
+                        <h2 class="titulo-pq">Por que a Alba Energia é
                             experiente <br>
                             nesse segmento?</h2>
 
@@ -194,19 +295,69 @@
                         <img src="/src/assets/images/segmentos/Industria.png" alt="">
                     </div>
                 </div>
+                <h2 class="titulo-projetos">Conheça alguns de nossos projetos em indústria:</h2>
+                <section id="projetos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-vermais">VER MAIS</button>
+                    </div>
+                </section>
             </div>
-            <div class="row setor residencia">
+            <div class="row setor" id="residencia">
                 <div class="col-md-4">
                     <div class="caixa-pq">
-                        <h2 class="titulo-pq">Por que a Alba Energia é <br>
+                        <h2 class="titulo-pq">Por que a Alba Energia é
                             experiente <br>
                             nesse segmento?</h2>
 
-                        <p>A energia produzida abastece todo <br>
+                        <p>A energia produzida abastece todo
                             o seu consumo durante o dia</p>
 
-                        <p>O excedente volta para rede elétrica, <br>
-                            gerando créditos de energia que podem <br>
+                        <p>O excedente volta para rede elétrica,
+                            gerando créditos de energia que podem
                             ser utilizados em até 60 meses</p>
 
                         <p class="vant">Vantagens:</p>
@@ -224,6 +375,56 @@
                         <img src="/src/assets/images/segmentos/Residencia.png" alt="">
                     </div>
                 </div>
+                <h2 class="titulo-projetos">Conheça alguns de nossos projetos em residência:</h2>
+                <section id="projetos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                            <div class="caixa-projeto">
+                                <div class="area-img">
+                                    <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
+                                </div>
+                                <div class="area-texto">
+                                    <p class="city-project">São José do Rio Preto</p>
+                                    <p class="setor-projeto">Centro de distribuição</p>
+                                </div>
+                                <div class="energia-paineis">
+                                    <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
+                                    <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
+                                        painéis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-vermais">VER MAIS</button>
+                    </div>
+                </section>
             </div>
         </div>
         <!-- Itens no mobile -->
@@ -352,101 +553,6 @@
         </div>
     </section>
 
-    <section id="projetos">
-        <div class="container">
-            <h2 class="titulo-projetos">Conheça alguns de nossos projetos em comércio:</h2>
-            <div class="row">
-                <div class="caixa-projeto">
-                    <div class="area-img">
-                        <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
-                    </div>
-                    <div class="area-texto">
-                        <p class="city-project">São José do Rio Preto</p>
-                        <p class="setor-projeto">Centro de distribuição</p>
-                    </div>
-                    <div class="energia-paineis">
-                        <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
-                        <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
-                            painéis</span>
-                    </div>
-                </div>
-                <div class="caixa-projeto">
-                    <div class="area-img">
-                        <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
-                    </div>
-                    <div class="area-texto">
-                        <p class="city-project">São José do Rio Preto</p>
-                        <p class="setor-projeto">Centro de distribuição</p>
-                    </div>
-                    <div class="energia-paineis">
-                        <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
-                        <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
-                            painéis</span>
-                    </div>
-                </div>
-                <div class="caixa-projeto">
-                    <div class="area-img">
-                        <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
-                    </div>
-                    <div class="area-texto">
-                        <p class="city-project">São José do Rio Preto</p>
-                        <p class="setor-projeto">Centro de distribuição</p>
-                    </div>
-                    <div class="energia-paineis">
-                        <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
-                        <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
-                            painéis</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="caixa-projeto">
-                    <div class="area-img">
-                        <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
-                    </div>
-                    <div class="area-texto">
-                        <p class="city-project">São José do Rio Preto</p>
-                        <p class="setor-projeto">Centro de distribuição</p>
-                    </div>
-                    <div class="energia-paineis">
-                        <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
-                        <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
-                            painéis</span>
-                    </div>
-                </div>
-                <div class="caixa-projeto">
-                    <div class="area-img">
-                        <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
-                    </div>
-                    <div class="area-texto">
-                        <p class="city-project">São José do Rio Preto</p>
-                        <p class="setor-projeto">Centro de distribuição</p>
-                    </div>
-                    <div class="energia-paineis">
-                        <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
-                        <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
-                            painéis</span>
-                    </div>
-                </div>
-                <div class="caixa-projeto">
-                    <div class="area-img">
-                        <img src="/src/assets/images/segmentos/fabrica.png" alt="" />
-                    </div>
-                    <div class="area-texto">
-                        <p class="city-project">São José do Rio Preto</p>
-                        <p class="setor-projeto">Centro de distribuição</p>
-                    </div>
-                    <div class="energia-paineis">
-                        <span class="energia"><img src="/src/assets/images/segmentos/raio.png" alt=""> 452Kwh/Mês</span>
-                        <span class="qtd-paineis"><img src="/src/assets/images/segmentos/placa.png" alt=""> 14
-                            painéis</span>
-                    </div>
-                </div>
-            </div>
-            <button class="btn-vermais">VER MAIS</button>
-        </div>
-    </section>
-
     <section id="mais-sobre">
         <div class="container">
             <div class="row">
@@ -456,71 +562,83 @@
                         <div class="carroussel-sobre">
                             <div>
                                 <div class="card">
-                                    <img class="card-img-top" src="src/assets/images/home/img-card-1.png" alt="Weg">
+                                    <a href="">
+                                        <img class="card-img-top" src="src/assets/images/home/img-card-1.png" alt="Weg">
                                     <p class="text-card">12 <span>Qua</span></p>
                                     <div class="card-body">
                                         <p class="card-text">WEG cresce em energia solar
                                             e prevê expandir negócio para
                                             outros países</p>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="card">
-                                    <img class="card-img-top" src="src/assets/images/home/img-card-2.png" alt="Weg">
+                                    <a href="">
+                                        <img class="card-img-top" src="src/assets/images/home/img-card-2.png" alt="Weg">
                                     <p class="text-card">13 <span>Qui</span></p>
                                     <div class="card-body">
                                         <p class="card-text">Sistema de irrigação movido
                                             a energia solar reduz gastos
                                             com eletricidade</p>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="card">
-                                    <img class="card-img-top" src="src/assets/images/home/img-card-3.png" alt="Weg">
+                                    <a href="">
+                                        <img class="card-img-top" src="src/assets/images/home/img-card-3.png" alt="Weg">
                                     <p class="text-card">14 <span>Sex</span></p>
                                     <div class="card-body">
                                         <p class="card-text">Porsche investe pesado
                                             em elétricos e híbridos</p>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="card">
-                                    <img class="card-img-top" src="src/assets/images/home/img-card-1.png" alt="Weg">
+                                    <a href="">
+                                        <img class="card-img-top" src="src/assets/images/home/img-card-1.png" alt="Weg">
                                     <p class="text-card">12 <span>Qua</span></p>
                                     <div class="card-body">
                                         <p class="card-text">WEG cresce em energia solar
                                             e prevê expandir negócio para
                                             outros países</p>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="card">
-                                    <img class="card-img-top" src="src/assets/images/home/img-card-2.png" alt="Weg">
+                                    <a href="">
+                                        <img class="card-img-top" src="src/assets/images/home/img-card-2.png" alt="Weg">
                                     <p class="text-card">13 <span>Qui</span></p>
                                     <div class="card-body">
                                         <p class="card-text">Sistema de irrigação movido
                                             a energia solar reduz gastos
                                             com eletricidade</p>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="card">
-                                    <img class="card-img-top" src="src/assets/images/home/img-card-3.png" alt="Weg">
+                                    <a href="">
+                                        <img class="card-img-top" src="src/assets/images/home/img-card-3.png" alt="Weg">
                                     <p class="text-card">14 <span>Sex</span></p>
                                     <div class="card-body">
                                         <p class="card-text">Porsche investe pesado
                                             em elétricos e híbridos</p>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -530,31 +648,42 @@
         </div>
     </section>
 
-    <section id="conversar">
+    <section id="quer-conversar">
         <div class="container">
             <div class="row">
-                <h2>Quer conversar?</h2>
-                <div class="col-md-6 email-tel">
-                    <div class="col-sm-6 caixa-email-tel">
-                        <div class="caixa-email">
-                            <i class="far fa-envelope"></i>
-                            <p class="m1">Mande um email</p>
-                            <p class="end-mail">Email: email@email.com</p>
+                <div class="col-md-12">
+                    <div class="session-conversar">
+                        <div class="col-md-7">
+                            <h2>Quer conversar?</h2>
+
+                            <div class="conteudo-conversar">
+                                <div class="mail">
+                                    <img src="src/assets/images/orcamento/email.png" alt="">
+                                    <p class="email">Mande um email <br>
+                                    <span>Email: email@email.com</span></p>
+                                </div>
+
+                                <div class="phone">
+                                    <img src="src/assets/images/orcamento/phone.png" alt="">
+                                    <p class="telefone">Telefone de contato (XX) XXXX-XXXX</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="button-ligue">
+                                <a href="">
+                                    <button type="button" class="btn-ligue"><span class="ligue"><img src="src/assets/images/orcamento/phone-btn.png" alt=""></span> Ligue para mim agora <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span></button>
+                                </a>
+                            </div>
+
+                            <div class="button-whats">
+                                <a href="">
+                                    <button type="button" class="btn-whats"><span class="whats"><img src="src/assets/images/orcamento/whats.png" alt=""></span> Abrir o chat no whatsapp <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span></button>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 caixa-telefone">
-                        <div class="caixa-tel-links">
-                            <i class="fas fa-phone-alt"></i>
-                            <p class="contact-tel">Telefone de contato</p>
-                            <p class="contact-num">(XX)XXXX-XXXX</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 caixa-whats">
-                    <button class="btn-ligue-agora"><i class="fas fa-phone-alt"></i> LIGUE PARA MIM AGORA <i
-                            class="fas fa-arrow-right"></i></button>
-                    <button class="btn-whats"><i class="fab fa-whatsapp"></i> ABRIR CHAT NO WHATSAPP<i
-                            class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>

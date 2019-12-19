@@ -1,0 +1,179 @@
+#simule .session-simule .formulario .form-simule input, #simule .session-simule .formulario .form-simule-left input{
+    border: none!important;
+    font-size: 0.675rem!important;
+    text-transform: uppercase!important;
+    color: #00808F!important;
+}
+
+#simule .session-simule .formulario .form-simule-left .form-control{
+    height: 40px!important;
+}
+#simule .session-simule .formulario .form-simule .form-control{
+    height: 40px!important;
+}
+#simule .js-labelFile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 161%;
+    margin-left: 3rem;
+    background: #E5F2F4;
+    border-radius: 6px;
+    height: 38px;
+    color: #00808F!important;
+    cursor: pointer;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-left: .9rem;
+    margin-top: -1.5rem;
+}
+#simule .js-labelFile .alba{
+    display: none;
+}
+
+
+#simule .js-labelFile span{
+    margin-left: .5rem;
+}
+
+#simule p{
+    margin-bottom: 0!important;
+}
+
+#simule-verde .session-simule .formulario .form-simule input, #simule-verde .session-simule .formulario .form-simule-left input{
+    border: none!important;
+    font-size: 0.675rem!important;
+    text-transform: uppercase!important;
+    color: #fff!important;
+}
+
+#simule-verde .session-simule .formulario .form-simule-left .form-control{
+    height: 40px!important;
+}
+
+#simule-verde .session-simule .formulario .form-simule .form-control{
+    height: 40px!important;
+}
+
+#simule-verde .js-labelFile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 167%;
+    margin-left: 3rem;
+    background: #198c9a;
+    border-radius: 6px!important;
+    height: 38px;
+    color: #fff!important;
+    cursor: pointer;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-left: .9rem;
+    margin-top: -1.5rem;
+}
+
+#simule-verde .js-labelFile .home{
+    display: none!important
+}
+
+#simule-verde  .js-labelFile span{
+    margin-left: .5rem;
+}
+
+#simule-verde p{
+    margin-bottom: 0!important;
+}
+
+#formulario .session-formulario .orcamento .session-orcamento .botoes .button-simulacao a{
+    position:relative;
+}
+
+#formulario .session-formulario .orcamento .session-orcamento .botoes .button-simulacao a .seta{
+    position: absolute;
+    top: 27px;
+    left: 480px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+#formulario .session-formulario .orcamento .session-orcamento .form-group input{
+    text-transform: uppercase!important;
+    color: #00808F!important;
+}
+
+#simule-pratica .session-simule .formulario .form-simule input, #simule-pratica .session-simule .formulario .form-simule-left input{
+    border: none!important;
+    font-size: 0.675rem!important;
+    text-transform: uppercase!important;
+    color: #00808F!important;
+}
+
+#simule-pratica .session-simule .formulario .form-simule-left .form-control{
+    height: 40px!important;
+}
+#simule-pratica .session-simule .formulario .form-simule .form-control{
+    height: 40px!important;
+}
+#simule-pratica .js-labelFile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 168%;
+    margin-left: 3rem;
+    background: #E5F2F4;
+    border-radius: 6px;
+    height: 38px;
+    color: #00808F!important;
+    cursor: pointer;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-left: .9rem;
+    margin-top: -1.5rem;
+}
+#simule-pratica .js-labelFile .alba{
+    display: none;
+}
+
+
+#simule-pratica .js-labelFile span{
+    margin-left: .5rem;
+}
+
+#simule-pratica p{
+    margin-bottom: 0!important;
+}
+
+@media screen and (max-width: 768px){
+    #simule .session-simule .formulario .js-labelFile{
+        width: 113.2%!important;
+        margin-left: 2.6rem!important;
+        margin-top: -2rem;
+    }
+    #simule .js-labelFile{
+        margin-left: 2.6rem;
+    }
+
+    #simule-pratica .session-simule .formulario .js-labelFile{
+        width: 113.2%!important;
+        margin-left: 2.6rem!important;
+        margin-top: -2rem;
+    }
+    #simule-pratica .js-labelFile{
+        margin-left: 2.6rem;
+    }
+
+    #simule-verde .session-simule .formulario .js-labelFile{
+        width: 113.2%!important;
+        margin-left: 2.6rem!important;
+        margin-top: -1rem;
+    }
+    #simule-verde .js-labelFile{
+        margin-left: 2.6rem;
+    }
+}
