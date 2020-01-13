@@ -110,14 +110,21 @@ footer{
                 justify-content: flex-start;
                 align-items: center;
 
-                a{
-                    text-decoration: none;
+                div{
+                    margin-right: 2.5rem;
 
-                    .fab{
-                        font-size: 19.58px;
-                        color: #ffffff;
-                        margin-right: 2.5rem;
-                        margin-top: .3rem;
+                    a{
+                        text-decoration: none;
+    
+                        .fab{
+                            font-size: 19.58px;
+                            color: #ffffff;
+                            margin-top: .3rem;
+                        }
+                        
+                        img{
+                            margin-top: -.1rem;
+                        }
                     }
                 }
             }
@@ -169,10 +176,14 @@ footer{
 }
 
 @media screen and (max-width:768px) {
+    .modal-backdrop.show{
+        z-index: 0!important;
+    }
 
     footer{
         width: 100%;
         height: 100%;
+        
 
     
         .mask-img {

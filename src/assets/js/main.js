@@ -80,6 +80,24 @@ $(function () {
 })
 
 $(function () {
+  $('.carrousel-single').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
+});
+
+
+$(function () {
   $('.menu').click(function () {
     $('.cx-itens').toggleClass('show');
   });
@@ -92,14 +110,6 @@ $(function () {
     $('.etapa.active').removeClass('active').next('div').addClass('active');
   });
 });
-
-// $(function () {
-//   $('.btn-simule').click(function (e) {
-//     e.preventDefault();
-//     $('.circulo.active').removeClass('active').next('li').addClass('active');
-//     $('.etapa.active').removeClass('active').next('div').addClass('active');
-//   });
-// })
 
 $(function () {
   $('.btn-cont-lendo').click(function () {
@@ -144,6 +154,24 @@ $(function () {
   });
 });
 
+$("#accordion").on("click", function(){   
+  $(this).find(".seta").toggleClass("rotate-fa");
+  
+
+  $(this).click(function(e) {
+    e.preventDefault();
+
+    if($('.seta').hasClass("rotate-fa")){
+        $('.seta').removeClass('rotate-fa')
+        $('.seta').addClass('rotate-fa')
+    } else {
+        $('.seta').addClass('rotate-fa')
+        $('.seta').removeClass('rotate-fa')
+    }
+});
+});
+
+
 $(function () {
   var classActive = 'active';
 
@@ -177,7 +205,7 @@ $(function () {
   $('#segmentos-especialista .setor').first().addClass(classActive);
 
 
-  $('#qual-setor li a').click(function (e) {
+  $('#qual-setor li a').click(function(e) {
     e.preventDefault();
     var itemId = $(this).attr('href');
 
@@ -261,3 +289,91 @@ $('.btn-vermais').click(function () {
   $(this).hide();
   $('.mais-cont').addClass('active');
 });
+
+$(function(){
+  $('[data-group]').each(function(){
+    var $allTarget = $(this).find('[data-target]'),
+        $allClick = $(this).find('[data-click]'),
+        activeClass = 'active';
+
+    $allTarget.first().addClass(activeClass);
+    $allClick.first().addClass(activeClass);
+
+    $allClick.click(function(e){
+      e.preventDefault();
+
+      var id = $(this).data('click'),
+        $target = $('[data-target="' + id + '"]');
+
+        $allClick.removeClass(activeClass);
+        $allTarget.removeClass(activeClass);
+
+        $target.addClass(activeClass);
+        $(this).addClass(activeClass);
+    })
+  })
+});
+
+$(function(){
+
+  $('.direita').click(function(e){
+    e.preventDefault();
+    var el = $('.active');
+    if (el.next().length > 1){
+        el.next().addClass('active');
+        el.removeClass('active');
+
+        if ($('.bg-branco-3').hasClass('active')) {
+          $('.fa-chevron-left').css('color', '#fff');
+          $('.fa-chevron-right').css('color', '#fff');
+        } else {
+          $('.fa-chevron-left').css('color', '#00808F');
+          $('.fa-chevron-right').css('color', '#00808F');
+        }
+    }
+  });
+
+  $('.esquerda').click(function(e){
+    e.preventDefault();
+    var el = $('.active');
+    if (el.prev().length > 3){
+        el.prev().addClass('active');
+        el.removeClass('active');
+
+        if ($('.bg-branco-3').hasClass('active')) {
+          $('.fa-chevron-left').css('color', '#fff');
+          $('.fa-chevron-right').css('color', '#fff');
+        } else {
+          $('.fa-chevron-left').css('color', '#00808F');
+          $('.fa-chevron-right').css('color', '#00808F');
+        }
+    }
+  });
+});
+
+$(document).ready(function () {        
+  getUrlVars()
+});
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+
+    if(vars.narrat == 'industria') {
+        $('.row.setor.comercio').removeClass('active');
+        $('.row.setor.industria').addClass('active');
+    }
+    if(vars.narrat == 'comercio') {
+        $('.row.setor.comercio').removeClass('active');
+        $('.row.setor.comercio').addClass('active');
+    }
+    if(vars.narrat == 'agro') {
+        $('.row.setor.comercio').removeClass('active');
+        $('.row.setor.agro').addClass('active');
+    }
+    if(vars.narrat == 'residencia') {
+        $('.row.setor.comercio').removeClass('active');
+        $('.row.setor.residencia').addClass('active');
+    }
+}

@@ -89,9 +89,9 @@
               color: $verde-alba;
               letter-spacing: 3px;
               text-transform: uppercase;
-              font-weight: 900;
+              font-weight: 700;
               margin-bottom: 0.6rem;
-              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
             }
 
             span {
@@ -124,7 +124,7 @@
       color: $verde-alba;
       max-width: 210px;
       position: relative;
-      line-height: 100%;
+      line-height: 120%;
 
       &::before {
         content: "";
@@ -141,6 +141,7 @@
       max-width: 595px;
       font-size: 1.125rem;
       color: $cinza-alba;
+      line-height: 160%;
 
       p {
         margin-bottom: 0;
@@ -186,7 +187,7 @@
         cursor: pointer;
 
         &:hover {
-          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
           background-image: linear-gradient(
             135deg,
             #ffffff 81.5%,
@@ -252,9 +253,9 @@
           color: $verde-alba;
           letter-spacing: 3px;
           text-transform: uppercase;
-          font-weight: 900;
+          font-weight: 700;
           margin-bottom: 0.6rem;
-          box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
         }
 
         .seta {
@@ -348,8 +349,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 900;
-            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
 
             span {
               margin-left: 0.5rem;
@@ -501,8 +502,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 900;
-            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
             margin-top: 2.5rem;
         }
 
@@ -553,7 +554,7 @@
         width: 19.2475rem;
         position: relative;
         border: none;
-        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
          
         
         a{
@@ -627,7 +628,7 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         margin-top: 3rem;
-        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
       }
 
       .seta {
@@ -818,6 +819,7 @@
       .button-form {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 0.5rem;
         margin-bottom: 5.9375rem;
 
@@ -832,12 +834,13 @@
             align-items: center;
             text-transform: uppercase;
             border: none;
+            padding-top: .2rem;
             letter-spacing: 3px;
             border-radius: 3px;
             font-weight: 700;
             width: 145.17px;
             height: 39.16px;
-            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
           }
 
           .btn-simule {
@@ -853,7 +856,7 @@
             font-weight: 700;
             width: 170.97px;
             height: 39.16px;
-            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
           }
 
           .seta {
@@ -865,14 +868,13 @@
   }
 }
 
-@media screen and(min-width: 1281px) {
+@media screen and(min-width: 1441px) {
   #banner {
     .carrousel-banner {
 
       .caixa-image{
-
-        .mascara{
-          top: 133px;
+        img{
+          height: 532px;
         }
   
         .text-banner {
@@ -880,6 +882,36 @@
           h1,
           .text-button {
             margin-left: 27rem;
+          }
+        }
+      }
+      
+    }
+  }
+  #conheca {
+    min-height: 700px;
+    margin-bottom: 30.4rem;
+
+    .bg-banner {
+      margin-top: 32rem;
+    }
+  }
+}
+
+@media screen and(min-width: 1281px) and (max-width: 1440px) {
+  #banner {
+    .carrousel-banner {
+
+      .caixa-image{
+        img{
+          height: 532px;
+        }
+  
+        .text-banner {
+          h5,
+          h1,
+          .text-button {
+            margin-left: 11rem;
           }
         }
       }
@@ -1067,7 +1099,7 @@
         }
 
         .card.active {
-          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
           background-image: linear-gradient(
             135deg,
             #ffffff 81.5%,
@@ -1106,7 +1138,7 @@
             text-transform: uppercase;
             font-weight: 700;
             margin-bottom: 0.6rem;
-            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
           }
 
           .seta {

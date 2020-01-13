@@ -9,28 +9,79 @@
         .slick-list {
             padding: 0 !important;
         }
+
+        .slick-dots{
+            bottom: 94px;
+        }
+
+        .slick-dots li button:before{
+            color: transparent;
+            font-size: 58px;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            height: 15px;
+            width: 15px;
+            line-height: 11px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .slick-dots li.slick-active button:before{
+            color: #fff;
+            opacity: 1;
+        }
         
         .caixa-banners {
             position: relative;
+            margin-top: 4rem;
+
+            .mobile{
+                display: none;
+            }
             img {
                 width: 100%;
-                height: 100%;
+                height: 516px;
+            }
+
+            &::before{
+                content:'';
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                background-color:rgba(0,0,0,.5);
             }
 
             .titulo-ban-blog {
                 position: absolute;
-                top: 170px;
+                top: 150px;
                 left: 100px;
                 color: $amarelo-alba;
+                text-transform: uppercase;
+
+
+                a{
+                    color: $amarelo-alba;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
             }
 
             .titulo-grande-blog {
                 position: absolute;
-                top: 200px;
+                top: 170px;
                 left: 90px;
                 font-size: 70px;
                 color: #FFF;
-                line-height: 60px;
+                line-height: 70px;
+                text-transform: uppercase;
+                max-width: 830px;
+                font-weight: 100;
+
+                span{
+                    font-weight: 500;
+                }
             }
 
             a.btn-leia-agora {
@@ -47,6 +98,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-transform: uppercase;
 
                 i{
                     margin-left: 1rem;
@@ -134,7 +186,8 @@
     
             .artigos-blog {
                 .caixa-artigo {
-
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
                     width: 100%;
 
                     .mobile {
@@ -142,33 +195,43 @@
                     }
                     
                     h1 {
-                        width: 100%;
                         font-size: 40px;
                         font-weight: bold;
                         color: $verde-alba;
-                        position: relative;
-                    }
+                        text-transform: uppercase;
 
-                    h1:before {
-                        content: '';
-                        position: absolute;
-                        width: 785px;
-                        height: 4px;
-                        background: $amarelo-alba;
-                        bottom: 0;
+                        span{
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                height: 4px;
+                                background: $amarelo-alba;
+                                bottom: 0;
+                            }
+                            
+                        }
+                    
+                      
                     }
 
                     .data-postagem {
                         font-size: 22px;
                         font-weight: 300;
                         width: 100%;
+                        margin-bottom: 3rem;
                     }
 
                     p {
                         font-size: 18px;
+                        color: $cinza-alba;
+                        line-height: 150%;
+                        max-width: 1080px;
                     }
                 
                 .caixa-img {
+                    margin-top: 4rem;
                     width: 100%;
                     .img-postagem {
                         width: 100%;
@@ -178,18 +241,21 @@
             }
         }
     .caixa-botao {
-        margin: 50px 0;
+        margin: 60px 0 0 0;
+        .btn-vermais {
+            border: 0;
+            border-radius: 5px;
+            background-color: $amarelo-alba;
+            color: $verde-alba;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 15px 50px;
+        }
     }
     
-    .btn-vermais {
-        width: 164px;
-        height: 40px;
-        border: 0;
-        border-radius: 5px;
-        background-color: $amarelo-alba;
-        color: $verde-alba;
-        font-size: 14px;
-    }
+   
 
     .more-link{
         width: 164px;
@@ -201,42 +267,128 @@
         font-size: 14px;
         padding: 15px 50px;
         text-decoration: none;
+        text-transform: uppercase;
     }
   }
 }
 
+@media screen and(min-width: 1441px){
+    #conteudo-blog .container{
+        max-width: 55%;
+    }
+    #banner-home-blog .carrossel-banner-blog .caixa-banners .titulo-ban-blog{
+        top: 180px;
+        left: 430px;
+
+        a{
+            font-size: 19px;
+        }
+    }
+    #banner-home-blog .carrossel-banner-blog .caixa-banners .titulo-grande-blog{
+        top: 230px;
+        max-width: 830px;
+        left: 430px;
+    }
+    #banner-home-blog .carrossel-banner-blog .caixa-banners a.btn-leia-agora{
+        left: 430px;
+        cursor: pointer;
+    }
+    #banner-home-blog .carrossel-banner-blog .caixa-banners img{
+        height: 516px;
+        margin-top: 4rem;
+    }
+    #banner-home-blog .tip-bar .area-texto ul{
+        justify-content: center;
+    }
+    #banner-home-blog .tip-bar .area-texto ul li{
+        margin: 5px 2.5rem;
+    }
+
+    #banner-home-blog .carrossel-banner-blog .caixa-banners{
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width: 767px) {
+
+    #banner-home-blog .carrossel-banner-blog .caixa-banners{
+        margin-top: 0;
+    }
 
     #banner-home-blog {
         padding-top: 75px;
 
         .carrossel-banner-blog {
 
+            .slick-dots{
+                bottom: 16px;
+            }
+    
+            .slick-dots li button:before{
+                color: transparent;
+                font-size: 43px;
+                border: 1px solid #fff;
+                border-radius: 100%;
+                height: 11px;
+                width: 11px;
+                line-height: 8px;
+                display: flex;
+                justify-content: center;
+            }
+    
+            .slick-dots li.slick-active button:before{
+                color: #fff;
+                opacity: 1;
+            }
+
+
             .caixa-banners {
+
+                .desk{
+                    display: none;
+                }
+    
+                .mobile{
+                    display: block;
+                    width: 100%;
+                    height: 310px;
+                }
                 
                 .titulo-ban-blog {
                     position: absolute;
-                    top: 15px;
-                    left: 20px;
+                    top: 100px;
+                    left: 18px;
                     color: #FFD45E;
-                    font-size: 16px;
+                    font-size: 24px;
                 }
 
                 .titulo-grande-blog {
                     position: absolute;
-                    top: 40px;
-                    left: 20px;
-                    font-size: 15px;
+                    top: 135px;
+                    left: 18px;
+                    font-size: 30px;
                     color: #FFF;
-                    line-height: 15px;
+                    line-height: 30px;
+                    max-width: 342px;
+                    text-transform: none!important;
+                    letter-spacing: 1.5px;
+                    font-weight: 300;
+
+                    span{
+                        font-weight: 700;
+                    }
                 }
 
-                .btn-leia-agora {
+                a.btn-leia-agora {
                     position: absolute;
-                    bottom: 15px;
-                    left: 20px;
-                    width: 125px;
-                    height: 35px;
+                    bottom: 52px!important;
+                    left: 20px!important;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 209.78px;
+                    font-weight: 700;
+                    height: 44px!important;
+                    font-size: 1rem;
                     border: 0;
                     border-radius: 5px;
                     color: #00808F;
@@ -332,26 +484,35 @@
                 .caixa-artigo {
 
                     h1 {
-                        display: none;
+                        font-size: 30px;
+                        text-align: center;
+                        max-width: 310px;
+                        margin: 1rem auto;
+
+                        span{
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 79%;
+                                height: 4px;
+                                left: 30px;
+                                background: $amarelo-alba;
+                                bottom: -4px;
+                            }
+                            
+                        }
                     }
 
                     h1.mobile {
                         display: block;
-                        text-align: center;
-                        font-size: 30px;
+                        
                     }
 
-                    h1:before {
-                        content: '';
-                        position: absolute;
-                        width: 215px;
-                        height: 4px;
-                        background: #FFD45E;
-                        bottom: 0;
-                    }
 
                     .data-postagem {
                         font-size: 12px;
+                        font-weight: 500;
                     }
 
                     p {

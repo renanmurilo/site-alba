@@ -49,11 +49,11 @@
                         width: 286.5px;
                         height: 47.16px;
                         letter-spacing: 3px;
-                        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
                         border: none;
                         border-radius: 3px;
                         text-transform: uppercase;
-                        font-weight: 900;
+                        font-weight: 700;
                     }
                 }
 
@@ -111,7 +111,7 @@
     background-image: url('../images/alba/bg-cinza.png');
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     max-width: 100%;
     background-size: cover;
     background-position: 100% center;
@@ -150,23 +150,24 @@
 
         ul{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             list-style-type: none;
             flex-wrap: wrap;
+            margin-left: 2.3rem;
+            max-width: 90%;
 
-            .btn-list{
-                font-size: 0.875rem;
-                font-weight: 500;
-                margin: 0 3.3rem;
-                color: $cinza-alba;
-                filter: grayscale(100%);
-                display: flex;
-                align-items: flex-end;
 
+            li{
                 a{
                     text-decoration: none;
-
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    color: $cinza-alba;
+                    filter: grayscale(100%);
+                    display: flex;
+                    align-items: flex-end;
+                    opacity: .4;
                     span{
                         vertical-align: bottom;
                         margin-left: .3rem;
@@ -175,50 +176,53 @@
                 
             }
 
-            .btn-list.active{
+            li>a.active{
                 border: 1px solid $verde-alba;
                 padding: .5rem;
                 border-radius: 7px;
                 color: $verde-alba;
                 filter: grayscale(0%);
-
+                opacity: 1;
                 a{
                     color: $verde-alba;
                 }
             }
+
         }
     }
 
     .session-especialista{
-        display: flex;
-        margin: 0 0 2rem 0;
         flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-start;
+        max-width: 87%;
+        margin: 0 auto;
+        opacity: 0;
+        overflow: hidden;
+        height: 0;
 
-        .card-left{
+
+        .col-md-4{
             display: flex;
             justify-content: center;
-            margin-left: 4rem;
-            margin-top: 3.25rem;
-        }
-
-        .card-right{
-            display: flex;
-            justify-content: flex-start;
-            margin-left: 2rem;
-            margin-top: 3.25rem;
+            margin: 1.625rem 0;
         }
 
         .card{
-            width: 26.515625rem;
+            width: 19.2475rem;
             border-radius: 20px;
             border: none;
             height: 100%;
-            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+            
+            .card-img-top{
+                min-height: 247px;
+            }
 
             .text-card{
                 font-size: 1.8125rem;
                 color: $verde-alba;
-                margin-left: 2.125rem;
+                margin-left: 1.125rem;
                 margin-top: 1.375rem;
                 font-weight: bold;
                 margin-bottom: 0;
@@ -237,20 +241,19 @@
                 .card-text{
                     font-size: 0.9375rem;
                     color: $cinza-alba;
-                    margin-left: 2.125rem;
+                    margin-left: 1.125rem;
                     font-weight: 500;
                 }
 
                 .card-bottom{
                     display: flex;
-                    margin-left: 2.125rem;
                     font-size: 0.9375rem;
                     color: $cinza-alba;
                     align-items: center;
+                    justify-content: space-around;
                     font-weight: 300;
 
                     .raio{
-                        margin-right: 3rem;
                         
                         img{
                             margin-right: .6rem;
@@ -265,6 +268,13 @@
                 }
             }
         }
+    }
+
+    .session-especialista.active{
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        transition: .3s;
     }
 
     .button{
@@ -286,11 +296,11 @@
                 width: 181.5px;
                 height: 39.16px;
                 letter-spacing: 3px;
-                box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
                 border: none;
                 border-radius: 3px;
                 text-transform: uppercase;
-                font-weight: 900;
+                font-weight: 700;
             }
 
             .seta{
@@ -319,6 +329,81 @@
             max-width: 100%;
             background-size: cover;
             background-position: top center;
+            position: relative;
+
+            .mobile{
+                display: none;
+            }
+
+            .modal-dialog{
+                max-width: 95%;
+
+                .modal-body{
+                    display: flex;
+
+                    .image{
+                        
+                        img{
+                            max-width: 95%;
+                            height: 100%;
+                        }
+                    }
+
+                    .texto-modal{
+                        font-size: 1rem;
+                        color: $cinza-alba;
+                        max-width: 50%;
+
+                        p{
+                            max-width: 90%;
+                            margin: 0 auto;
+                        }
+
+                        .botao-modal{
+                            margin-top: 4rem;
+                            margin-left: 2rem;
+                            
+                            a{
+                                text-decoration: none;
+                                background-color: $amarelo-alba;
+                                width: 100%;
+                                padding: 10px 30px;
+                                border: none;
+                                border-radius: 4px;
+                                font-size: 1.125rem;
+                                color: $verde-alba;
+                                text-transform: uppercase;
+                                letter-spacing: 3px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .icon-1{
+                position: absolute;
+                top: 6rem;
+                right: 6.5rem;
+            }
+
+            .icon-2{
+                position: absolute;
+                top: 7.5rem;
+                right: 2.3rem;
+            }
+
+            .icon-3{
+                position: absolute;
+                top: 18.4rem;
+                right: 4.7rem;
+            }
+
+            .icon-4{
+                position: absolute;
+                bottom: 0;
+                right: 13.9rem;
+            }
         }
 
         .bg-amarelo{
@@ -336,7 +421,7 @@
                 width: 590px;
                 max-height: 540px;
                 border-radius: 15px;
-                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
                 margin-left: 2.5625rem;
                 position: absolute;
                 top: -4.625rem;
@@ -481,14 +566,14 @@
             font-weight: bold;
             max-width: 581px;
             text-align: center;
-            line-height: 100%;
+            line-height: 120%;
             margin-top: 1rem;
             position: relative;
 
             &::before{
                 content: '';
                 background-color: $amarelo-alba;
-                width: 429px;
+                width: 71%;
                 height: 4px;
                 position: absolute;
                 bottom: -10px;
@@ -512,9 +597,13 @@
             .card{
                 border-radius: 15px;
                 height: 347px;
-                width: 17.2475rem;
+                width: 19.1875rem;
                 border: none;
-                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+
+                .card-body{
+                    padding: 1.7rem;
+                }
 
                 .card-text{
                     max-width: 220px;
@@ -562,12 +651,12 @@
                 width: 179.5px;
                 height: 39.16px;
                 letter-spacing: 3px;
-                box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
                 border: none;
                 border-radius: 3px;
                 text-transform: uppercase;
-                font-weight: 900;
-                margin-bottom: 3rem;
+                font-weight: 700;
+                margin-bottom: 6rem;
             }
             
             .seta{
@@ -773,7 +862,7 @@
               font-weight: 700;
               width: 145.17px;
               height: 39.16px;
-              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
             }
   
             .btn-simule {
@@ -789,7 +878,7 @@
               font-weight: 700;
               width: 170.97px;
               height: 39.16px;
-              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
             }
   
             .seta {
@@ -814,7 +903,7 @@
     }
 }
 
-@media screen and(min-width: 1281px){
+@media screen and(min-width: 1441px){
 
     #banner-alba .session-banner .text-banner{
         margin-left: 24.5rem;
@@ -899,7 +988,7 @@
 
     #especialista{
         background-image: url('../images/alba/bg-cinza-mobile.png')!important;
-        height: 774px;
+        height: 940px;
 
         h3{
             margin-left: 0;
@@ -930,12 +1019,13 @@
             ul{
                 flex-direction: column;
                 padding: 0!important;
+                margin: auto auto;
 
-                .btn-list{
+                li{
                     margin: .7rem auto;
                 }
 
-                .btn-list.active{
+                li>a.active{
                     border: 1px solid $verde-alba;
                     width: 180px;
                     display: flex;
@@ -957,7 +1047,7 @@
         }
 
         .session-especialista{
-            margin: -2rem 0 0rem auto;
+            margin: 0rem auto 0rem auto;
 
             .card-left, .card-right{
                 margin-left: 0!important;
@@ -1018,7 +1108,7 @@
         }
 
         .button{
-            margin-top: 1rem;
+            margin-top: 0rem;
             margin-bottom: 1rem;
         }
 
@@ -1036,6 +1126,76 @@
                 z-index: 1;
                 top: 10rem;
                 left: 2.6rem;
+
+                .mobile{
+                    display: block!important;
+                }
+
+                .desk{
+                    display: none;
+                }
+                
+                
+                .modal-dialog{
+                    max-width: 90%;
+                    margin: 5rem auto;
+
+                    .modal-body{
+                        flex-wrap: wrap;
+    
+                        .image{
+                            height: auto;
+                            img{
+                                max-width: 100%;
+                                height: auto;
+                            }
+                        }
+    
+                        .texto-modal{
+                            font-size: 1rem;
+                            color: $cinza-alba;
+                            max-width: 100%;
+                            margin-top: 1rem;
+                            text-align: center;
+    
+                            p{
+                                max-width: 100%;
+                                margin: 0 auto;
+                            }
+    
+                            .botao-modal{
+                                margin-left: 0;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                
+                                a{
+                                    width: 50%;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+
+                .icon-1{
+                    top: 2.1rem;
+                    right: 3.1rem;
+                }
+
+                .icon-2{
+                    top: 2.8rem;
+                    right: .7rem;
+                }
+
+                .icon-3{
+                    top: 7.8rem;
+                    right: 1.6rem;
+                }
+
+                .icon-4{
+                    right: 6.6rem;
+                }
             }
     
             .bg-amarelo{
@@ -1114,6 +1274,7 @@
         height: 130px;
         max-height: 100%;
         width: 100%;
+        background-position: 100% 75%;
         margin-bottom: 20rem;
     
         .session-time{
@@ -1125,7 +1286,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                background-position: 100% center;
+                background-position: 99% 100%;
                 margin-top: 8.1rem;
                 position: absolute;
                 left: 0;
@@ -1218,11 +1379,11 @@
                     width: 179.5px;
                     height: 39.16px;
                     letter-spacing: 3px;
-                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
                     border: none;
                     border-radius: 3px;
                     text-transform: uppercase;
-                    font-weight: 900;
+                    font-weight: 700;
                     margin-bottom: 3rem;
                 }
                 

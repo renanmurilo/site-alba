@@ -54,7 +54,7 @@
         </nav>
     </header>
 
-    <section id="formulario">
+    <section id="formulario" data-group="formulario">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -69,22 +69,22 @@
                                     <li>
                                         <p class="text">Selecione seu tipo de imóvel:<span>*</span> </p>
                                     </li>
-                                    <li class="btn-selecione active"><a href=""><span><img
-                                                    src="src/assets/images/orcamento/comercio.png" alt=""></span>
-                                            Comércio</a></li>
-                                    <li class="btn-selecione direita"><a href=""><span><img
-                                                    src="src/assets/images/orcamento/agronegocio.png" alt=""></span>
-                                            Agronegócio</a></li>
-                                    <li class="btn-selecione direita"><a href=""><span><img
-                                                    src="src/assets/images/orcamento/industria.png" alt=""></span>
-                                            Indústria</a></li>
-                                    <li class="btn-selecione direita"><a href=""><span><img
-                                                    src="src/assets/images/orcamento/residencia.png" alt=""></span>
-                                            Residência</a></li>
+                                    <li><a href="" data-click="comercio"><img
+                                        src="src/assets/images/orcamento/comercio.png" alt=""><span>Comércio</span>
+                                            </a></li>
+                                    <li><a href="" data-click="agro"><img
+                                        src="src/assets/images/orcamento/agronegocio.png" alt=""><span>Agronegócio</span>
+                                           </a></li>
+                                    <li><a href="" data-click="industria"><img
+                                        src="src/assets/images/orcamento/industria.png" alt=""><span>Indústria</span>
+                                            </a></li>
+                                    <li><a href="" data-click="residencia"><img
+                                        src="src/assets/images/orcamento/residencia.png" alt=""><span>Residência</span>
+                                            </a></li>
                                 </ul>
                             </div>
 
-                            <div class="session-orcamento">
+                            <div class="session-orcamento" data-target="comercio">
                                 <form>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
@@ -158,13 +158,291 @@
                                     <div class="botoes">
                                         <div class="button-simulacao">
                                             <a href="">
-                                                <button type="button" class="btn-simulacao">Ver resultado da minha simulação <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span></button>
+                                               Ver resultado da minha simulação
                                             </a>
+                                            <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span>
                                         </div>
 
                                         <div class="button-personalizado">
                                             <a href="">
-                                                <button type="button" class="btn-personalizado">Receber um orçamento personalizado</button>
+                                                Receber um orçamento personalizado
+                                            </a>
+                                        </div>
+
+                                        <div class="button-simulacao-mobile">
+                                            <a href="">
+                                            Ver resultado
+                                            </a>
+                                            <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span>
+                                        </div>
+
+                                        <div class="button-personalizado-mobile">
+                                            <a href="">
+                                                Receber um orçamento
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="session-orcamento" data-target="agro">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-estado">Estado <span class="red"> *</span></label>
+                                            <div class="form-color">
+                                                <select class="form-control" id="custom-select">
+                                                    <option desable>São Paulo</option>
+                                                    <option>Rio de Janeiro</option>
+                                                    <option>São Paulo</option>
+                                                    <option>Bahia</option>
+                                                    <option>Manaus</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-cidade">Cidade: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="São Paulo">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-valor">Valor da conta de energia: <span class="red">*</span> <a href="#" class="tip-valor" data-tooltip="Valor aproximado."><img src="src/assets/images/orcamento/icon.png" alt=""></a></label>
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="R$ 00,00">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-anexar"><span class="image"><img
+                                                        src="src/assets/images/orcamento/clip.png" alt=""></span>
+                                                <u>Anexar conta:</u> <a href="#" class="tip-anexo" data-tooltip="É possível anexar sua conta de luz dos últimos 12 meses para obter um resultado mais personalizado."><img src="src/assets/images/orcamento/icon.png" alt=""></a></label>
+                                            <div class="form-color-file">
+                                                <input type="file" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label class="custom-label-nome">Nome completo: <span class="red">*</span></label>
+
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="Joâo Silva">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-7">
+                                            <label class="custom-label-telefone">Telefone: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                    <input type="text" class="form-control esquerda" placeholder="(XX) XXXX-XXXX">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label class="custom-label-email">Email: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                <input type="email" class="form-control" placeholder="João@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label class="texto-menor"><span class="red">*</span> campos obrigatórios</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="botoes">
+                                        <div class="button-simulacao">
+                                            <a href="">
+                                               Ver resultado da minha simulação
+                                            </a>
+                                            <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span>
+                                        </div>
+
+                                        <div class="button-personalizado">
+                                            <a href="">
+                                                Receber um orçamento personalizado
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="session-orcamento" data-target="industria">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-estado">Estado <span class="red"> *</span></label>
+                                            <div class="form-color">
+                                                <select class="form-control" id="custom-select">
+                                                    <option desable>São Paulo</option>
+                                                    <option>Rio de Janeiro</option>
+                                                    <option>São Paulo</option>
+                                                    <option>Bahia</option>
+                                                    <option>Manaus</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-cidade">Cidade: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="São Paulo">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-valor">Valor da conta de energia: <span class="red">*</span> <a href="#" class="tip-valor" data-tooltip="Valor aproximado."><img src="src/assets/images/orcamento/icon.png" alt=""></a></label>
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="R$ 00,00">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-anexar"><span class="image"><img
+                                                        src="src/assets/images/orcamento/clip.png" alt=""></span>
+                                                <u>Anexar conta:</u> <a href="#" class="tip-anexo" data-tooltip="É possível anexar sua conta de luz dos últimos 12 meses para obter um resultado mais personalizado."><img src="src/assets/images/orcamento/icon.png" alt=""></a></label>
+                                            <div class="form-color-file">
+                                                <input type="file" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label class="custom-label-nome">Nome completo: <span class="red">*</span></label>
+
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="Joâo Silva">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-7">
+                                            <label class="custom-label-telefone">Telefone: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                    <input type="text" class="form-control esquerda" placeholder="(XX) XXXX-XXXX">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label class="custom-label-email">Email: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                <input type="email" class="form-control" placeholder="João@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label class="texto-menor"><span class="red">*</span> campos obrigatórios</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="botoes">
+                                        <div class="button-simulacao">
+                                            <a href="">
+                                               Ver resultado da minha simulação
+                                            </a>
+                                            <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span>
+                                        </div>
+
+                                        <div class="button-personalizado">
+                                            <a href="">
+                                                Receber um orçamento personalizado
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="session-orcamento" data-target="residencia">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-estado">Estado <span class="red"> *</span></label>
+                                            <div class="form-color">
+                                                <select class="form-control" id="custom-select">
+                                                    <option desable>São Paulo</option>
+                                                    <option>Rio de Janeiro</option>
+                                                    <option>São Paulo</option>
+                                                    <option>Bahia</option>
+                                                    <option>Manaus</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-cidade">Cidade: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="São Paulo">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-valor">Valor da conta de energia: <span class="red">*</span> <a href="#" class="tip-valor" data-tooltip="Valor aproximado."><img src="src/assets/images/orcamento/icon.png" alt=""></a></label>
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="R$ 00,00">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label class="custom-label-anexar"><span class="image"><img
+                                                        src="src/assets/images/orcamento/clip.png" alt=""></span>
+                                                <u>Anexar conta:</u> <a href="#" class="tip-anexo" data-tooltip="É possível anexar sua conta de luz dos últimos 12 meses para obter um resultado mais personalizado."><img src="src/assets/images/orcamento/icon.png" alt=""></a></label>
+                                            <div class="form-color-file">
+                                                <input type="file" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label class="custom-label-nome">Nome completo: <span class="red">*</span></label>
+
+                                            <div class="form-color">
+                                                <input type="text" class="form-control" placeholder="Joâo Silva">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-7">
+                                            <label class="custom-label-telefone">Telefone: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                    <input type="text" class="form-control esquerda" placeholder="(XX) XXXX-XXXX">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label class="custom-label-email">Email: <span class="red">*</span></label>
+                                            <div class="form-color">
+                                                <input type="email" class="form-control" placeholder="João@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label class="texto-menor"><span class="red">*</span> campos obrigatórios</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="botoes">
+                                        <div class="button-simulacao">
+                                            <a href="">
+                                               Ver resultado da minha simulação
+                                            </a>
+                                            <span class="seta"><img src="src/assets/images/home/seta-verde.png" alt=""></span>
+                                        </div>
+
+                                        <div class="button-personalizado">
+                                            <a href="">
+                                                Receber um orçamento personalizado
                                             </a>
                                         </div>
                                     </div>

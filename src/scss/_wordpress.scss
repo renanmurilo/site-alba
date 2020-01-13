@@ -61,7 +61,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 167%;
+    width: 161%;
     margin-left: 3rem;
     background: #198c9a;
     border-radius: 6px!important;
@@ -122,7 +122,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 168%;
+    width: 161%;
     margin-left: 3rem;
     background: #E5F2F4;
     border-radius: 6px;
@@ -146,6 +146,10 @@
 }
 
 #simule-pratica p{
+    margin-bottom: 0!important;
+}
+
+#formulario .session-formulario .orcamento .session-orcamento .form-group .form-color p{
     margin-bottom: 0!important;
 }
 

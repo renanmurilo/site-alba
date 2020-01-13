@@ -1,11 +1,11 @@
 #banner-principal-blog {
   .cx-banner {
-    padding: 60px 0 0;
+    padding: 55px 0 0;
 
     .desktop {
       display: block;
       width: 100%;
-      height: 338px;
+      height: 516px;
     }
 
     .mobile {
@@ -90,46 +90,54 @@
   padding-top: 50px;
 
   .container {
-    max-width: 95%;
-
-    .mobile {
-      display: none;
-    }
+    max-width: 88%;
 
     .titulo-blog {
       font-size: 40px;
       font-weight: bold;
       color: $verde-alba;
-      position: relative;
+      text-transform: uppercase;
+      
+      span{
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          background: $amarelo-alba;
+          height: 5px;
+          bottom: -5px;
+        }
+      }
+      
     }
 
-    .titulo-blog::before {
-      content: "";
-      position: absolute;
-      width: 785px;
-      background: $amarelo-alba;
-      height: 5px;
-      bottom: -5px;
-    }
-
-    .texto-blog {
+    p{
       color: $cinza-alba;
+      max-width: 782px;
+      line-height: 150%;
+      font-size: 18px;
     }
 
     .data-blog {
       font-size: 22px;
       color: $cinza-alba;
       font-weight: 300;
+      margin-top: 2rem;
     }
 
     .nome-blog {
       font-size: 16px;
       color: $amarelo-alba;
       font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
     }
 
     .caixa-tags {
       padding: 20px;
+      width: 305px;
       height: 350px;
       border-radius: 10px;
       box-shadow: 0px 0px 10px $cinza-alba;
@@ -150,7 +158,7 @@
           background: transparent;
           border: 0;
           position: absolute;
-          right: 50px;
+          right: -10px;
           top: 27px;
           color: $amarelo-alba;
         }
@@ -201,113 +209,74 @@
       color: $verde-alba;
     }
   }
-  #banner-miolo.show {
-    height: auto;
-    overflow: visible;
-    opacity: 1;
-    transition: all 0.5s;
-  }
-  #maneira-geral.show {
-    height: auto;
-    overflow: visible;
-    opacity: 1;
-    transition: all 0.5s;
-  }
+  
+}
 
-  #banner-miolo {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.5s;
-    margin: 30px 0;
+#banner-miolo{
+  width: 100%;
 
-    .desktop {
-      display: block;
-      width: 100%;
-    }
+  .banners{
 
-    .mobile {
-      display: none;
-    }
-
-    .bg-miolo {
-      position: absolute;
-      top: 0;
-      right: 115px;
-      width: 494px;
-      height: 520px;
-    }
-
-    .texto-miolo {
-      position: absolute;
-      top: 60px;
-      right: 140px;
-      font-size: 40px;
-      color: #fff;
-
-      .asp1 {
-        color: #ffd45e;
-        position: absolute;
-        top: -30px;
-        left: 0;
-        font-size: 100px;
-      }
-
-      .asp2 {
-        color: #ffd45e;
-        position: absolute;
-        bottom: -120px;
-        right: 110px;
-        font-size: 100px;
-      }
+    .mobile{
+      display: none!important;
     }
   }
-  #maneira-geral {
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.5s;
-    padding-top: 50px;
 
-    .btn-cont-lendo {
-      height: 40px;
-      width: 262px;
-      border: 0;
-      border-radius: 5px;
-      background-color: $amarelo-alba;
+  .container{
+    max-width: 85%;
+
+    p{
+      color: $cinza-alba;
+      font-size: 1.125rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+}
+
+#posts{
+  width: 100%;
+  margin-top: 2rem;
+
+  .container{
+    max-width: 87%;
+
+    h5{
       color: $verde-alba;
+      font-weight: 700;
+      font-size: 1.375rem;
     }
+  }
 
-    .container {
-      max-width: 90%;
-      margin: 0 auto;
-      padding: 0;
+  .session-posts{
 
-      .texto-blog {
-        width: 100%;
+    .carrousel-single{
+
+      .slick-initialized,
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
-      .post-relacionados {
-        max-width: 100%;
-        padding: 30px 0;
-        justify-content: space-between;
+      .card {
+        border-radius: 15px !important;
+        width: 19.2475rem;
+        position: relative;
+        border: none;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+         
+        
+        a{
+          text-decoration: none;
 
-        h5 {
-          color: $verde-alba;
-          width: 100%;
-          margin: 0 0 30px;
-          font-size: 22px;
-          font-weight: 300;
-        }
-
-        .card {
-          border-radius: 15px !important;
-          width: 19.2475rem;
-          position: relative;
-          border: none;
-          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
-
+          .card-img-top{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            min-height: 247px;
+          }
+  
           .text-card {
             position: absolute;
             font-size: 0.75rem;
@@ -318,12 +287,12 @@
             text-align: center;
             line-height: 120%;
             text-transform: uppercase;
-
+  
             span {
               font-weight: 900;
             }
           }
-
+  
           &::before {
             content: "";
             width: 47px;
@@ -333,11 +302,11 @@
             border-top-left-radius: 15px;
             border-bottom-right-radius: 15px;
           }
-
+  
           .card-body {
             text-align: center;
             min-height: 7.265rem;
-
+  
             .card-text {
               font-size: 1rem;
               color: $cinza-alba;
@@ -345,36 +314,93 @@
             }
           }
         }
-
-        .caixa-botoes-blog {
-          margin-top: 60px;
-          margin-bottom: 30px;
-          width: 100%;
-
-          .btn-voltar {
-            background-color: $amarelo-alba;
-            border: 0;
-            border-radius: 5px;
-            padding: 10px;
-            height: 39px;
-            width: 155px;
-            margin: 0 20px 0 0;
-            color: $verde-alba;
-          }
-
-          .btn-conheca {
-            background-color: $amarelo-alba;
-            border: 0;
-            border-radius: 5px;
-            padding: 10px;
-            heigth: 39px;
-            width: 365px;
-            margin: 0 0 0 20px;
-            color: $verde-alba;
-          }
-        }
       }
     }
+  }
+
+  .buttons-posts{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    
+    a.btn-voltar{
+      background-color: $amarelo-alba;
+      text-decoration: none;
+      color: $verde-alba;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-right: 3rem;
+      width: 158.23px;
+      height: 39.16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      border-radius: 4px;
+      box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+      letter-spacing: 3px;
+    }
+
+    a.btn-conheca{
+      background-color: $amarelo-alba;
+      text-decoration: none;
+      color: $verde-alba;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-right: 3rem;
+      width: 356px;
+      height: 39.16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      border-radius: 4px;
+      box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+      letter-spacing: 2.5px;;
+    }
+  }
+}
+
+
+@media screen and(min-width: 1441px){
+  
+  #banner-principal-blog .cx-banner{
+    padding: 55px 0 0;
+  }
+
+  #banner-principal-blog .cx-banner .desktop{
+    height: 516px;
+  }
+
+  #importancia .container{
+    max-width: 58%;
+  }
+
+  #banner-miolo .banners .desk{
+    width: 1920px;
+  }
+
+  #banner-miolo .container{
+    max-width: 55%;
+  }
+
+  #posts .container{
+    max-width: 56%;
+  }
+
+  #posts .session-posts .carrousel-single .slick-slide .slick-current .slick-active{
+    width: 370px!important;
+  }
+  
+}
+
+@media screen and(min-width: 1281px) and (max-width: 1440px){
+  #banner-miolo .banners .desk{
+    width: 1420px;
+  }
+  #importancia .container .caixa-tags #busca-tag .btn-busca{
+    right: 15px;
   }
 }
 
@@ -383,6 +409,7 @@
     .cx-banner {
       .mobile {
         display: block;
+        height: 310px;
       }
 
       .desktop {
@@ -472,26 +499,21 @@
     padding-top: 50px;
 
     .container {
-      h1 {
-        display: none;
-      }
+      max-width: 95%;
 
-      .mobile {
-        display: block !important;
-        font-size: 28px;
+      .titulo-blog {
+        font-size: 1.875rem;
         text-align: center;
-        font-weight: bold;
-        color: $verde-alba;
-        position: relative;
-      }
+        max-width: 310px;
+        text-transform: initial;
 
-      .mobile::before {
-        content: "";
-        position: absolute;
-        width: 200px;
-        background: $amarelo-alba;
-        height: 5px;
-        bottom: -5px;
+        span{
+
+          &::before{
+            width: 80%;
+            left: 25px;
+          }
+        }
       }
 
       .texto-blog {
@@ -518,94 +540,57 @@
         color: $verde-alba;
       }
     }
-    #banner-miolo.show {
-      height: auto;
-      overflow: visible;
-      opacity: 1;
-      transition: all 0.5s;
+  }
+  
+  #importancia .container p{
+    font-size: 0.875rem;
+  }
+
+  #banner-miolo .container p{
+    font-size: 0.875rem;
+  }
+
+  #posts{
+    margin-top: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #posts .container h5{
+    text-align: center;
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 50%;
+      left: 70px;
+      background-color: $amarelo-alba;
+      height: 4px;
+      bottom: -5px;
     }
-    #maneira-geral.show {
-      height: auto;
-      overflow: visible;
-      opacity: 1;
-      transition: all 0.5s;
-    }
+  }
 
-    #banner-miolo {
-      position: relative;
-      height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: all 0.5s;
-      margin: 30px 0;
+  #posts .buttons-posts{
+    justify-content: center;
+    margin: -42rem auto 0 auto;
+    align-items: center;
+    position: absolute;
+  }
+  #posts .session-posts .carrousel-single .card{
+    margin: 1rem .5rem;
+  }
 
-      .desktop {
-        display: none;
-      }
+  #posts .buttons-posts a.btn-voltar{
+    margin: 0 0 0 -2rem;
+  }
 
-      .mobile {
-        display: block;
-        width: 100%;
-      }
-
-      .bg-miolo {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 170px;
-        height: 173px;
-      }
-
-      .texto-miolo {
-        position: absolute;
-        top: 0px;
-        right: 5px;
-        font-size: 14px;
-        color: #fff;
-
-        .asp1 {
-          color: #ffd45e;
-          position: absolute;
-          top: -10px;
-          left: 0;
-          font-size: 40px;
-        }
-
-        .asp2 {
-          color: #ffd45e;
-          position: absolute;
-          bottom: -50px;
-          right: 35px;
-          font-size: 40px;
-        }
-      }
-    }
-    #maneira-geral {
-      .caixa-botoes-blog {
-        text-align: center;
-
-        .btn-voltar {
-          background-color: $amarelo-alba;
-          border: 0;
-          border-radius: 5px;
-          padding: 10px;
-          height: auto;
-          width: 155px;
-          margin: 10px 0;
-          color: $verde-alba;
-        }
-
-        .btn-conheca {
-          background-color: $amarelo-alba;
-          border: 0;
-          border-radius: 5px;
-          padding: 10px;
-          heigth: auto;
-          width: 160px;
-          margin: 10px 0;
-          color: $verde-alba;
-        }
-      }
-    }
+  #posts .buttons-posts a.btn-conheca{
+    margin: 2rem 0 1rem .5rem;
+    width: 257.53px;
+    justify-content: center;
+    height: 56px;
+    max-width: 80%;
+    text-align: center;
   }
 }

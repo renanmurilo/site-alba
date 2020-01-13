@@ -37,13 +37,13 @@
                         </li>
                         <li class="nav-item active dropdown">
                             <a class="nav-link" href="alba.html" id="navbarDropdownMenuLink">
-                              A alba
+                                A alba
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <a class="dropdown-item" href="#">Comercio</a>
-                              <a class="dropdown-item" href="#">Agronegócio</a>
-                              <a class="dropdown-item" href="#">Indústria</a>
-                              <a class="dropdown-item" href="#">Residência</a>
+                                <a class="dropdown-item" href="#">Comercio</a>
+                                <a class="dropdown-item" href="#">Agronegócio</a>
+                                <a class="dropdown-item" href="#">Indústria</a>
+                                <a class="dropdown-item" href="#">Residência</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -52,7 +52,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
-                         <li>
+                        <li>
                             <a href="orcamento.html">
                                 <button type="button" class="btn-orcamento">Orçamento <span><img
                                             src="src/assets/images/home/seta.png" alt="Seta"></span></button>
@@ -108,7 +108,7 @@
         </div>
     </section>
 
-    <section id="especialista">
+    <section id="especialista" data-group="alba">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -117,88 +117,125 @@
 
                     <div class="lista-buttons">
                         <ul>
-                            <li class="btn-list active"><a href=""><img src="src/assets/images/alba/comercio.png" alt="">
-                                <span>Comércio</span></a></li>
-                            <li class="btn-list"><a href=""><img src="src/assets/images/alba/agronegocio.png" alt="">
-                                <span>Agronegócio</span></a></li>
-                            <li class="btn-list"><a href=""><img src="src/assets/images/alba/industria.png" alt="">
-                                <span>Indústria</span></a></li>
-                            <li class="btn-list"><a href=""><img src="src/assets/images/alba/residencia.png" alt="">
-                                <span>Residência</span></a></li>
-                            <li class="btn-list box-none"><a href="">Todos</a></li>
+                            <li><a href="#comercio" data-click="comercio"><img src="src/assets/images/alba/comercio.png"
+                                        alt="">
+                                    <span>Comércio</span></a></li>
+                            <li><a href="#agro" data-click="agro"><img src="src/assets/images/alba/agronegocio.png"
+                                        alt="">
+                                    <span>Agronegócio</span></a></li>
+                            <li><a href="#industria" data-click="industria"><img
+                                        src="src/assets/images/alba/industria.png" alt="">
+                                    <span>Indústria</span></a></li>
+                            <li><a href="#residencia" data-click="residencia"><img
+                                        src="src/assets/images/alba/residencia.png" alt="">
+                                    <span>Residência</span></a></li>
+                            <li class="box-none"><a href="#" data-click="todos">Todos</a></li>
                         </ul>
                     </div>
 
-                    <div class="session-especialista carroussel-tipbar">
-                        <div class="col-md-6">
-                            <div class="card-left">
-                                <div class="card">
-                                    <img class="card-img-top desk" src="src/assets/images/alba/card-1.png" alt="">
-                                    <img class="card-img-top mob" src="src/assets/images/alba/card-1-mobile.png" alt="">
-                                    <p class="text-card">Fazenda Solar</p>
-                                    <div class="card-body">
-                                        <p class="card-text">Monte Verde - MG</p>
-                                        <div class="card-bottom">
-                                            <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
-                                                Kwh/Mês</p>
-                                            <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
-                                                painéis</p>
-                                        </div>
+                    <div data-target="comercio" class="session-especialista carroussel-tipbar">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top desk" src="src/assets/images/alba/card-1.png" alt="">
+                                <img class="card-img-top mob" src="src/assets/images/alba/card-1-mobile.png" alt="">
+                                <p class="text-card">Fazenda Solar</p>
+                                <div class="card-body">
+                                    <p class="card-text">Monte Verde - MG</p>
+                                    <div class="card-bottom">
+                                        <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
+                                            Kwh/Mês</p>
+                                        <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
+                                            painéis</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="card-right">
-                                <div class="card">
-                                    <img class="card-img-top desk" src="src/assets/images/alba/card-2.png" alt="">
-                                    <img class="card-img-top mob" src="src/assets/images/alba/card-1-mobile.png" alt="">
-                                    <p class="text-card">Fazenda Solar</p>
-                                    <div class="card-body">
-                                        <p class="card-text">Monte Verde - MG</p>
-                                        <div class="card-bottom">
-                                            <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
-                                                Kwh/Mês</p>
-                                            <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
-                                                painéis</p>
-                                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top desk" src="src/assets/images/alba/card-1.png" alt="">
+                                <img class="card-img-top mob" src="src/assets/images/alba/card-1-mobile.png" alt="">
+                                <p class="text-card">Fazenda Solar</p>
+                                <div class="card-body">
+                                    <p class="card-text">Monte Verde - MG</p>
+                                    <div class="card-bottom">
+                                        <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
+                                            Kwh/Mês</p>
+                                        <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
+                                            painéis</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-6">
-                            <div class="card-left">
-                                <div class="card">
-                                    <img class="card-img-top" src="src/assets/images/alba/card-3.png" alt="">
-                                    <p class="text-card">Fazenda Solar</p>
-                                    <div class="card-body">
-                                        <p class="card-text">Monte Verde - MG</p>
-                                        <div class="card-bottom">
-                                            <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
-                                                Kwh/Mês</p>
-                                            <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
-                                                painéis</p>
-                                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top desk" src="src/assets/images/alba/card-1.png" alt="">
+                                <img class="card-img-top mob" src="src/assets/images/alba/card-1-mobile.png" alt="">
+                                <p class="text-card">Fazenda Solar</p>
+                                <div class="card-body">
+                                    <p class="card-text">Monte Verde - MG</p>
+                                    <div class="card-bottom">
+                                        <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
+                                            Kwh/Mês</p>
+                                        <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
+                                            painéis</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-6">
-                            <div class="card-right">
-                                <div class="card">
-                                    <img class="card-img-top" src="src/assets/images/alba/card-4.png" alt="">
-                                    <p class="text-card">Fazenda Solar</p>
-                                    <div class="card-body">
-                                        <p class="card-text">Monte Verde - MG</p>
-                                        <div class="card-bottom">
-                                            <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
-                                                Kwh/Mês</p>
-                                            <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
-                                                painéis</p>
-                                        </div>
+                    <div data-target="agro" class="session-especialista carroussel-tipbar">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top desk" src="src/assets/images/alba/card-2.png" alt="">
+                                <img class="card-img-top mob" src="src/assets/images/alba/card-1-mobile.png" alt="">
+                                <p class="text-card">Fazenda Solar</p>
+                                <div class="card-body">
+                                    <p class="card-text">Monte Verde - MG</p>
+                                    <div class="card-bottom">
+                                        <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
+                                            Kwh/Mês</p>
+                                        <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
+                                            painéis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-target="industria" class="session-especialista carroussel-tipbar">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top desk" src="src/assets/images/alba/card-3.png" alt="">
+                                <img class="card-img-top mob" src="src/assets/images/alba/card-1-mobile.png" alt="">
+                                <p class="text-card">Fazenda Solar</p>
+                                <div class="card-body">
+                                    <p class="card-text">Monte Verde - MG</p>
+                                    <div class="card-bottom">
+                                        <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
+                                            Kwh/Mês</p>
+                                        <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
+                                            painéis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-target="residencia" class="session-especialista carroussel-tipbar">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top desk" src="src/assets/images/alba/card-4.png" alt="">
+                                <img class="card-img-top mob" src="src/assets/images/alba/card-1-mobile.png" alt="">
+                                <p class="text-card">Fazenda Solar</p>
+                                <div class="card-body">
+                                    <p class="card-text">Monte Verde - MG</p>
+                                    <div class="card-bottom">
+                                        <p class="raio"><img src="src/assets/images/alba/icon-raio.png" alt=""> 452
+                                            Kwh/Mês</p>
+                                        <p class="paines"><img src="src/assets/images/alba/icon-card.png" alt="">14
+                                            painéis</p>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +258,115 @@
             <div class="col-md-12">
                 <div class="session-mapa">
                     <div class="col-md-6">
-                        <div class="image-mapa"></div>
+                        <div class="image-mapa">
+                            <div>
+                                <a class="icon-1" href="#" data-toggle="modal" data-target="#modalExemplo">
+                                    <img class="desk" src="src/assets/images/alba/estado-1.png" alt="">
+                                    <img class="mobile" src="src/assets/images/alba/estado-mobile-1.png" alt="">
+                                </a>
+
+                                <div class="modal fade bd-example-modal-xl" id="modalExemplo" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="image">
+                                                    <img src="src/assets/images/segmentos/Agropecuaria.png" alt="">
+                                                </div>
+                                                <div class="texto-modal">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nihil distinctio quis reiciendis odio, obcaecati nulla quasi eos magni ullam dignissimos sapiente blanditiis, architecto animi, nam omnis velit illum accusamus.</p>
+                                                    <div class="botao-modal">
+                                                        <a href="" target="_blank">Botão</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a class="icon-2" href="#" data-toggle="modal" data-target="#modalExemplo1">
+                                    <img class="desk" src="src/assets/images/alba/estado-2.png" alt="">
+                                    <img class="mobile" src="src/assets/images/alba/estado-mobile-2.png" alt="">
+                                </a>
+
+                                <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a class="icon-3" href="#" data-toggle="modal" data-target="#modalExemplo2">
+                                    <img class="desk" src="src/assets/images/alba/estado-3.png" alt="">
+                                        <img class="mobile" src="src/assets/images/alba/estado-mobile-3.png" alt="">
+                                    </a>
+
+                                <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                               MOdal 3
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a class="icon-4" href="#" data-toggle="modal" data-target="#modalExemplo3">
+                                    <img class="desk" src="src/assets/images/alba/estado-4.png" alt="">
+                                    <img class="mobile" src="src/assets/images/alba/estado-mobile-4.png" alt="">
+                                </a>
+
+                                <div class="modal fade" id="modalExemplo3" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                               MOdal 4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-md-6">
@@ -236,7 +381,7 @@
                                         tecnologia, como o INATEL (Instituto Nacional de Telecomunicações), seguimos
                                         impulsionando o setor e o desenvolvimento sustentável de nossos clientes. <a
                                             href="">Ler mais</a></p>
-                                            <p class="ler"><a href="">Ler mais</a></p>
+                                    <p class="ler"><a href="">Ler mais</a></p>
 
                                     <div class="image-bg">
                                         <div class="abgd"></div>
@@ -285,31 +430,12 @@
                             <div>
                                 <div class="card">
                                     <div class="card-body">
-                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos satisfeitos com a praticidade do atendimento e da entrega. <br><br> Obrigado!” </p>
+                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos
+                                            satisfeitos com a praticidade do atendimento e da entrega. <br><br>
+                                            Obrigado!” </p>
                                         <div class="rodape">
-                                            <p class="nome">Dr. Mário Xavier <span><img src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos satisfeitos com a praticidade do atendimento e da entrega. <br><br> Obrigado!” </p>
-                                        <div class="rodape">
-                                            <p class="nome">Dr. Mário Xavier <span><img src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos satisfeitos com a praticidade do atendimento e da entrega. <br><br> Obrigado!” </p>
-                                        <div class="rodape">
-                                            <p class="nome">Dr. Mário Xavier <span><img src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
+                                            <p class="nome">Dr. Mário Xavier <span><img
+                                                        src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -318,36 +444,79 @@
                             <div>
                                 <div class="card">
                                     <div class="card-body">
-                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos satisfeitos com a praticidade do atendimento e da entrega. <br><br> Obrigado!” </p>
+                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos
+                                            satisfeitos com a praticidade do atendimento e da entrega. <br><br>
+                                            Obrigado!” </p>
                                         <div class="rodape">
-                                            <p class="nome">Dr. Mário Xavier <span><img src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
+                                            <p class="nome">Dr. Mário Xavier <span><img
+                                                        src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="card" style="width: 18rem;">
+                                <div class="card">
                                     <div class="card-body">
-                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos satisfeitos com a praticidade do atendimento e da entrega. <br><br> Obrigado!” </p>
+                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos
+                                            satisfeitos com a praticidade do atendimento e da entrega. <br><br>
+                                            Obrigado!” </p>
                                         <div class="rodape">
-                                            <p class="nome">Dr. Mário Xavier <span><img src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
+                                            <p class="nome">Dr. Mário Xavier <span><img
+                                                        src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div>
-                                <div class="card" style="width: 18rem;">
+                                <div class="card">
                                     <div class="card-body">
-                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos satisfeitos com a praticidade do atendimento e da entrega. <br><br> Obrigado!” </p>
+                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos
+                                            satisfeitos com a praticidade do atendimento e da entrega. <br><br>
+                                            Obrigado!” </p>
                                         <div class="rodape">
-                                            <p class="nome">Dr. Mário Xavier <span><img src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
+                                            <p class="nome">Dr. Mário Xavier <span><img
+                                                        src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos
+                                            satisfeitos com a praticidade do atendimento e da entrega. <br><br>
+                                            Obrigado!” </p>
+                                        <div class="rodape">
+                                            <p class="nome">Dr. Mário Xavier <span><img
+                                                        src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-text">“Foi nossa primeira compra de um painel solar, estamos
+                                            satisfeitos com a praticidade do atendimento e da entrega. <br><br>
+                                            Obrigado!” </p>
+                                        <div class="rodape">
+                                            <p class="nome">Dr. Mário Xavier <span><img
+                                                        src="src/assets/images/alba/foto-slide.png" alt=""></span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="button">
+                        <a href="">
+                            <button type="button" class="btn-comentarios">Saiba mais <span class="seta"><img
+                                        src="src/assets/images/home/seta-verde.png" alt=""></span></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -451,11 +620,13 @@
     <section id="imape">
         <div class="row">
             <div class="col-md-12">
-               <div class="session-imape">
-                   <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.8514538392114!2d-46.56860438450763!3d-21.78600940431625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9dcef1b4153ab%3A0x6770e77d119983b2!2sAv.%20Francisco%20Salles%2C%20104%20-%20Centro%2C%20Po%C3%A7os%20de%20Caldas%20-%20MG%2C%2037701-704!5e0!3m2!1spt-BR!2sbr!4v1574025314289!5m2!1spt-BR!2sbr" width="98%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                   </div>
-               </div> 
+                <div class="session-imape">
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.8514538392114!2d-46.56860438450763!3d-21.78600940431625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9dcef1b4153ab%3A0x6770e77d119983b2!2sAv.%20Francisco%20Salles%2C%20104%20-%20Centro%2C%20Po%C3%A7os%20de%20Caldas%20-%20MG%2C%2037701-704!5e0!3m2!1spt-BR!2sbr!4v1574025314289!5m2!1spt-BR!2sbr"
+                            width="98%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -477,10 +648,10 @@
                                 <div class="site-map">
                                     <h2>Site Map</h2>
                                     <ul>
-                                        <li><a href="">Home</a></li>
-                                        <li><a href="">A Alba</a></li>
-                                        <li><a href="">Na prática</a></li>
-                                        <li class="linha"><a href="">Blog</a></li>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="alba.html">A Alba</a></li>
+                                        <li><a href="pratica.html">Na prática</a></li>
+                                        <li class="linha"><a href="blog.html">Blog</a></li>
                                         <li><a href="">Comércio</a></li>
                                         <li><a href="">Agronegócio</a></li>
                                         <li><a href="">Indústria</a></li>
@@ -489,31 +660,17 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 unidade-mobile">
                                 <div class="unidades">
                                     <h2>Unidades</h2>
                                     <p><span>Pouso Alegre - MG</span> <br>
-                                        Rua Bom Jesus, 612, Centro <br>
-                                        <u>Tel: (35) 4102-1599 | (35) 9 9217-0063</u></p>
+                                        Rua Bom Jesus, 612, Centro</p>
                                 </div>
 
-                                <div class="unidades">
+                                <div class="unidades uni-2">
                                     <p><span>Poços de Caldas - MG</span><br>
-                                        Avenida Francisco Salles, 104, Centro <br>
-                                        <u> Tel: (35) 4141-1599 | (35) 9 9164-0006</u></p>
-                                </div>
-
-                                <div class="unidades-mobile">
-                                    <h2>Unidades</h2>
-                                    <p><span>Pouso Alegre - MG</span><br>
-                                        Rua Bom Jesus, 612, <br> Centro <br>
-                                        <u>Tel: (35) 4102-1599 <br> (35) 9 9217-0063</u></p>
-                                </div>
-
-                                <div class="unidades-mobile">
-                                    <p><span>Poços de Caldas - MG</span><br>
-                                        Avenida Francisco Salles, 104, <br> Centro <br>
-                                        <u> Tel: (35) 4141-1599 <br> (35) 9 9164-0006</u></p>
+                                        R. Junqueiras, 466 - Centro <br> <br>
+                                        <u> Tel: (35) 4102-1599</u> <br> comercial@albaenergia.com.br</p>
                                 </div>
 
 
@@ -521,10 +678,13 @@
                                     <h2>Nossas Redes</h2>
 
                                     <div class="icones">
-                                        <div><a href=""><i class="fab fa-facebook-square"></i></a></div>
-                                        <div><a href=""><i class="fab fa-instagram"></i></a></div>
+                                        <div><a href=""><img src="/src/assets/images/footer/facebook.png" alt=""></a>
+                                        </div>
+                                        <div><a href=""><img src="/src/assets/images/footer/instagram.png" alt=""></a>
+                                        </div>
                                         <div><a href=""><i class="fab fa-linkedin"></i></a></div>
-                                        <div><a href=""><i class="fab fa-whatsapp"></i></a></div>
+                                        <div><a href=""><img src="/src/assets/images/footer/whatsapp.png" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -532,12 +692,13 @@
                             <div class="col-md-3">
                                 <div class="contato">
                                     <h2>Contato</h2>
-                                    <p><u>Entre em contato <br> com a gente!</u></p>
+                                    <p class="desk"><u>Entre em contato <br> com a gente!</u></p>
+                                    <p class="mobile"><u>Entre em contato com a gente!</u></p>
                                 </div>
 
                                 <div class="orcamento">
                                     <h2>Orçamento</h2>
-                                    <p><a href="">Faça o seu orçamento</a></p>
+                                    <p><a href="orcamento.html">Faça o seu orçamento</a></p>
                                 </div>
 
                                 <div class="faq">
@@ -556,9 +717,9 @@
         </div>
     </footer>
 
-    <script src="src/assets/js/bootstrap.min.js"></script>
     <script src="src/assets/js/jquery.min.js"></script>
     <script src="src/assets/js/popper.min.js"></script>
+    <script src="src/assets/js/bootstrap.min.js"></script>
     <script src="src/assets/js/slick.min.js"></script>
     <script src="src/assets/js/main.js"></script>
     <script src="src/assets/js/player.js"></script>
