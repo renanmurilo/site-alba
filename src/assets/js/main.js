@@ -151,24 +151,18 @@ $(function () {
 $(function () {
   var classActive = 'active';
 
-  $('.navbar-nav li.nav-item').click(function() {
+  $('.navbar-nav li.nav-item').click(function () {
 
     $('.navbar-nav li.nav-item').removeClass(classActive);
     $(this).addClass(classActive);
   });
 });
 
-$(function () {
-  $('.seta').addClass('rotate-fa')
-});
-
-$(".seta").on("click", function(){   
-  $(this).find(".seta").toggleClass("rotate-fa");
-  $('.seta').addClass('rotate-fa')
-  $('#' + this.id).removeClass('rotate-fa')
-  
-
-});
+$('.card-header').click(function () {
+  if ($(this).attr('aria-expanded', 'true')) {
+    $(this).find('img').toggleClass('rotate-fa');
+  }
+})
 
 
 $(function () {
@@ -204,7 +198,7 @@ $(function () {
   $('#segmentos-especialista .setor').first().addClass(classActive);
 
 
-  $('#qual-setor li a').click(function(e) {
+  $('#qual-setor li a').click(function (e) {
     e.preventDefault();
     var itemId = $(this).attr('href');
 
@@ -214,24 +208,24 @@ $(function () {
   });
 });
 
-var pare 
+var pare
 
-$(function(){
+$(function () {
   var loop = 0;
-      pare = setInterval(function(){
-      if(loop < 4){
-          loop++;
-      }else{
-          loop = 0;
-      }
-      $('.lista-veja ul li:nth-child('+loop+') a').trigger('click')
+  pare = setInterval(function () {
+    if (loop < 4) {
+      loop++;
+    } else {
+      loop = 0;
+    }
+    $('.lista-veja ul li:nth-child(' + loop + ') a').trigger('click')
   }, 1800);
 
 });
 
-function stop(){
+function stop() {
 
-    clearInterval(pare);
+  clearInterval(pare);
 }
 
 
@@ -309,90 +303,90 @@ $('.btn-vermais').click(function () {
   $('.mais-cont').addClass('active');
 });
 
-$(function(){
-  $('[data-group]').each(function(){
+$(function () {
+  $('[data-group]').each(function () {
     var $allTarget = $(this).find('[data-target]'),
-        $allClick = $(this).find('[data-click]'),
-        activeClass = 'active';
+      $allClick = $(this).find('[data-click]'),
+      activeClass = 'active';
 
     $allTarget.first().addClass(activeClass);
     $allClick.first().addClass(activeClass);
 
-    $allClick.click(function(e){
+    $allClick.click(function (e) {
       e.preventDefault();
 
       var id = $(this).data('click'),
         $target = $('[data-target="' + id + '"]');
 
-        $allClick.removeClass(activeClass);
-        $allTarget.removeClass(activeClass);
+      $allClick.removeClass(activeClass);
+      $allTarget.removeClass(activeClass);
 
-        $target.addClass(activeClass);
-        $(this).addClass(activeClass);
+      $target.addClass(activeClass);
+      $(this).addClass(activeClass);
     })
   })
 });
 
-$(function(){
+$(function () {
 
-  $('.direita').click(function(e){
+  $('.direita').click(function (e) {
     e.preventDefault();
     var el = $('.active');
-    if (el.next().length > 1){
-        el.next().addClass('active');
-        el.removeClass('active');
+    if (el.next().length > 1) {
+      el.next().addClass('active');
+      el.removeClass('active');
 
-        if ($('.bg-branco-3').hasClass('active')) {
-          $('.fa-chevron-left').css('color', '#fff');
-          $('.fa-chevron-right').css('color', '#fff');
-        } else {
-          $('.fa-chevron-left').css('color', '#00808F');
-          $('.fa-chevron-right').css('color', '#00808F');
-        }
+      if ($('.bg-branco-3').hasClass('active')) {
+        $('.fa-chevron-left').css('color', '#fff');
+        $('.fa-chevron-right').css('color', '#fff');
+      } else {
+        $('.fa-chevron-left').css('color', '#00808F');
+        $('.fa-chevron-right').css('color', '#00808F');
+      }
     }
   });
 
-  $('.esquerda').click(function(e){
+  $('.esquerda').click(function (e) {
     e.preventDefault();
     var el = $('.active');
-    if (el.prev().length > 3){
-        el.prev().addClass('active');
-        el.removeClass('active');
+    if (el.prev().length > 3) {
+      el.prev().addClass('active');
+      el.removeClass('active');
 
-        if ($('.bg-branco-3').hasClass('active')) {
-          $('.fa-chevron-left').css('color', '#fff');
-          $('.fa-chevron-right').css('color', '#fff');
-        } else {
-          $('.fa-chevron-left').css('color', '#00808F');
-          $('.fa-chevron-right').css('color', '#00808F');
-        }
+      if ($('.bg-branco-3').hasClass('active')) {
+        $('.fa-chevron-left').css('color', '#fff');
+        $('.fa-chevron-right').css('color', '#fff');
+      } else {
+        $('.fa-chevron-left').css('color', '#00808F');
+        $('.fa-chevron-right').css('color', '#00808F');
+      }
     }
   });
 });
 
-$(document).ready(function () {        
+$(document).ready(function () {
   getUrlVars()
 });
 function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    vars[key] = value;
+  });
 
-    if(vars.narrat == 'industria') {
-        $('.row.setor.comercio').removeClass('active');
-        $('.row.setor.industria').addClass('active');
-    }
-    if(vars.narrat == 'comercio') {
-        $('.row.setor.comercio').removeClass('active');
-        $('.row.setor.comercio').addClass('active');
-    }
-    if(vars.narrat == 'agro') {
-        $('.row.setor.comercio').removeClass('active');
-        $('.row.setor.agro').addClass('active');
-    }
-    if(vars.narrat == 'residencia') {
-        $('.row.setor.comercio').removeClass('active');
-        $('.row.setor.residencia').addClass('active');
-    }
+  if (vars.narrat == 'industria') {
+    $('.row.setor.comercio').removeClass('active');
+    $('.row.setor.industria').addClass('active');
+  }
+  if (vars.narrat == 'comercio') {
+    $('.row.setor.comercio').removeClass('active');
+    $('.row.setor.comercio').addClass('active');
+  }
+  if (vars.narrat == 'agro') {
+    $('.row.setor.comercio').removeClass('active');
+    $('.row.setor.agro').addClass('active');
+  }
+  if (vars.narrat == 'residencia') {
+    $('.row.setor.comercio').removeClass('active');
+    $('.row.setor.residencia').addClass('active');
+  }
 }
