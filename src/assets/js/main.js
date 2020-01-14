@@ -149,26 +149,25 @@ $(function () {
 })
 
 $(function () {
-  $('a.nav-link').click(function () {
-    $(this).parents("li").addClass("active").siblings().removeClass("active");
+  var classActive = 'active';
+
+  $('.navbar-nav li.nav-item').click(function() {
+
+    $('.navbar-nav li.nav-item').removeClass(classActive);
+    $(this).addClass(classActive);
   });
 });
 
-$("#accordion").on("click", function(){   
+$(function () {
+  $('.seta').addClass('rotate-fa')
+});
+
+$(".seta").on("click", function(){   
   $(this).find(".seta").toggleClass("rotate-fa");
+  $('.seta').addClass('rotate-fa')
+  $('#' + this.id).removeClass('rotate-fa')
   
 
-  $(this).click(function(e) {
-    e.preventDefault();
-
-    if($('.seta').hasClass("rotate-fa")){
-        $('.seta').removeClass('rotate-fa')
-        $('.seta').addClass('rotate-fa')
-    } else {
-        $('.seta').addClass('rotate-fa')
-        $('.seta').removeClass('rotate-fa')
-    }
-});
 });
 
 
@@ -214,6 +213,26 @@ $(function () {
     $(itemId).addClass(classActive);
   });
 });
+
+var pare 
+
+$(function(){
+  var loop = 0;
+      pare = setInterval(function(){
+      if(loop < 4){
+          loop++;
+      }else{
+          loop = 0;
+      }
+      $('.lista-veja ul li:nth-child('+loop+') a').trigger('click')
+  }, 1800);
+
+});
+
+function stop(){
+
+    clearInterval(pare);
+}
 
 
 

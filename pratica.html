@@ -68,10 +68,10 @@
 
         <div class="lista-veja">
             <ul>
-                <li><a href="#veja" class="">1. <br>Geração <br> de energia</a><span></span></li>
-                <li><a href="#veja1" class="">2. <br>Consumo <br> e créditos</a><span></span></li>
-                <li><a href="#veja2" class="">3. <br>Utilização <br> dos créditos <p class="borda-branca"></p></a><span></span></li>
-                <li><a href="#veja3" class="">4. <br>Economia</a></li>
+                <li onmousedown="stop('Geracao')"><a href="#veja" class="">1. <br>Geração <br> de energia</a><span></span></li >
+                <li onmousedown="stop('Consumo')"><a href="#veja1" class="">2. <br>Consumo <br> e créditos</a><span></span></li>
+                <li onmousedown="stop('Utilizacao')"><a href="#veja2" class="">3. <br>Utilização <br> dos créditos<p class="borda-branca"></p></a><span></span></li>
+                <li onmousedown="stop('Economia')"><a href="#veja3" class="">4. <br>Economia</a></li>
             </ul>
         </div>
 
@@ -422,7 +422,7 @@
                                         <a class="card-link" data-toggle="collapse" href="#collapseOne">
                                             <span>1</span> Simulação do investimento
                                         </a>
-                                        <a id="link" class="icon" data-toggle="collapse" href="#collapseOne"><img class="seta" src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
+                                        <a id="link" class="icon" data-toggle="collapse" href="#collapseOne"><img class="seta" id="seta1" src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
                                     </div>
                                     <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                         <div class="card-body">
@@ -437,7 +437,7 @@
                                             <span>2</span> Consulta tecnica e elaboração da proposta
                                         </a>
                                         <a id="link" class="icon" data-toggle="collapse" href="#collapseTwo"><img
-                                                src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
+                                            class="seta" id="seta2" src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
                                     </div>
                                     <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
@@ -452,7 +452,7 @@
                                             <span>3</span> Suporte com Financiamento
                                         </a>
                                         <a class="icon" data-toggle="collapse" href="#collapseThree"><img
-                                                src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
+                                            class="seta" id="seta3" src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
                                     </div>
                                     <div id="collapseThree" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
@@ -467,7 +467,7 @@
                                             <span>4</span> Desenvolvimento do projeto e instalação do sistema
                                         </a>
                                         <a class="icon" data-toggle="collapse" href="#collapseFour"><img
-                                                src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
+                                            class="seta" id="seta4" src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
                                     </div>
                                     <div id="collapseFour" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
@@ -497,7 +497,7 @@
                                         <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
                                             <span>5</span> Monitoramento e pós vendas
                                         </a>
-                                        <a class="icon" data-toggle="collapse" href="#collapseFive"><img class="seta" src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
+                                        <a class="icon" data-toggle="collapse" href="#collapseFive"><img class="seta" id="seta5" src="src/assets/images/na-pratica/icon-accordion.png" alt=""></a>
                                     </div>
                                     <div id="collapseFive" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
