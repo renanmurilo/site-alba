@@ -717,11 +717,14 @@
                             }
                         }
 
-                        .seta{
+                        .seta.rotate-fa{
+                            transform: rotateZ(0deg);
                             transition: all 250ms ease-in-out;
-                          }
-                        .rotate-fa{
+                            float: right;
+                        }
+                        .seta.rotate-fa.active {
                             transform: rotateZ(180deg);
+                            transition: all 250ms ease-in-out;
                         }
                         
                     }

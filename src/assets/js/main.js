@@ -160,7 +160,7 @@ $(function () {
 
 $('.card-header').click(function () {
   if ($(this).attr('aria-expanded', 'true')) {
-    $(this).find('img').toggleClass('rotate-fa');
+    $(this).find('img').toggleClass('active');
   }
 })
 
